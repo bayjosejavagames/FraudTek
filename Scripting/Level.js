@@ -11,6 +11,6 @@ for(var i=0; i<levelWidth; i++){
 // populate the array with random values (whole numbers between 0 and 100)
 for(var i=0; i<levelWidth; i++){
     for(var j=0; j<levelHieght; j++){
-        
+        //buzorple
     }
 }
