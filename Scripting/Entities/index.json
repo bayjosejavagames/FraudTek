@@ -1,0 +1,12 @@
+{
+  "entities":[
+    {
+      "name":"tile",
+      "file":"tile.json"
+    },
+    {
+      "name":"Sphere",
+      "file":"Sphere.json"
+    }
+  ]
+}

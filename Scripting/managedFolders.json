@@ -1,0 +1,40 @@
+[
+  {
+    "name":"Images",
+    "description":"Put image source files in this directory."
+  },
+  {
+    "name":"Models",
+    "description":"Put .obj source files in this directory."
+  },
+  {
+    "name":"Sounds",
+    "description":"Put all sound files in this directory."
+  },
+  {
+    "name":"Shaders",
+    "description":"This is the directory where the engine compiles the shaders to."
+  },
+  {
+    "name":"Scripting",
+    "description":"This is the directory containing this game source file, as well as all other game sources.",
+    "watched":true
+  },
+  {
+    "name":"res",
+    "description":"Resources Folder.",
+    "watched":true
+  },
+  {
+    "name":"Web",
+    "description":"Auto-Generated Web portfolio for your game."
+  },
+  {
+    "name":"Documentation",
+    "description":"All Auto-Generated Documentation goes here, compatible with JavaDocs formatting."
+  },
+  {
+    "name":"Logs",
+    "description":"Log files go here."
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "type":"Sphere",
+  "positionOffset":{
+    "x":0,
+    "y":0,
+    "z":0
+  },
+  "rotation":{
+    "x":0,
+    "y":0,
+    "z":0
+  },
+  "scale":0.65,
+  "Components": {
+    "ComponentMesh": {
+      "link": "mesh1",
+      "model":"hex"
+    },
+    "ComponentCollision": {
+      "link":"mesh1"
+    },
+    "ComponentMaterial":{
+      "material":"Brick"
+    },
+    "ComponentRender": {},
+    "ComponentScript":{
+      "filename":"Sphere.js"
+    }
+  }
+}
