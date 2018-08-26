@@ -1,3 +1,13 @@
+// a chunk is a 15x15 array which stores terrain data
+var chunk = {
+    width:14
+    height:14
+    data:new Array(Width);
+}
+for(int i=0; i<chunk.width; i++){
+    chunk.data[i] = new Array(chunk.height);
+}
+
 // level width and height are between 10 and 20 for now
 var random = new Random(123);
 var levelWidth = 10 + random.nextInt(11);
@@ -20,10 +30,19 @@ var k2 = 50;
 // randomCap is the maximum value of the array values +1
 var randomCap = 100 + 1;
 
+// islandCutOff is the minimum value for a chunk to exist
+var islandCutOff = 60;
+
 // populate the array with random values (whole numbers between 0 and 100)
 for(var i=0; i<levelWidth; i++){
     for(var j=0; j<levelHieght; j++){
+        mapArray[i[j]] = chunk;
         // value is a product of random number + function of i&j
-        mapArray[i[j]] = (-(i-h1)^2 + k1) + (-(j-h2) + k2) + random.nextInt(randomCap);
+        mapArray[i[j]].data[chunk.width/2[chunk.height/2]] = (-(i-h1)^2 + k1) + (-(j-h2) + k2) + random.nextInt(randomCap);
+        // if it doesn't meet the cutoff, zero it
+        if(mapArray[i[j]] < islandCutOff){
+            mapArray[i[j]] = 0;
+        }
     }
 }
+
