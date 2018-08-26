@@ -25,6 +25,8 @@ function init(x, y){
 function tick(){
     location = player.getPosition();
 
+    light.setPosition(player.getPosition().add(new Vector3f(0, 2, 0)));
+
     var moved = false;
 
     if(ScriptingEngine.focused()){

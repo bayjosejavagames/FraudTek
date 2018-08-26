@@ -1,10 +1,10 @@
 {
   "width":1920,
   "height":1080,
-  "fullscreen":false,
+  "fullscreen":true,
   "vsync":true,
   "name":"Hex test",
-  "username":"bayjose",
+  "username":"ThePiratePup",
   "mainScript":"SoulGame.js",
   "path":"/out/artifacts/unnamed/Edaxerum.jar",
   "aspectRatios":[

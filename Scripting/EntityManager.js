@@ -10,7 +10,7 @@ function init(){
     entities = new EntityContainer(new ComparitorVAO());
     //Shader
     // shader = new Shader('cell_shading');
-    shader = new Shader('dynamic_lighting');
+    shader = new Shader('cell_shading');
 }
 
 function tick(){

@@ -2,6 +2,8 @@
  * Created by Bayjose Java Games on 8/10/2018.
  */
 
+var dragon;
+
 function init(levelName){
     Log.println("Generating Levels"+levelName);
     loadLevel(levelName);
@@ -13,22 +15,15 @@ function loadLevel(seed){
     //Shrine
     //Forrest
     //SkullBridge
-    var random = new Random();
-    var x = random.nextInt(22)+10;
-    var y = random.nextInt(22)+10;
-    // for(var i = 0; i < y; i++){
-    //     for(var j = 0; j < x; j++){
-    //         entities.push(new EntityModel(ModelLoader.loadModel("hex"), "white", new Vector3f(i * 2, random.nextFloat(), j * 2), 0, 0, 0, 2));
-    //     }
-    // }
 
     ScriptingEngine.addScript("Level");
 
+    dragon = entities.push(new EntityModel(ModelLoader.loadModel("dragon"), "white", new Vector3f(0, 0, -6), 0, 0, 0, 1));
     entities.push(new EntityModel(ModelLoader.loadModel("quad"), "white", new Vector3f(0, 0, 0), 0, 0, 0, 12));
 }
 
 function tick(){
-
+    dragon.rotate(0, 1, 0);
 }
 
 function render(){
