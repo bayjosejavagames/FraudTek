@@ -48,11 +48,10 @@ function init() {
                 for(var k=0; k<chunk.width;k++){
                     for(var l=0; l<chunk.width;l++){
                         var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                        var materialID = MaterialManager.getColor(0,mapArray[i][j].data[chunk.width/2][chunk.height/2],0);
-                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), materialID.getName()+"", new Vector3f(i, 0, j), 0, 0, 0, 0.5);
+                        var materialID = MaterialManager.getColor(0, clamp(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)], 0, 255),0);
+                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i+(k/chunk.width), 0, j+(l/chunk.height)), 0, 0, 0, 0.5/chunk.width);
                         entity.setMaterial(materialID);
                         entities.push(entity);
-                        entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i+(k/chunk.width), 0, j+(l/chunk.height)), 0, 0, 0, 0.5/chunk.width));
                     }
                 }
                 // var entities = ScriptingEngine.getScript("EntityManager").var("entities");
@@ -118,4 +117,8 @@ function generateStructures(){
     for(var i = 0; i < structures.length; i++){
 
     }
+}
+
+function clamp(x, min, max){
+    return (x<min?0:x>max?max:x);
 }
