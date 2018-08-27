@@ -1,9 +1,4 @@
-// a chunk is a 15x15 array which stores terrain data
-var chunk = {
-    width:14,
-    height:14,
-    data:[]
-};
+
 
 // level width and height are between 10 and 20 for now
 var random;
@@ -26,14 +21,12 @@ var LinkDirections = Object.freeze({UP:0,DOWN:1,LEFT:2,RIGHT:3});
 
 function init() {
 
-    random = new Random();
+    random = new Random(123);
     levelWidth = 10 + random.nextInt(21);
     levelHieght = 10 + random.nextInt(21);
 
 
-    for(var i=0; i<chunk.width; i++){
-        chunk.data[i] = new Array(chunk.height);
-    }
+
 
     for(var i=0; i<levelWidth; i++){
         mapArray[i] = new Array(levelHieght);
@@ -42,20 +35,36 @@ function init() {
     // populate the array with random values (whole numbers between 0 and 100)
     for(var i=0; i<levelWidth; i++){
         for(var j=0; j<levelHieght; j++){
+            var chunk = generateChunk();
             mapArray[i][j] = chunk;
             // value is a product of random number + function of i&j
-            mapArray[i][j].data[chunk.width/2][chunk.height/2] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHieght/2)),2) + random.nextInt(randomCap);
+            mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHieght/2)),2) + random.nextInt(randomCap);
             // if it doesn't meet the cutoff, zero it
-            if(mapArray[i][j].data[chunk.width/2][chunk.height/2] < islandCutOff){
-                mapArray[i][j].data[chunk.width/2][chunk.height/2] = 0;
+            if(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] < islandCutOff){
+                mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = 0;
             }
             else
             {
-                var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 0.5));
+                for(var k=0; k<chunk.width;k++){
+                    for(var l=0; l<chunk.width;l++){
+                        var entities = ScriptingEngine.getScript("EntityManager").var("entities");
+                        entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i+(k/chunk.width), 0, j+(l/chunk.height)), 0, 0, 0, 0.5/chunk.width));
+                    }
+                }
+                // var entities = ScriptingEngine.getScript("EntityManager").var("entities");
+                // entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 0.5));
             }
 
-            Log.println(mapArray[i][j].data[chunk.width/2][chunk.height/2]);
+            Log.println(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)]);
+        }
+    }
+
+    // perform linear interpolation
+    for(var i=0; i<levelWidth; i++){
+        for(var j=0; j<levelHieght; j++){
+
+
+
         }
     }
 }
@@ -69,10 +78,18 @@ function render() {
 }
 
 function generateChunk(){
+    var chunkSize = 3;
+    var outdata = [];
+    for(var i=0; i<chunkSize; i++){
+        outdata[i] = new Array(chunkSize);
+        for(var j=0; j<chunkSize;j++){
+            outdata[i][j] = 0;
+        }
+    }
     return {
-        width:15,
-        height:15,
-        data:[],
+        width:chunkSize,
+        height:chunkSize,
+        data:outdata,
         link:LinkDirections.UP
     }
 }
