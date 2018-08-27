@@ -13,26 +13,17 @@ var levelHieght;
 // create a 2d array of size width x height
 var mapArray = [];
 
-
-// h is the variation in parabola position in the x direction
-var h1 = 50;
-var h2 = 50;
-
-// k is the variation in parabola position in the y direction
-var k1 = 50;
-var k2 = 50;
-
 // randomCap is the maximum value of the array values +1
-var randomCap = 100 + 1;
+var randomCap = 50 + 1;
 
 // islandCutOff is the minimum value for a chunk to exist
-var islandCutOff = 173;
+var islandCutOff = 0;
 
 function init() {
 
-    random = new Random(123);
-    levelWidth = 10 + random.nextInt(11);
-    levelHieght = 10 + random.nextInt(11);
+    random = new Random();
+    levelWidth = 10 + random.nextInt(21);
+    levelHieght = 10 + random.nextInt(21);
 
 
     for(var i=0; i<chunk.width; i++){
@@ -48,17 +39,18 @@ function init() {
         for(var j=0; j<levelHieght; j++){
             mapArray[i][j] = chunk;
             // value is a product of random number + function of i&j
-            mapArray[i][j].data[chunk.width/2[chunk.height/2]] = (-(i-h1)^2 + k1) + (-(j-h2) + k2) + random.nextInt(randomCap);
+            mapArray[i][j].data[chunk.width/2][chunk.height/2] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHieght/2)),2) + random.nextInt(randomCap);
             // if it doesn't meet the cutoff, zero it
-            if(mapArray[i][j].data[chunk.width/2[chunk.height/2]] < islandCutOff){
-                mapArray[i][j].data[chunk.width/2[chunk.height/2]] = 0;
+            if(mapArray[i][j].data[chunk.width/2][chunk.height/2] < islandCutOff){
+                mapArray[i][j].data[chunk.width/2][chunk.height/2] = 0;
             }
-            else{
+            else
+            {
                 var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 1));
+                entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 0.5));
             }
 
-            Log.println(mapArray[i][j].data[chunk.width/2[chunk.height/2]]);
+            Log.println(mapArray[i][j].data[chunk.width/2][chunk.height/2]);
         }
     }
 }
