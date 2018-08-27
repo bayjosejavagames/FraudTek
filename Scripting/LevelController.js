@@ -3,6 +3,7 @@
  */
 
 var dragon;
+var random;
 
 function init(levelName){
     Log.println("Generating Levels"+levelName);
@@ -10,6 +11,8 @@ function init(levelName){
 }
 
 function loadLevel(seed){
+    random = new Random();
+
     var entities = ScriptingEngine.getScript("EntityManager").var("entities");
     //Move into level class
     //Shrine
@@ -23,6 +26,9 @@ function loadLevel(seed){
 }
 
 function tick(){
+    // var material = MaterialManager.getColor(random.nextInt(256),random.nextInt(256),random.nextInt(256));
+    // dragon.setMaterial(material);
+    // Log.println(material.getName()+"");
     dragon.rotate(0, 1, 0);
 }
 

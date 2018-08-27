@@ -52,10 +52,13 @@ function init() {
             else
             {
                 var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 0.5));
+                var materialID = MaterialManager.getColor(0,mapArray[i][j].data[chunk.width/2][chunk.height/2],0);
+                var entity = new EntityModel(ModelLoader.loadModel("cube2"), materialID.getName()+"", new Vector3f(i, 0, j), 0, 0, 0, 0.5);
+                entity.setMaterial(materialID);
+                entities.push(entity);
             }
 
-            Log.println(mapArray[i][j].data[chunk.width/2][chunk.height/2]);
+            // Log.println(mapArray[i][j].data[chunk.width/2][chunk.height/2]);
         }
     }
 }

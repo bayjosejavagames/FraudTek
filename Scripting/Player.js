@@ -14,7 +14,9 @@ function init(x, y){
     player = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), "lava", new Vector3f(x, 1, y), 0, 0, 0, 1));
     player.addComponent(new ComponentGravity(player));
 
-    light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(0, 0.5, 1.0));
+    // light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(0, 0.5, 1.0));
+
+    light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(1, 1, 1));
 
     //Setup camera
     var camera = new TargetCamera(player, new Vector3f(0, 10, 4), new Vector3f(0, 45, 0));
@@ -58,12 +60,12 @@ function tick(){
 
 
     if (moved) {
-        ScriptingEngine.getScript('SoulGame').var('client').sendData({
-            id:player.getID(),
-            x:player.getPosition().x(),
-            y:player.getPosition().y(),
-            z:player.getPosition().z()
-        });
+        // ScriptingEngine.getScript('SoulGame').var('client').sendData({
+        //     id:player.getID(),
+        //     x:player.getPosition().x(),
+        //     y:player.getPosition().y(),
+        //     z:player.getPosition().z()
+        // });
     }
 }
 
