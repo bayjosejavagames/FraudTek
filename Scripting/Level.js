@@ -28,6 +28,11 @@ var randomCap = 100 + 1;
 // islandCutOff is the minimum value for a chunk to exist
 var islandCutOff = 173;
 
+//Structures in the level
+var structures = [];
+
+var LinkDirections = Object.freeze({UP:0,DOWN:1,LEFT:2,RIGHT:3});
+
 function init() {
 
     random = new Random(123);
@@ -69,4 +74,37 @@ function tick() {
 
 function render() {
 
+}
+
+function generateChunk(){
+    return {
+        width:15,
+        height:15,
+        data:[],
+        link:LinkDirections.UP
+    }
+}
+
+function addStructure(){
+    structures.push({
+        name:name,
+        links:links,
+        entity:entity,
+        placed:false
+    });
+}
+
+function addStructure(name, links, entity){
+    structures.push({
+        name:name,
+        links:links,
+        entity:entity,
+        placed:false
+    });
+}
+
+function generateStructures(){
+    for(var i = 0; i < structures.length; i++){
+
+    }
 }
