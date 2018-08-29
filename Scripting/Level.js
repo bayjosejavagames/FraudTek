@@ -68,6 +68,91 @@ function init() {
 
         }
     }
+
+    //find primary path
+    //select random starting point from the top row
+    // INPUTS: None
+    // OUTPUTS: [x, y]
+    function selectRandomStartingChunk(){
+        var activePathChunkIndex = random.nextInt(levelWidth);
+        if(activePathChunk.data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] == 0){
+            activePathChunkIndex = selectRandomStartingChunk();
+        }else(
+            return [0, activePathChunkIndex]
+        )
+    }
+
+    // select random next chunk
+    // INPUTS: [x, y]
+    // OUTPUTS: [x, y]
+    function selectNextChunkIndex(startingChunkIndex){
+        var nextChunkIndex = [0, 0];
+        switch(random.nextInt(4)){
+            case 0:
+                if(startingChunkIndex[1]<1){
+                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
+                }else{
+                    nextChunkIndex[0] = startingChunkIndex[0];
+                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+                }
+                return nextChunkIndex;
+                break;
+            case 1:
+                if(startingChunkIndex[1]<1){
+                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
+                }else{
+                    nextChunkIndex[0] = startingChunkIndex[0];
+                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+                }
+                return nextChunkIndex;
+                break;
+            case 2:
+                if(startingChunkIndex[1] >= levelWidth-1){
+                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
+                }else{
+                    nextChunkIndex[0] = startingChunkIndex[0];
+                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+                }
+                return nextChunkIndex;
+                break;
+            case 3:
+                if(startingChunkIndex[1] >= levelWidth-1){
+                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
+                }else{
+                    nextChunkIndex[0] = startingChunkIndex[0];
+                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+                }
+                return nextChunkIndex;
+                break;
+            case 4:
+                nextChunkIndex[0] = startingChunkIndex[0] +1;
+                nextChunkIndex[1] = startingChunkIndex[1];
+                return nextChunkIndex;
+                break;
+            default:
+                nextChunkIndex[0] = startingChunkIndex[0] +1;
+                nextChunkIndex[1] = startingChunkIndex[1];
+                return nextChunkIndex;
+                break;
+        }
+    }
+
+    // Find the entire path given the starting point
+    // determine starting point & populate path
+    var latestPathChunkIndex = selectRandomStartingChunk();
+    var chunkPath = [];
+    chunkPath.add(latestPathChunkIndex);
+    // add all of the chunks along the path
+    while(latestPathChunkIndex[0] < levelHieght-1){
+        latestPathChunkIndex = selectNextChunkIndex(latestPathChunkIndex);
+        chunkPath.add(latestPathChunkIndex);
+    }
+    // print for verification
+    for(var i=0; i<chunkPath.length;i++){
+        Log.println(chunkPath[i]);
+    }
+
+
 }
 
 function tick() {
