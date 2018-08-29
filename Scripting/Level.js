@@ -3,10 +3,10 @@
 // level width and height are between 10 and 20 for now
 var random;
 var levelWidth;
-var levelHieght;
+var levelHeight;
 
 // create a 2d array of size width x height
-var mapArray = [];
+var chunks = [];
 
 // randomCap is the maximum value of the array values +1
 var randomCap = 50 + 1;
@@ -19,139 +19,140 @@ var structures = [];
 
 var LinkDirections = Object.freeze({UP:0,DOWN:1,LEFT:2,RIGHT:3});
 
-function init() {
+function init(seed) {
+    //Generate a random Level based on a seed
+    // random = new Random(seed.hashCode()); //Generate a random sequence of numbers based on the passed String
+    random = new Random(); //Generate a random sequence of numbers based on the passed String
+    levelWidth = 10 + random.nextInt(21); //Generate a random number between 10 and 30
+    levelHeight = 10 + random.nextInt(21);//Generate a random number between 10 and 30
 
-    random = new Random(123);
-    levelWidth = 10 + random.nextInt(21);
-    levelHieght = 10 + random.nextInt(21);
-
-
-
-
-    for(var i=0; i<levelWidth; i++){
-        mapArray[i] = new Array(levelHieght);
-    }
+    var entities = ScriptingEngine.getScript("EntityManager").var("entities");
 
     // populate the array with random values (whole numbers between 0 and 100)
     for(var i=0; i<levelWidth; i++){
-        for(var j=0; j<levelHieght; j++){
+        chunks[i] = [];
+        for(var j=0; j<levelHeight; j++){
             var chunk = generateChunk();
-            mapArray[i][j] = chunk;
+            chunks[i][j] = chunk;
             // value is a product of random number + function of i&j
-            mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHieght/2)),2) + random.nextInt(randomCap);
+            chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHeight/2)),2) + random.nextInt(randomCap);
             // if it doesn't meet the cutoff, zero it
-            if(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] < islandCutOff){
-                mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = 0;
-            }
-            else
-            {
-                for(var k=0; k<chunk.width;k++){
-                    for(var l=0; l<chunk.width;l++){
-                        var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                        var materialID = MaterialManager.getColor(0, clamp(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)], 0, 255),0);
-                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i+(k/chunk.width), 0, j+(l/chunk.height)), 0, 0, 0, 0.5/chunk.width);
+            if(chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] < islandCutOff){
+                chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = 0;
+            } else {
+                //Since we are putting data into this chunk, we are going to set the generated flag = to true
+                chunks[i][j].generated = true;
+                chunks[i][j].x = i;
+                chunks[i][j].y = j;
+                for(var k = 0; k < chunk.height; k++){
+                    for(var l = 0; l < chunk.width; l++){
+                        var materialID = MaterialManager.getColor(0, clamp(chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)], 0, 255),0);
+                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i+(k/chunk.width) - (levelWidth/2)) * 3, 0, (j+(l/chunk.height) - (levelHeight/2)) * 3), 0, 0, 0, 0.5);
+                        chunk.tiles[l+(k * chunk.width)] = entity;
                         entity.setMaterial(materialID);
                         entities.push(entity);
                     }
                 }
-                // var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-                // entities.push(new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f(i, 0, j), 0, 0, 0, 0.5));
             }
-
-            Log.println(mapArray[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)]);
         }
     }
 
-    // perform linear interpolation
     for(var i=0; i<levelWidth; i++){
-        for(var j=0; j<levelHieght; j++){
-
-        }
-    }
-
-    //find primary path
-    //select random starting point from the top row
-    // INPUTS: None
-    // OUTPUTS: [x, y]
-    function selectRandomStartingChunk(){
-        var activePathChunkIndex = random.nextInt(levelWidth);
-        if(activePathChunk.data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] == 0){
-            activePathChunkIndex = selectRandomStartingChunk();
-        }else(
-            return [0, activePathChunkIndex]
-        )
-    }
-
-    // select random next chunk
-    // INPUTS: [x, y]
-    // OUTPUTS: [x, y]
-    function selectNextChunkIndex(startingChunkIndex){
-        var nextChunkIndex = [0, 0];
-        switch(random.nextInt(4)){
-            case 0:
-                if(startingChunkIndex[1]<1){
-                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
-                }else{
-                    nextChunkIndex[0] = startingChunkIndex[0];
-                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+        for(var j=0; j<levelHeight; j++){
+            if(inChunkBounds(i, j-1)) { //up
+                if(chunks[i][j-1].generated){
+                    chunks[i][j].neighbors.push(LinkDirections.UP);
                 }
-                return nextChunkIndex;
-                break;
-            case 1:
-                if(startingChunkIndex[1]<1){
-                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
-                }else{
-                    nextChunkIndex[0] = startingChunkIndex[0];
-                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+            }
+            if(inChunkBounds(i, j+1)) { //up
+                if(chunks[i][j+1].generated){
+                    chunks[i][j].neighbors.push(LinkDirections.DOWN);
                 }
-                return nextChunkIndex;
-                break;
-            case 2:
-                if(startingChunkIndex[1] >= levelWidth-1){
-                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
-                }else{
-                    nextChunkIndex[0] = startingChunkIndex[0];
-                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+            }
+            if(inChunkBounds(i-1, j)) { //left
+                if(chunks[i-1][j].generated){
+                    chunks[i][j].neighbors.push(LinkDirections.LEFT);
                 }
-                return nextChunkIndex;
-                break;
-            case 3:
-                if(startingChunkIndex[1] >= levelWidth-1){
-                    nextChunkIndex = selectNextChunkIndex(startingChunkIndex);
-                }else{
-                    nextChunkIndex[0] = startingChunkIndex[0];
-                    nextChunkIndex[1] = startingChunkIndex[1]-1;
+            }
+            if(inChunkBounds(i+1, j)) { //right
+                if(chunks[i+1][j].generated){
+                    chunks[i][j].neighbors.push(LinkDirections.RIGHT);
                 }
-                return nextChunkIndex;
-                break;
-            case 4:
-                nextChunkIndex[0] = startingChunkIndex[0] +1;
-                nextChunkIndex[1] = startingChunkIndex[1];
-                return nextChunkIndex;
-                break;
-            default:
-                nextChunkIndex[0] = startingChunkIndex[0] +1;
-                nextChunkIndex[1] = startingChunkIndex[1];
-                return nextChunkIndex;
-                break;
+            }
         }
     }
 
     // Find the entire path given the starting point
     // determine starting point & populate path
-    var latestPathChunkIndex = selectRandomStartingChunk();
+    var startingChunk = selectRandomStartingChunk();
+    startingChunk.chunkIndex = 0;
     var chunkPath = [];
-    chunkPath.add(latestPathChunkIndex);
-    // add all of the chunks along the path
-    while(latestPathChunkIndex[0] < levelHieght-1){
-        latestPathChunkIndex = selectNextChunkIndex(latestPathChunkIndex);
-        chunkPath.add(latestPathChunkIndex);
-    }
-    // print for verification
-    for(var i=0; i<chunkPath.length;i++){
-        Log.println(chunkPath[i]);
+    chunkPath.push(startingChunk);
+
+    generateTraversalPath(chunkPath);
+
+
+}
+
+//find primary path
+//select random starting point from the top row
+// INPUTS: None
+// OUTPUTS: [x, y]
+function selectRandomStartingChunk(){
+    var y = 0;
+
+    var startingChunks = [];
+    while(true){
+        for(var i = 0; i < levelWidth; i++){
+            if(chunks[i][y].generated){
+                if(chunks[i][y].neighbors.length >= 3) {
+                    startingChunks.push(chunks[i][y]);
+                }
+            }
+        }
+        if(startingChunks.length == 0){
+            y++
+        }else{
+            break;
+        }
     }
 
+    var chunk = startingChunks[random.nextInt(startingChunks.length)];
+
+    var materialID = MaterialManager.getColor(255,0,0);
+    for(var i = 0; i < chunk.tiles.length; i++){
+        chunk.tiles[i].setMaterial(materialID);
+    }
+    return chunk;
+}
+
+// select random next chunk
+// INPUTS: Chunk[]
+// OUTPUTS: Chunk[]
+function generateTraversalPath(chunkPath){
+    var tmpChunk = getRelativeChunk(chunkPath[0], LinkDirections.DOWN);
+    tmpChunk.chunkIndex = chunkPath.length;
+    var materialID = MaterialManager.getColor(255,0,0);
+    for(var i = 0; i < tmpChunk.tiles.length; i++){
+        tmpChunk.tiles[i].setMaterial(materialID);
+    }
+    chunkPath.push(tmpChunk);
+    while(getRelativeChunk(tmpChunk, LinkDirections.LEFT)!=null){
+        tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.LEFT);
+        tmpChunk.chunkIndex = chunkPath.length;
+        for(var i = 0; i < tmpChunk.tiles.length; i++){
+            tmpChunk.tiles[i].setMaterial(materialID);
+        }
+        chunkPath.push(tmpChunk);
+    }
+    while(getRelativeChunk(tmpChunk, LinkDirections.DOWN)!=null){
+        tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
+        tmpChunk.chunkIndex = chunkPath.length;
+        for(var i = 0; i < tmpChunk.tiles.length; i++){
+            tmpChunk.tiles[i].setMaterial(materialID);
+        }
+        chunkPath.push(tmpChunk);
+    }
 
 }
 
@@ -173,20 +174,18 @@ function generateChunk(){
         }
     }
     return {
+        x:-1,
+        y:-1,
         width:chunkSize,
         height:chunkSize,
         data:outdata,
-        link:LinkDirections.UP
+        tiles:[],
+        entities:[],
+        neighbors:[],
+        generated:false,
+        link:LinkDirections.UP,
+        chunkIndex:-1,
     }
-}
-
-function addStructure(){
-    structures.push({
-        name:name,
-        links:links,
-        entity:entity,
-        placed:false
-    });
 }
 
 function addStructure(name, links, entity){
@@ -204,6 +203,56 @@ function generateStructures(){
     }
 }
 
+function getRelativeChunk(chunk, direction){
+    if(contains(chunk.neighbors, direction)) {
+        switch (direction) {
+            case LinkDirections.UP:
+                if(inChunkBounds(chunk.x, chunk.y-1)){
+                    if(chunks[chunk.x][chunk.y - 1].generated) {
+                        return chunks[chunk.x][chunk.y - 1];
+                    }
+                }
+            case LinkDirections.DOWN:
+                if(inChunkBounds(chunk.x, chunk.y + 1)) {
+                    if(chunks[chunk.x][chunk.y + 1].generated) {
+                        return chunks[chunk.x][chunk.y + 1];
+                    }
+                }
+            case LinkDirections.LEFT:
+                if(inChunkBounds(chunk.x - 1, chunk.y)) {
+                    if(chunks[chunk.x - 1][chunk.y].generated) {
+                        return chunks[chunk.x - 1][chunk.y];
+                    }
+                }
+            case LinkDirections.RIGHT:
+                if(inChunkBounds(chunk.x + 1, chunk.y)) {
+                    if(chunks[chunk.x + 1][chunk.y].generated) {
+                        return chunks[chunk.x + 1][chunk.y];
+                    }
+                }
+        }
+    }
+    return null;
+}
+
+function inChunkBounds(x, y){
+    if(x >= 0 && x < levelWidth){
+        if(y >= 0 && y < levelHeight){
+            return true;
+        }
+    }
+    return false;
+}
+
 function clamp(x, min, max){
     return (x<min?0:x>max?max:x);
+}
+
+function contains(array, value){
+    for(var i = 0; i < array.length; i++){
+        if(array[i] === value){
+            return true;
+        }
+    }
+    return false;
 }

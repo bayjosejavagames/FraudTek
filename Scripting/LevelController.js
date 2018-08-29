@@ -19,7 +19,7 @@ function loadLevel(seed){
     //Forrest
     //SkullBridge
 
-    ScriptingEngine.addScript("Level");
+    ScriptingEngine.addScript("Level", "testlevel");
 
     dragon = entities.push(new EntityModel(ModelLoader.loadModel("dragon"), "white", new Vector3f(0, 0, -6), 0, 0, 0, 1));
     entities.push(new EntityModel(ModelLoader.loadModel("quad"), "white", new Vector3f(0, 0, 0), 0, 0, 0, 12));
