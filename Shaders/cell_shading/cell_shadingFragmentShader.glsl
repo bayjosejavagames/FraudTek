@@ -41,7 +41,7 @@ void main(void){
 
     vec3 totalDiffuse = vec3(0.0);
     vec3 totalSpecular = vec3(0.0);
-    vec3 ambient = vec3(1.0, 1.0, 1.0) * 0.3;
+    vec3 ambient = vec3(1.0, 1.0, 1.0);
 
     for(int i = 0; i < 4; i++){
         float distance = length(toLightVector[i]);

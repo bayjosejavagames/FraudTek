@@ -3,7 +3,7 @@
   "height":1080,
   "fullscreen":true,
   "vsync":true,
-  "name":"Hex test",
+  "name":"Soul Game",
   "username":"ThePiratePup",
   "mainScript":"SoulGame.js",
   "path":"/out/artifacts/unnamed/Edaxerum.jar",

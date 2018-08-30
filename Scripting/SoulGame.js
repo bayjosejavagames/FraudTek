@@ -18,6 +18,8 @@ function init(){
     // otherPlayer = LightingEngine.addLight(new Vector3f(0, 2, 0), new Vector3f(1, 0, 0));
     // LightingEngine.addLight(new Vector3f(0, 6, 1), new Vector3f(1, 0, 0));
     LightingEngine.addLight(new Vector3f(0, 6, 1), new Vector3f(1, 1, 1));
+
+    guis.add(new Gui(SpriteBinder.loadSprite("hud").textureID, new Vector2f(0.0, 0.0), new Vector2f(1, 1)));
 }
 
 function tick(){

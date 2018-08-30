@@ -46,8 +46,8 @@ function init(seed) {
                 chunks[i][j].y = j;
                 for(var k = 0; k < chunk.height; k++){
                     for(var l = 0; l < chunk.width; l++){
-                        var materialID = MaterialManager.getColor(0, clamp(chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)], 0, 255),0);
-                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i+(k/chunk.width) - (levelWidth/2)) * 3, 0, (j+(l/chunk.height) - (levelHeight/2)) * 3), 0, 0, 0, 0.5);
+                        var materialID = MaterialManager.getColor(0,255,0);
+                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i+(k/chunk.width) - (levelWidth/2)) * chunk.width * 2, 0, (j+(l/chunk.height) - (levelHeight/2)) * chunk.height * 2), 0, 0, 0, 1);
                         chunk.tiles[l+(k * chunk.width)] = entity;
                         entity.setMaterial(materialID);
                         entities.push(entity);
@@ -137,21 +137,45 @@ function generateTraversalPath(chunkPath){
         tmpChunk.tiles[i].setMaterial(materialID);
     }
     chunkPath.push(tmpChunk);
-    while(getRelativeChunk(tmpChunk, LinkDirections.LEFT)!=null){
-        tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.LEFT);
-        tmpChunk.chunkIndex = chunkPath.length;
-        for(var i = 0; i < tmpChunk.tiles.length; i++){
-            tmpChunk.tiles[i].setMaterial(materialID);
+    while(tmpChunk.y <= levelHeight){
+        //Choose a direction left right or down.
+        var dir = random.nextInt(5);
+        if(dir == 0){ //Down
+            tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
+            for(var i = 0; i < tmpChunk.tiles.length; i++){
+                tmpChunk.tiles[i].setMaterial(materialID);
+            }
         }
-        chunkPath.push(tmpChunk);
-    }
-    while(getRelativeChunk(tmpChunk, LinkDirections.DOWN)!=null){
-        tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
-        tmpChunk.chunkIndex = chunkPath.length;
-        for(var i = 0; i < tmpChunk.tiles.length; i++){
-            tmpChunk.tiles[i].setMaterial(materialID);
+        if(dir == 1 || dir == 3){ //LEFT
+            while(tmpChunk != null){
+                if(random.nextInt(3) == 0){
+                    tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
+                    for(var i = 0; i < tmpChunk.tiles.length; i++){
+                        tmpChunk.tiles[i].setMaterial(materialID);
+                    }
+                    break;
+                }
+                tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.LEFT);
+                for(var i = 0; i < tmpChunk.tiles.length; i++){
+                    tmpChunk.tiles[i].setMaterial(materialID);
+                }
+            }
         }
-        chunkPath.push(tmpChunk);
+        if(dir == 2 || dir == 4){ //RIGHT
+            while(tmpChunk != null){
+                if(random.nextInt(3) == 0){
+                    tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
+                    for(var i = 0; i < tmpChunk.tiles.length; i++){
+                        tmpChunk.tiles[i].setMaterial(materialID);
+                    }
+                    break;
+                }
+                tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.RIGHT);
+                for(var i = 0; i < tmpChunk.tiles.length; i++){
+                    tmpChunk.tiles[i].setMaterial(materialID);
+                }
+            }
+        }
     }
 
 }
@@ -165,7 +189,7 @@ function render() {
 }
 
 function generateChunk(){
-    var chunkSize = 3;
+    var chunkSize = 5;
     var outdata = [];
     for(var i=0; i<chunkSize; i++){
         outdata[i] = new Array(chunkSize);

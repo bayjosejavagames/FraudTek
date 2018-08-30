@@ -25,7 +25,7 @@ function render(){
     shader.run("loadLights", LightingEngine.getLights());
     var lastVao = -1;
     for(var i = 0; i < entities.getLength(); i++){
-        if(DistanceCalculator.distance(player.getPosition(), entities.get(i).getPosition()) < 12.0){
+        if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(30)), entities.get(i).getPosition()) < 38.0){
             shader.loadData("rotationMatrix", Maths.getEntityRot(entities.get(i)));
             var model = entities.get(i).getComponent(EnumComponentType.MESH).getModel();
             if(lastVao != model.getVaoID()) {
