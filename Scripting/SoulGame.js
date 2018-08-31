@@ -5,6 +5,9 @@ function init(){
     ServerManager.connect('localhost', '8160');
     client = ServerManager.addClient('localhost', '8160');
 
+    //GUIS should be initialized BEFORE the entity manager starts.
+    guis.add(new Gui("Engine/sorry", new Vector2f(-0.8, 0.8), new Vector2f(0.1, 0.1)));
+
     ScriptingEngine.addScript("EntityManager");
 
     ScriptingEngine.addScript("Player",  -2, -2);
@@ -18,8 +21,6 @@ function init(){
     // otherPlayer = LightingEngine.addLight(new Vector3f(0, 2, 0), new Vector3f(1, 0, 0));
     // LightingEngine.addLight(new Vector3f(0, 6, 1), new Vector3f(1, 0, 0));
     LightingEngine.addLight(new Vector3f(0, 6, 1), new Vector3f(1, 1, 1));
-
-    guis.add(new Gui(SpriteBinder.loadSprite("hud").textureID, new Vector2f(0.0, 0.0), new Vector2f(1, 1)));
 }
 
 function tick(){

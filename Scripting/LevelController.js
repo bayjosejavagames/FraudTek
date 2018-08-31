@@ -18,6 +18,9 @@ function loadLevel(seed){
     //SkullBridge
 
     ScriptingEngine.addScript("Level", "testlevel");
+
+    entities.push(new EntityModel(ModelLoader.loadModel("quad"), "brick", new Vector3f(0, 2, 0), 0, 0, 0, 1));
+    // ParticleEngine.push(new EntityParticleEmitter(new Vector3f(0, 0, 0), "fruit", 100));
 }
 
 function tick(){

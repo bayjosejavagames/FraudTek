@@ -1,5 +1,10 @@
 [
   {
+    "name":"Animations",
+    "description":"Source for animation .dae files.",
+    "watched":true
+  },
+  {
     "name":"Images",
     "description":"Put image source files in this directory."
   },

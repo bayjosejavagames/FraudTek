@@ -12,16 +12,15 @@ out vec3 toCameraVector;
 out vec3 passNormal;
 out mat3 TBN;
 
+uniform mat4 animationMatrix;
 uniform mat4 transformationMatrix;
 uniform mat4 rotationMatrix;
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
 uniform vec3 lightPosition[4];
-uniform vec4 plane;
 
 void main(void){
-    vec4 worldPosition = transformationMatrix * vec4(position, 1.0);
-//    gl_ClipDistance[0] = dot(worldPosition, plane);
+    vec4 worldPosition = animationMatrix * transformationMatrix * vec4(position, 1.0);
 
     gl_Position =  projectionMatrix * viewMatrix * worldPosition;
     pass_textureCoords = textureCoords;

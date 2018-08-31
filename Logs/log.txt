@@ -1,729 +1,291 @@
 ------------------------------------------------------------------------------------------
-[22:31:34]Engine Initialization
+[22:27:20]Engine Initialization
 ------------------------------------------------------------------------------------------
-[22:31:34]FraudTek version:1.0
-[22:31:35]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum_WIN.exe
-[22:31:35]Game Name:Hex test
-[22:31:35]Target Width:1920
-[22:31:35]Target Height:1080
-[22:31:35]Window is Fullscreen:false
-[22:31:35]Window is using vsync:true
+[22:27:20]FraudTek version:1.0
+[22:27:20]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum_WIN.exe
+[22:27:20]Game Name:Soul Game
+[22:27:20]Target Width:1920
+[22:27:20]Target Height:1080
+[22:27:20]Window is Fullscreen:true
+[22:27:20]Window is using vsync:true
 ------------------------------------------------------------------------------------------
-[22:31:35]Looking for Source Folders...
+[22:27:21]Looking for Source Folders...
 ------------------------------------------------------------------------------------------
-[22:31:35]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
-[22:31:35]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
-[22:31:35]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
-[22:31:35]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
-[22:31:35]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
-[22:31:35]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
-[22:31:35]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
-[22:31:35]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
-[22:31:35]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
+[22:27:21]Looking for /Animations/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Animations/
+[22:27:21]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
+[22:27:21]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
+[22:27:21]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
+[22:27:21]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
+[22:27:21]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
+[22:27:21]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
+[22:27:21]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
+[22:27:21]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
+[22:27:21]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
 ------------------------------------------------------------------------------------------
-[22:31:35]Initializing all engines associated with the game.
+[22:27:21]Initializing all engines associated with the game.
 ------------------------------------------------------------------------------------------
-[22:31:35]Initializing Engine:TextureManager...Success.
-[22:31:35]Initializing Engine:LightingEngine...Success.
-[22:31:35]Initializing Engine:CameraManager...Success.
-[22:31:35]Initializing Engine:Steam...Success.
-[22:31:35]Initializing Engine:SpriteBinder...Success.
-[22:31:35]Initializing Engine:ModelManager...Success.
-[22:31:35]Initializing Engine:Controllers...
+[22:27:21]Initializing Engine:TextureManager...Success.
+[22:27:21]Initializing Engine:LightingEngine...Success.
+[22:27:21]Initializing Engine:CameraManager...Success.
+[22:27:21]Initializing Engine:Steam...Success.
+[22:27:21]Initializing Engine:SpriteBinder...Success.
+[22:27:21]Initializing Engine:ModelManager...Success.
+[22:27:21]Initializing Engine:Controllers...
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------Success.
-[22:31:35]Initializing Engine:VAOManager...Success.
-[22:31:35]Initializing Engine:ServerManager...Success.
-[22:31:35]Initializing Engine:MaterialManager...Success.
-[22:31:35]Initializing Engine:ParticleEngine...Success.
+[22:27:21]Initializing Engine:VAOManager...Success.
+[22:27:21]Initializing Engine:ServerManager...Success.
+[22:27:21]Initializing Engine:MaterialManager...Success.
+[22:27:21]Sending Data to texture:1 color:-1
+[22:27:21]Sending Data to texture:2 color:-1
+[22:27:21]Sending Data to texture:3 color:-8355841
+[22:27:21]Sending Data to texture:4 color:-1
+[22:27:21]Sending Data to texture:5 color:-1
+[22:27:21]Sending Data to texture:6 color:-1
+[22:27:21]Sending Data to texture:7 color:-16777216
+[22:27:21]Initializing Engine:ParticleEngine...Success.
 ------------------------------------------------------------------------------------------
-[22:31:35]Adding refrences to the scripting engine.
-[22:31:35]Adding class:Vector2f class:class org.joml.Vector2f
-[22:31:35]Adding class:Vector3f class:class org.joml.Vector3f
-[22:31:35]Adding class:Vector4f class:class org.joml.Vector4f
-[22:31:35]Adding class:Gui class:class graphics.gui.Gui
-[22:31:35]Adding class:Debouncer class:class base.util.Debouncer
-[22:31:35]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
-[22:31:35]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[22:31:35]Adding class:EntityModel class:class entity.EntityModel
-[22:31:35]Adding class:EntitySprite class:class entity.EntitySprite
-[22:31:35]Adding class:ModelLoader class:class models.ModelLoader
-[22:31:35]Adding class:Entity class:class entity.Entity
-[22:31:35]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
-[22:31:35]Adding class:Keyboard class:class input.Keyboard
-[22:31:35]Adding class:KeyEvent class:class java.awt.event.KeyEvent
-[22:31:35]Adding class:Mouse class:class input.Mouse
-[22:31:35]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[22:31:35]Adding class:EnumButtonType class:class base.controller.EnumButtonType
-[22:31:35]Adding class:Shader class:class shaders.Shader
-[22:31:35]Adding class:FBO class:class graphics.FBO
-[22:31:35]Adding class:VAO class:class graphics.VAO
-[22:31:35]Adding class:Material class:class textures.Material
-[22:31:35]Adding class:FPSCamera class:class camera.FPSCamera
-[22:31:35]Adding class:TopDownCamera class:class camera.TopDownCamera
-[22:31:35]Adding class:DynamicCamera class:class camera.DynamicCamera
-[22:31:35]Adding class:TargetCamera class:class camera.TargetCamera
-[22:31:35]Adding class:Maths class:class math.Maths
-[22:31:35]Adding class:EntityContainer class:class entity.EntityContainer
-[22:31:35]Adding class:EnumComponentType class:class entity.component.EnumComponentType
-[22:31:35]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
-[22:31:35]Adding class:Cast class:class ScriptingEngine.Cast
-[22:31:35]Adding class:Callback class:class base.util.Callback
-[22:31:35]Adding class:Random class:class java.util.Random
-[22:31:35]Adding class:ComponentGravity class:class entity.component.ComponentGravity
-[22:31:35]Adding class:GL11 class:class org.lwjgl.opengl.GL11
-[22:31:35]Adding class:GL20 class:class org.lwjgl.opengl.GL20
-[22:31:35]Adding class:GL30 class:class org.lwjgl.opengl.GL30
-[22:31:35]File Extension:cube2.obj
-[22:31:35]verticies:36
-[22:31:35]textures:36
-[22:31:35]normals:36
-[22:31:36]Sending Data to texture:1
-[22:31:36]Sending Data to texture:2
-[22:31:36]Sending Data to texture:3
-[22:31:36]Sending Data to texture:4
-[22:31:36]File Extension:sphere4.obj
-[22:31:36]verticies:240
-[22:31:36]textures:240
-[22:31:36]normals:240
-[22:31:36]networking.FraudtekClient@5a7005d
-[22:31:36]FraudTekServer@localhost:8160 has started.
-[22:31:36]New Client connected @/127.0.0.1:57058
-[22:31:36]Client joined!
-[22:31:36]File Extension:sphere2.obj
-[22:31:36]verticies:3456
-[22:31:36]textures:3456
-[22:31:36]normals:3456
-[22:31:37]Sending Data to texture:5
-[22:31:37]Sending Data to texture:6
-[22:31:37]Sending Data to texture:7
-[22:31:37]Sending Data to texture:8
-[22:31:37]Sending Data to texture:9
-[22:31:37]Sending Data to texture:10
-[22:31:37]Sending Data to texture:11
-[22:31:37]Sending Data to texture:12
-[22:31:37]Sending Data to texture:13
-[22:31:37]Sending Data to texture:14
-[22:31:37]Sending Data to texture:15
-[22:31:37]Sending Data to texture:16
-[22:31:37]Sending Data to texture:17
-[22:31:37]Sending Data to texture:18
-[22:31:37]Generating LevelshelloWorld
-[22:31:37]178
-[22:31:37]0
-[22:31:37]0
-[22:31:37]197
-[22:31:37]193
-[22:31:37]0
-[22:31:37]0
-[22:31:37]198
-[22:31:37]0
-[22:31:37]0
-[22:31:37]192
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]187
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]192
-[22:31:37]0
-[22:31:37]0
-[22:31:37]173
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]199
-[22:31:37]174
-[22:31:37]0
-[22:31:37]184
-[22:31:37]198
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]190
-[22:31:37]0
-[22:31:37]184
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]185
-[22:31:37]0
-[22:31:37]194
-[22:31:37]0
-[22:31:37]0
-[22:31:37]214
-[22:31:37]0
-[22:31:37]0
-[22:31:37]184
-[22:31:37]0
-[22:31:37]209
-[22:31:37]0
-[22:31:37]173
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]202
-[22:31:37]196
-[22:31:37]190
-[22:31:37]185
-[22:31:37]0
-[22:31:37]220
-[22:31:37]203
-[22:31:37]0
-[22:31:37]205
-[22:31:37]0
-[22:31:37]0
-[22:31:37]208
-[22:31:37]203
-[22:31:37]0
-[22:31:37]0
-[22:31:37]180
-[22:31:37]176
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]196
-[22:31:37]205
-[22:31:37]217
-[22:31:37]204
-[22:31:37]0
-[22:31:37]217
-[22:31:37]0
-[22:31:37]192
-[22:31:37]201
-[22:31:37]179
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]197
-[22:31:37]0
-[22:31:37]196
-[22:31:37]202
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]197
-[22:31:37]0
-[22:31:37]206
-[22:31:37]207
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]186
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]203
-[22:31:37]207
-[22:31:37]0
-[22:31:37]208
-[22:31:37]0
-[22:31:37]196
-[22:31:37]229
-[22:31:37]0
-[22:31:37]175
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]187
-[22:31:37]0
-[22:31:37]0
-[22:31:37]185
-[22:31:37]205
-[22:31:37]200
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]195
-[22:31:37]186
-[22:31:37]0
-[22:31:37]195
-[22:31:37]0
-[22:31:37]213
-[22:31:37]201
-[22:31:37]0
-[22:31:37]0
-[22:31:37]185
-[22:31:37]177
-[22:31:37]174
-[22:31:37]207
-[22:31:37]0
-[22:31:37]213
-[22:31:37]0
-[22:31:37]181
-[22:31:37]0
-[22:31:37]0
-[22:31:37]211
-[22:31:37]0
-[22:31:37]0
-[22:31:37]220
-[22:31:37]179
-[22:31:37]0
-[22:31:37]220
-[22:31:37]200
-[22:31:37]204
-[22:31:37]178
-[22:31:37]194
-[22:31:37]187
-[22:31:37]206
-[22:31:37]0
-[22:31:37]213
-[22:31:37]173
-[22:31:37]0
-[22:31:37]194
-[22:31:37]192
-[22:31:37]193
-[22:31:37]221
-[22:31:37]197
-[22:31:37]177
-[22:31:37]0
-[22:31:37]193
-[22:31:37]0
-[22:31:37]181
-[22:31:37]0
-[22:31:37]200
-[22:31:37]0
-[22:31:37]185
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]188
-[22:31:37]186
-[22:31:37]0
-[22:31:37]204
-[22:31:37]197
-[22:31:37]211
-[22:31:37]193
-[22:31:37]0
-[22:31:37]0
-[22:31:37]214
-[22:31:37]0
-[22:31:37]204
-[22:31:37]0
-[22:31:37]175
-[22:31:37]0
-[22:31:37]0
-[22:31:37]196
-[22:31:37]0
-[22:31:37]0
-[22:31:37]180
-[22:31:37]175
-[22:31:37]0
-[22:31:37]174
-[22:31:37]0
-[22:31:37]217
-[22:31:37]0
-[22:31:37]182
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]191
-[22:31:37]182
-[22:31:37]177
-[22:31:37]0
-[22:31:37]192
-[22:31:37]197
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]184
-[22:31:37]0
-[22:31:37]195
-[22:31:37]188
-[22:31:37]0
-[22:31:37]184
-[22:31:37]196
-[22:31:37]184
-[22:31:37]0
-[22:31:37]181
-[22:31:37]0
-[22:31:37]181
-[22:31:37]201
-[22:31:37]0
-[22:31:37]174
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]213
-[22:31:37]200
-[22:31:37]209
-[22:31:37]0
-[22:31:37]0
-[22:31:37]180
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]183
-[22:31:37]0
-[22:31:37]0
-[22:31:37]177
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]185
-[22:31:37]182
-[22:31:37]181
-[22:31:37]0
-[22:31:37]0
-[22:31:37]209
-[22:31:37]0
-[22:31:37]204
-[22:31:37]0
-[22:31:37]208
-[22:31:37]0
-[22:31:37]0
-[22:31:37]176
-[22:31:37]0
-[22:31:37]190
-[22:31:37]0
-[22:31:37]176
-[22:31:37]187
-[22:31:37]0
-[22:31:37]209
-[22:31:37]206
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]174
-[22:31:37]0
-[22:31:37]185
-[22:31:37]180
-[22:31:37]179
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]214
-[22:31:37]207
-[22:31:37]180
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]193
-[22:31:37]199
-[22:31:37]0
-[22:31:37]195
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]0
-[22:31:37]182
-[22:31:37]182
-[22:31:37]214
-[22:31:37]0
-[22:31:37]184
-[22:31:37]0
-[22:31:37]0
-[22:31:37]181
-[22:31:37]0
-[22:31:37]0
-[22:31:37]203
-[22:31:37]210
-[22:31:37]196
-[22:31:37]174
-[22:31:37]204
-[22:31:37]0
-[22:31:37]174
-[22:31:37]189
-[22:31:37]203
-[22:31:37]0
-[22:31:37]192
-[22:31:37]226
-[22:31:37]215
-[22:31:37]213
-[22:31:37]204
-[22:31:37]221
-[22:31:37]0
-[22:31:37]191
-[22:31:37]210
-[22:31:37]193
-[22:31:37]218
-[22:31:37]202
-[22:31:37]0
-[22:31:37]218
-[22:31:37]191
-[22:31:37]0
-[22:31:37]0
-[22:31:37]183
-[22:31:37]194
-[22:31:37]185
-[22:31:37]File Extension:quad.obj
-[22:31:37]verticies:6
-[22:31:37]textures:6
-[22:31:37]normals:6
-[22:31:37]Adding callback:base.util.Callback$$NashornJavaAdapter@22a6e998
-[22:31:37]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/barrel.png
-[22:31:37]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
-[22:31:37]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
-[22:31:38][FPS: 77]
-[22:31:39][FPS: 138]
-[22:31:40]{id:"id:0.4786024938285245",x:-1.9270136,y:1.0,z:-1.9316407}
-[22:31:40]{id:"id:0.4786024938285245",x:-1.8540273,y:1.0,z:-1.8632815}
-[22:31:40]{id:"id:0.4786024938285245",x:-1.7810409,y:1.0,z:-1.7949222}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.9270136,y:1.0,z:-1.9316407}
-[22:31:40][Ljava.lang.Object;@ecdb7d3
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.7810409,y:1.0,z:-1.7949222}
-[22:31:40][Ljava.lang.Object;@4665762f
-[22:31:40]{id:"id:0.4786024938285245",x:-1.7080545,y:1.0,z:-1.726563}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.7080545,y:1.0,z:-1.726563}
-[22:31:40][Ljava.lang.Object;@73fa629d
-[22:31:40]{id:"id:0.4786024938285245",x:-1.5667089,y:1.0,z:-1.7311901}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.5667089,y:1.0,z:-1.7311901}
-[22:31:40][Ljava.lang.Object;@7039104f
-[22:31:40]{id:"id:0.4786024938285245",x:-1.4253633,y:1.0,z:-1.7358172}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.4253633,y:1.0,z:-1.7358172}
-[22:31:40][Ljava.lang.Object;@13a952b4
-[22:31:40]{id:"id:0.4786024938285245",x:-1.2840177,y:1.0,z:-1.7404443}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.2840177,y:1.0,z:-1.7404443}
-[22:31:40][Ljava.lang.Object;@7e108ae0
-[22:31:40]{id:"id:0.4786024938285245",x:-1.1426721,y:1.0,z:-1.7450714}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.1426721,y:1.0,z:-1.7450714}
-[22:31:40][Ljava.lang.Object;@5e5ee135
-[22:31:40]{id:"id:0.4786024938285245",x:-1.0013264,y:1.0,z:-1.7496985}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-1.0013264,y:1.0,z:-1.7496985}
-[22:31:40][Ljava.lang.Object;@66dd29d9
-[22:31:40]{id:"id:0.4786024938285245",x:-0.85998076,y:1.0,z:-1.7543256}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.85998076,y:1.0,z:-1.7543256}
-[22:31:40][Ljava.lang.Object;@3fb8fb44
-[22:31:40]{id:"id:0.4786024938285245",x:-0.7186351,y:1.0,z:-1.7589527}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.7186351,y:1.0,z:-1.7589527}
-[22:31:40][Ljava.lang.Object;@450521d9
-[22:31:40]{id:"id:0.4786024938285245",x:-0.5772894,y:1.0,z:-1.7635798}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.5772894,y:1.0,z:-1.7635798}
-[22:31:40][Ljava.lang.Object;@6c7b3705
-[22:31:40]{id:"id:0.4786024938285245",x:-0.43594372,y:1.0,z:-1.768207}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.43594372,y:1.0,z:-1.768207}
-[22:31:40][Ljava.lang.Object;@63e748b2
-[22:31:40]{id:"id:0.4786024938285245",x:-0.29459804,y:1.0,z:-1.7728341}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.29459804,y:1.0,z:-1.7728341}
-[22:31:40][Ljava.lang.Object;@1bfdfd51
-[22:31:40]{id:"id:0.4786024938285245",x:-0.15325236,y:1.0,z:-1.7774612}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.15325236,y:1.0,z:-1.7774612}
-[22:31:40][Ljava.lang.Object;@779a1c1e
-[22:31:40]{id:"id:0.4786024938285245",x:-0.011906698,y:1.0,z:-1.7820883}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:-0.011906698,y:1.0,z:-1.7820883}
-[22:31:40][Ljava.lang.Object;@42eccef7
-[22:31:40]{id:"id:0.4786024938285245",x:0.12943897,y:1.0,z:-1.7867154}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.12943897,y:1.0,z:-1.7867154}
-[22:31:40][Ljava.lang.Object;@1b17acc0
-[22:31:40]{id:"id:0.4786024938285245",x:0.27078465,y:1.0,z:-1.7913425}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.27078465,y:1.0,z:-1.7913425}
-[22:31:40][Ljava.lang.Object;@6ff4dd86
-[22:31:40]{id:"id:0.4786024938285245",x:0.41213033,y:1.0,z:-1.7959696}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.41213033,y:1.0,z:-1.7959696}
-[22:31:40][Ljava.lang.Object;@4829468a
-[22:31:40]{id:"id:0.4786024938285245",x:0.553476,y:1.0,z:-1.8005967}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.553476,y:1.0,z:-1.8005967}
-[22:31:40][Ljava.lang.Object;@6c16b20e
-[22:31:40]{id:"id:0.4786024938285245",x:0.69482166,y:1.0,z:-1.8052238}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.69482166,y:1.0,z:-1.8052238}
-[22:31:40][Ljava.lang.Object;@4a4162e0
-[22:31:40]{id:"id:0.4786024938285245",x:0.83616734,y:1.0,z:-1.8098509}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.83616734,y:1.0,z:-1.8098509}
-[22:31:40][Ljava.lang.Object;@3909ec3
-[22:31:40]{id:"id:0.4786024938285245",x:0.977513,y:1.0,z:-1.814478}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:0.977513,y:1.0,z:-1.814478}
-[22:31:40][Ljava.lang.Object;@10f852d
-[22:31:40]{id:"id:0.4786024938285245",x:1.1188587,y:1.0,z:-1.8191051}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.1188587,y:1.0,z:-1.8191051}
-[22:31:40][Ljava.lang.Object;@5850c1c0
-[22:31:40]{id:"id:0.4786024938285245",x:1.2602464,y:1.0,z:-1.8221903}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.2602464,y:1.0,z:-1.8221903}
-[22:31:40][Ljava.lang.Object;@1947ee48
-[22:31:40]{id:"id:0.4786024938285245",x:1.4016513,y:1.0,z:-1.8243499}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.4016513,y:1.0,z:-1.8243499}
-[22:31:40][Ljava.lang.Object;@1e261d25
-[22:31:40]{id:"id:0.4786024938285245",x:1.5430642,y:1.0,z:-1.8228073}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.5430642,y:1.0,z:-1.8228073}
-[22:31:40][Ljava.lang.Object;@637dc521
-[22:31:40]{id:"id:0.4786024938285245",x:1.6843884,y:1.0,z:-1.8175634}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.6843884,y:1.0,z:-1.8175634}
-[22:31:40][Ljava.lang.Object;@3d7d464f
-[22:31:40]{id:"id:0.4786024938285245",x:1.8257124,y:1.0,z:-1.8123195}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.8257124,y:1.0,z:-1.8123195}
-[22:31:40][Ljava.lang.Object;@1beeca06
-[22:31:40]{id:"id:0.4786024938285245",x:1.966831,y:1.0,z:-1.8030701}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:1.966831,y:1.0,z:-1.8030701}
-[22:31:40][Ljava.lang.Object;@358f336b
-[22:31:40]{id:"id:0.4786024938285245",x:2.107659,y:1.0,z:-1.7901298}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.107659,y:1.0,z:-1.7901298}
-[22:31:40][Ljava.lang.Object;@38d6bc36
-[22:31:40]{id:"id:0.4786024938285245",x:2.2480638,y:1.0,z:-1.7732011}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.2480638,y:1.0,z:-1.7732011}
-[22:31:40][Ljava.lang.Object;@6fceda5d
-[22:31:40]{id:"id:0.4786024938285245",x:2.3881934,y:1.0,z:-1.7541302}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.3881934,y:1.0,z:-1.7541302}
-[22:31:40][Ljava.lang.Object;@21d8358
-[22:31:40]{id:"id:0.4786024938285245",x:2.5278249,y:1.0,z:-1.7317023}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.5278249,y:1.0,z:-1.7317023}
-[22:31:40][Ljava.lang.Object;@4ec5ec1b
-[22:31:40]{id:"id:0.4786024938285245",x:2.6669893,y:1.0,z:-1.7065374}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.6669893,y:1.0,z:-1.7065374}
-[22:31:40][Ljava.lang.Object;@43ffdef9
-[22:31:40]{id:"id:0.4786024938285245",x:2.8055716,y:1.0,z:-1.6783425}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.8055716,y:1.0,z:-1.6783425}
-[22:31:40][Ljava.lang.Object;@55d72010
-[22:31:40]{id:"id:0.4786024938285245",x:2.9434373,y:1.0,z:-1.6468302}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:2.9434373,y:1.0,z:-1.6468302}
-[22:31:40][Ljava.lang.Object;@65d22410
-[22:31:40]{id:"id:0.4786024938285245",x:3.0803542,y:1.0,z:-1.6114211}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.0803542,y:1.0,z:-1.6114211}
-[22:31:40][Ljava.lang.Object;@4cd54958
-[22:31:40]{id:"id:0.4786024938285245",x:3.2172709,y:1.0,z:-1.576012}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.2172709,y:1.0,z:-1.576012}
-[22:31:40][Ljava.lang.Object;@206e3772
-[22:31:40]{id:"id:0.4786024938285245",x:3.3529558,y:1.0,z:-1.5361421}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.3529558,y:1.0,z:-1.5361421}
-[22:31:40][Ljava.lang.Object;@59577f36
-[22:31:40]{id:"id:0.4786024938285245",x:3.4867723,y:1.0,z:-1.4903917}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.4867723,y:1.0,z:-1.4903917}
-[22:31:40][Ljava.lang.Object;@2d5122a8
-[22:31:40]{id:"id:0.4786024938285245",x:3.6171913,y:1.0,z:-1.4357024}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.6171913,y:1.0,z:-1.4357024}
-[22:31:40][Ljava.lang.Object;@4b2821d3
-[22:31:40]{id:"id:0.4786024938285245",x:3.7433383,y:1.0,z:-1.3717735}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.7433383,y:1.0,z:-1.3717735}
-[22:31:40][Ljava.lang.Object;@1aac5a63
-[22:31:40]{id:"id:0.4786024938285245",x:3.8635964,y:1.0,z:-1.2973555}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.8635964,y:1.0,z:-1.2973555}
-[22:31:40][Ljava.lang.Object;@78e038cf
-[22:31:40]{id:"id:0.4786024938285245",x:3.9767258,y:1.0,z:-1.2124927}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:3.9767258,y:1.0,z:-1.2124927}
-[22:31:40][Ljava.lang.Object;@5c800119
-[22:31:40]{id:"id:0.4786024938285245",x:4.0844636,y:1.0,z:-1.1208817}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.0844636,y:1.0,z:-1.1208817}
-[22:31:40][Ljava.lang.Object;@56ac85e3
-[22:31:40]{id:"id:0.4786024938285245",x:4.185764,y:1.0,z:-1.022199}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.185764,y:1.0,z:-1.022199}
-[22:31:40][Ljava.lang.Object;@2eaba217
-[22:31:40]{id:"id:0.4786024938285245",x:4.287064,y:1.0,z:-0.9235164}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.287064,y:1.0,z:-0.9235164}
-[22:31:40][Ljava.lang.Object;@5774d14d
-[22:31:40]{id:"id:0.4786024938285245",x:4.3830614,y:1.0,z:-0.81966746}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.3830614,y:1.0,z:-0.81966746}
-[22:31:40][Ljava.lang.Object;@b209a73
-[22:31:40]{id:"id:0.4786024938285245",x:4.474437,y:1.0,z:-0.71173}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.474437,y:1.0,z:-0.71173}
-[22:31:40][Ljava.lang.Object;@39119569
-[22:31:40]{id:"id:0.4786024938285245",x:4.573665,y:1.0,z:-0.6993266}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.573665,y:1.0,z:-0.6993266}
-[22:31:40][Ljava.lang.Object;@4a593346
-[22:31:40]{id:"id:0.4786024938285245",x:4.672866,y:1.0,z:-0.68670666}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.672866,y:1.0,z:-0.68670666}
-[22:31:40][Ljava.lang.Object;@3b566df9
-[22:31:40]{id:"id:0.4786024938285245",x:4.7720666,y:1.0,z:-0.67408675}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.7720666,y:1.0,z:-0.67408675}
-[22:31:40][Ljava.lang.Object;@342a9be2
-[22:31:40]{id:"id:0.4786024938285245",x:4.871239,y:1.0,z:-0.6612505}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.871239,y:1.0,z:-0.6612505}
-[22:31:40][Ljava.lang.Object;@125ead3
-[22:31:40]{id:"id:0.4786024938285245",x:4.970412,y:1.0,z:-0.6484142}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:4.970412,y:1.0,z:-0.6484142}
-[22:31:40][Ljava.lang.Object;@2e52ab2
-[22:31:40]{id:"id:0.4786024938285245",x:5.0695844,y:1.0,z:-0.6355779}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.0695844,y:1.0,z:-0.6355779}
-[22:31:40][Ljava.lang.Object;@a54b6b2
-[22:31:40]{id:"id:0.4786024938285245",x:5.168757,y:1.0,z:-0.62274164}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.168757,y:1.0,z:-0.62274164}
-[22:31:40][Ljava.lang.Object;@6a41d991
-[22:31:40]{id:"id:0.4786024938285245",x:5.2679296,y:1.0,z:-0.60990536}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.2679296,y:1.0,z:-0.60990536}
-[22:31:40][Ljava.lang.Object;@441cd578
-[22:31:40]{id:"id:0.4786024938285245",x:5.367102,y:1.0,z:-0.5970691}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.367102,y:1.0,z:-0.5970691}
-[22:31:40][Ljava.lang.Object;@6f87d7f3
-[22:31:40]{id:"id:0.4786024938285245",x:5.4662747,y:1.0,z:-0.5842328}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.4662747,y:1.0,z:-0.5842328}
-[22:31:40][Ljava.lang.Object;@40491d97
-[22:31:40]{id:"id:0.4786024938285245",x:5.5654473,y:1.0,z:-0.5713965}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.5654473,y:1.0,z:-0.5713965}
-[22:31:40][Ljava.lang.Object;@24a0c95e
-[22:31:40]{id:"id:0.4786024938285245",x:5.66462,y:1.0,z:-0.55856025}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.66462,y:1.0,z:-0.55856025}
-[22:31:40][Ljava.lang.Object;@6b56fa7
-[22:31:40]{id:"id:0.4786024938285245",x:5.7637925,y:1.0,z:-0.545724}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.7637925,y:1.0,z:-0.545724}
-[22:31:40][Ljava.lang.Object;@57dc08cd
-[22:31:40]{id:"id:0.4786024938285245",x:5.862965,y:1.0,z:-0.5328877}
-[22:31:40]PossibleObject:{id:"id:0.4786024938285245",x:5.862965,y:1.0,z:-0.5328877}
-[22:31:40][Ljava.lang.Object;@5f711204
-[22:31:40][FPS: 137]
+[22:27:21]Adding refrences to the scripting engine.
+[22:27:21]Adding class:Vector2f class:class org.joml.Vector2f
+[22:27:21]Adding class:Vector3f class:class org.joml.Vector3f
+[22:27:21]Adding class:Vector4f class:class org.joml.Vector4f
+[22:27:21]Adding class:Gui class:class graphics.gui.Gui
+[22:27:21]Adding class:Debouncer class:class base.util.Debouncer
+[22:27:21]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
+[22:27:21]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[22:27:21]Adding class:EntityModel class:class entity.EntityModel
+[22:27:21]Adding class:EntitySprite class:class entity.EntitySprite
+[22:27:21]Adding class:ModelLoader class:class models.ModelLoader
+[22:27:21]Adding class:Entity class:class entity.Entity
+[22:27:21]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
+[22:27:21]Adding class:Keyboard class:class input.Keyboard
+[22:27:21]Adding class:KeyEvent class:class java.awt.event.KeyEvent
+[22:27:21]Adding class:Mouse class:class input.Mouse
+[22:27:21]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[22:27:21]Adding class:EnumButtonType class:class base.controller.EnumButtonType
+[22:27:21]Adding class:Shader class:class shaders.Shader
+[22:27:21]Adding class:FBO class:class graphics.FBO
+[22:27:21]Adding class:VAO class:class graphics.VAO
+[22:27:21]Adding class:Material class:class textures.Material
+[22:27:21]Adding class:FPSCamera class:class camera.FPSCamera
+[22:27:21]Adding class:TopDownCamera class:class camera.TopDownCamera
+[22:27:21]Adding class:DynamicCamera class:class camera.DynamicCamera
+[22:27:21]Adding class:TargetCamera class:class camera.TargetCamera
+[22:27:21]Adding class:Maths class:class math.Maths
+[22:27:21]Adding class:EntityContainer class:class entity.EntityContainer
+[22:27:21]Adding class:EnumComponentType class:class entity.component.EnumComponentType
+[22:27:21]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
+[22:27:21]Adding class:Cast class:class ScriptingEngine.Cast
+[22:27:21]Adding class:Callback class:class base.util.Callback
+[22:27:21]Adding class:Random class:class java.util.Random
+[22:27:21]Adding class:ComponentGravity class:class entity.component.ComponentGravity
+[22:27:21]Adding class:GL11 class:class org.lwjgl.opengl.GL11
+[22:27:21]Adding class:GL20 class:class org.lwjgl.opengl.GL20
+[22:27:21]Adding class:GL30 class:class org.lwjgl.opengl.GL30
+[22:27:21]File Extension:quad.obj
+[22:27:21]verticies:6
+[22:27:21]textures:6
+[22:27:21]normals:6
+[22:27:21]VAOid:1
+[22:27:21]Sending Data to texture:8 color:-9568145
+[22:27:21]Sending Data to texture:9 color:-9568145
+[22:27:21]Sending Data to texture:10 color:-9568145
+[22:27:21]Sending Data to texture:11 color:-9568145
+[22:27:21]File Extension:quad2.obj
+[22:27:21]verticies:6
+[22:27:21]textures:6
+[22:27:21]normals:6
+[22:27:21]VAOid:2
+[22:27:22]networking.FraudtekClient@6035b93b
+[22:27:22]Sending Data to texture:12 color:0
+[22:27:22]Sending Data to texture:13 color:0
+[22:27:22]FraudTekServer@localhost:8160 has started.
+[22:27:22]New Client connected @/127.0.0.1:65310
+[22:27:22]Client joined!
+[22:27:22]File Extension:sphere2.obj
+[22:27:22]verticies:3456
+[22:27:22]textures:3456
+[22:27:22]normals:3456
+[22:27:22]VAOid:3
+[22:27:22]Sending Data to texture:16 color:-14081507
+[22:27:22]Sending Data to texture:17 color:-1250068
+[22:27:22]Sending Data to texture:18 color:-8943363
+[22:27:22]Sending Data to texture:19 color:-8026747
+[22:27:22]Sending Data to texture:20 color:-8421505
+[22:27:22]Sending Data to texture:21 color:-16646144
+[22:27:22]Sending Data to texture:22 color:-16777216
+[22:27:22]Sending Data to texture:23 color:-11120055
+[22:27:22]Sending Data to texture:24 color:-3223601
+[22:27:22]Sending Data to texture:25 color:-8278545
+[22:27:23]Sending Data to texture:26 color:-8026747
+[22:27:23]Sending Data to texture:27 color:-4342339
+[22:27:23]Sending Data to texture:28 color:-1
+[22:27:23]Sending Data to texture:29 color:-16777216
+[22:27:23]Generating LevelshelloWorld
+[22:27:23]Sending Data to texture:30 color:-1
+[22:27:23]Sending Data to texture:31 color:-1
+[22:27:23]Sending Data to texture:31 color:-16711936
+[22:27:23]SpriteID:31
+[22:27:23]File Extension:cube2.obj
+[22:27:23]verticies:36
+[22:27:23]textures:36
+[22:27:23]normals:36
+[22:27:23]VAOid:4
+[22:27:23]Sending Data to texture:32 color:-1
+[22:27:23]Sending Data to texture:33 color:-1
+[22:27:23]Sending Data to texture:34 color:-8355841
+[22:27:23]Sending Data to texture:35 color:-1
+[22:27:23]Sending Data to texture:36 color:-1
+[22:27:23]Sending Data to texture:37 color:-1
+[22:27:23]Sending Data to texture:38 color:-16777216
+[22:27:23]Sending Data to texture:39 color:-16711936
+[22:27:23]Sending Data to texture:39 color:-65536
+[22:27:23]SpriteID:39
+[22:27:23][ERROR] ScriptNotFoundException TypeError: Cannot get property "tiles" of null in Script:Level at line number 159
+[22:27:23]Adding callback:base.util.Callback$$NashornJavaAdapter@6a0f2853
+[22:27:23]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/barrel.png
+[22:27:23]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
+[22:27:23]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
+[22:27:24][FPS: 27]
+[22:27:25][FPS: 92]
+[22:27:26][FPS: 136]
+[22:27:27][FPS: 82]
+[22:27:28][FPS: 134]
+[22:27:29][FPS: 144]
+[22:27:30][FPS: 143]
+[22:27:31][FPS: 143]
+[22:27:32][FPS: 144]
+[22:27:33][FPS: 122]
+[22:27:34][FPS: 143]
+[22:27:35][FPS: 144]
+[22:27:36][FPS: 143]
+[22:27:37][FPS: 144]
+[22:27:39][FPS: 139]
+[22:27:39][FPS: 9]
+[22:27:40][FPS: 55]
+[22:27:41][FPS: 144]
+[22:27:42][FPS: 143]
+[22:27:43][FPS: 143]
+[22:27:44][FPS: 144]
+[22:27:45][FPS: 144]
+[22:27:46][FPS: 143]
+[22:27:47][FPS: 143]
+[22:27:48][FPS: 143]
+[22:27:49][FPS: 144]
+[22:27:50][FPS: 144]
+[22:27:51][FPS: 143]
+[22:27:52][FPS: 144]
+[22:27:53][FPS: 143]
+[22:27:54][FPS: 144]
+[22:27:55][FPS: 143]
+[22:27:56][FPS: 144]
+[22:27:57][FPS: 143]
+[22:27:58][FPS: 143]
+[22:27:59][FPS: 144]
+[22:28:0][FPS: 143]
+[22:28:1][FPS: 144]
+[22:28:2][FPS: 143]
+[22:28:3][FPS: 144]
+[22:28:4][FPS: 144]
+[22:28:5][FPS: 142]
+[22:28:6][FPS: 145]
+[22:28:7][FPS: 143]
+[22:28:8][FPS: 144]
+[22:28:9][FPS: 143]
+[22:28:10][FPS: 144]
+[22:28:11][FPS: 143]
+[22:28:12][FPS: 144]
+[22:28:13][FPS: 143]
+[22:28:14][FPS: 144]
+[22:28:15][FPS: 143]
+[22:28:16][FPS: 144]
+[22:28:17][FPS: 143]
+[22:28:18][FPS: 144]
+[22:28:19][FPS: 143]
+[22:28:20][FPS: 144]
+[22:28:21][FPS: 143]
+[22:28:22][FPS: 144]
+[22:28:23][FPS: 143]
+[22:28:24][FPS: 144]
+[22:28:25][FPS: 143]
+[22:28:26][FPS: 144]
+[22:28:27][FPS: 143]
+[22:28:28][FPS: 144]
+[22:28:29][FPS: 143]
+[22:28:30][FPS: 144]
+[22:28:31][FPS: 143]
+[22:28:32][FPS: 144]
+[22:28:33][FPS: 143]
+[22:28:34][FPS: 143]
+[22:28:35][FPS: 143]
+[22:28:36][FPS: 144]
+[22:28:37][FPS: 144]
+[22:28:38][FPS: 143]
+[22:28:39][FPS: 144]
+[22:28:40][FPS: 144]
+[22:28:41][FPS: 143]
+[22:28:42][FPS: 143]
+[22:28:43][FPS: 144]
+[22:28:44][FPS: 143]
+[22:28:45][FPS: 144]
+[22:28:46][FPS: 143]
+[22:28:47][FPS: 144]
+[22:28:48][FPS: 144]
+[22:28:49][FPS: 143]
+[22:28:50][FPS: 144]
+[22:28:51][FPS: 143]
+[22:28:52][FPS: 143]
+[22:28:53][FPS: 144]
+[22:28:54][FPS: 143]
+[22:28:55][FPS: 144]
+[22:28:56][FPS: 143]
+[22:28:57][FPS: 144]
+[22:28:58][FPS: 143]
+[22:28:59][FPS: 144]
+[22:29:0][FPS: 143]
+[22:29:1][FPS: 144]
+[22:29:2][FPS: 143]
+[22:29:3][FPS: 144]
+[22:29:4][FPS: 143]
+[22:29:5][FPS: 144]
+[22:29:6][FPS: 143]
+[22:29:7][FPS: 144]
+[22:29:8][FPS: 142]
+[22:29:9][FPS: 143]
 ------------------------------------------------------------------------------------------
-[22:31:40]Shutting down Engine.
+[22:29:10]Shutting down Engine.
 ------------------------------------------------------------------------------------------
-[22:31:40]Deleting VAO:1
-[22:31:40]Deleting VAO:2
-[22:31:40]Deleting VAO:3
-[22:31:40]Deleting VAO:4
-[22:31:40]Deleting VBO:1
-[22:31:40]Deleting VBO:2
-[22:31:40]Deleting VBO:3
-[22:31:40]Deleting VBO:4
-[22:31:40]Deleting VBO:5
-[22:31:40]Deleting VBO:6
-[22:31:40]Deleting VBO:7
-[22:31:40]Deleting VBO:8
-[22:31:40]Deleting VBO:9
-[22:31:40]Deleting VBO:10
-[22:31:40]Deleting VBO:11
-[22:31:40]Deleting VBO:12
-[22:31:40]Deleting VBO:13
-[22:31:40]Deleting VBO:14
-[22:31:40]Deleting VBO:15
-[22:31:40]Deleting VBO:16
-[22:31:40]Deleting VBO:17
-[22:31:40]Deleting VBO:18
-[22:31:40]Deleting VBO:19
-[22:31:40]Deleting VBO:20
-[22:31:40]Deleting VBO:21
-[22:31:40]Deleting VBO:22
-[22:31:40]Deleting VBO:23
-[22:31:40]Deleting VBO:24
+[22:29:10]Deleting VAO:1
+[22:29:10]Deleting VAO:2
+[22:29:10]Deleting VAO:3
+[22:29:10]Deleting VAO:4
+[22:29:10]Deleting VBO:1
+[22:29:10]Deleting VBO:2
+[22:29:10]Deleting VBO:3
+[22:29:10]Deleting VBO:4
+[22:29:10]Deleting VBO:5
+[22:29:10]Deleting VBO:6
+[22:29:10]Deleting VBO:7
+[22:29:10]Deleting VBO:8
+[22:29:10]Deleting VBO:9
+[22:29:10]Deleting VBO:10
+[22:29:10]Deleting VBO:11
+[22:29:10]Deleting VBO:12
+[22:29:10]Deleting VBO:13
+[22:29:10]Deleting VBO:14
+[22:29:10]Deleting VBO:15
+[22:29:10]Deleting VBO:16
+[22:29:10]Deleting VBO:17
+[22:29:10]Deleting VBO:18
+[22:29:10]Deleting VBO:19
+[22:29:10]Deleting VBO:20
+[22:29:10]Deleting VBO:21
+[22:29:10]Deleting VBO:22
+[22:29:10]Deleting VBO:23
+[22:29:10]Deleting VBO:24
 ------------------------------------------------------------------------------------------
-[22:31:40]Cleaning up Engine.
+[22:29:10]Cleaning up Engine.
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
-[22:31:40]Terminating Window.
+[22:29:10]Terminating Window.
 ------------------------------------------------------------------------------------------

@@ -18,8 +18,24 @@ function getVersion(){
 function getAttributes(){
     var attributes=[
         {
-            "type":"vec2",
+            "type":"vec3",
             "name":"position"
+        },
+        {
+            "type":"vec2",
+            "name":"textureCoords"
+        },
+        {
+            "type":"vec3",
+            "name":"normal"
+        },
+        {
+            "type":"vec3",
+            "name":"tangent"
+        },
+        {
+            "type":"vec3",
+            "name":"bitangent"
         }
     ];
     return attributes;
@@ -34,7 +50,7 @@ function getPassAttributes(){
     var pass=[
         {
             "type":"vec2",
-            "name":"textureCoords"
+            "name":"pass_textureCoords"
         }
     ];
     return pass;
@@ -56,6 +72,11 @@ function getUniforms(){
             "type":"sampler2D",
             "name":"guiTexture",
             "location":"fragment"
+        },
+        {
+            "type":"vec2",
+            "name":"guiScale",
+            "location":"vertex"
         }
     ];
     return uniforms;

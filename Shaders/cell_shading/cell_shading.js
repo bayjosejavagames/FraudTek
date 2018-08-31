@@ -93,6 +93,11 @@ function getUniforms(){
         },
         {
             "type":"mat4",
+            "name":"animationMatrix",
+            "location":"vertex"
+        },
+        {
+            "type":"mat4",
             "name":"viewMatrix",
             "location":"vertex"
         },
@@ -198,6 +203,10 @@ function loadLights(lights){
             SHADER.loadData("attenuation[" + i + "]", new Vector3f(1, 0, 0));
         }
     }
+}
+
+function setAnimationOffset(vector){
+    SHADER.loadData("animationMatrix", Maths.createTransformationMatrix(vector[0], 0, 0, 0, 1));
 }
 
 function setMaxLights(lights){
