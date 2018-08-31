@@ -6,7 +6,8 @@ function init(){
     client = ServerManager.addClient('localhost', '8160');
 
     //GUIS should be initialized BEFORE the entity manager starts.
-    guis.add(new Gui("Engine/sorry", new Vector2f(-0.8, 0.8), new Vector2f(0.1, 0.1)));
+    guis.add(new Gui("Broken_Sword", new Vector2f(0.85, 0), new Vector2f(0.2, 0.2)));
+    guis.add(new Gui("Mini_Map_Border", new Vector2f(0.55, -0.6), new Vector2f(0.35, 0.35)));
 
     ScriptingEngine.addScript("EntityManager");
 
