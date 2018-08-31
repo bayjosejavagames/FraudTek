@@ -123,6 +123,7 @@ function selectRandomStartingChunk(){
     for(var i = 0; i < chunk.tiles.length; i++){
         chunk.tiles[i].setMaterial(materialID);
     }
+    chunk.onPrimaryPath = true;
     return chunk;
 }
 
@@ -134,6 +135,7 @@ function generateTraversalPath(chunkPath){
     tmpChunk.chunkIndex = chunkPath.length;
     var materialID = MaterialManager.getColor(255,0,0);
     for(var i = 0; i < tmpChunk.tiles.length; i++){
+        tmpChunk.onPrimaryPath = true;
         tmpChunk.tiles[i].setMaterial(materialID);
     }
     chunkPath.push(tmpChunk);
@@ -143,6 +145,7 @@ function generateTraversalPath(chunkPath){
         if(dir == 0){ //Down
             tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
             for(var i = 0; i < tmpChunk.tiles.length; i++){
+                tmpChunk.onPrimaryPath = true;
                 tmpChunk.tiles[i].setMaterial(materialID);
             }
         }
@@ -151,12 +154,14 @@ function generateTraversalPath(chunkPath){
                 if(random.nextInt(3) == 0){
                     tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
                     for(var i = 0; i < tmpChunk.tiles.length; i++){
+                        tmpChunk.onPrimaryPath = true;
                         tmpChunk.tiles[i].setMaterial(materialID);
                     }
                     break;
                 }
                 tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.LEFT);
                 for(var i = 0; i < tmpChunk.tiles.length; i++){
+                    tmpChunk.onPrimaryPath = true;
                     tmpChunk.tiles[i].setMaterial(materialID);
                 }
             }
@@ -166,12 +171,14 @@ function generateTraversalPath(chunkPath){
                 if(random.nextInt(3) == 0){
                     tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.DOWN);
                     for(var i = 0; i < tmpChunk.tiles.length; i++){
+                        tmpChunk.onPrimaryPath = true;
                         tmpChunk.tiles[i].setMaterial(materialID);
                     }
                     break;
                 }
                 tmpChunk = getRelativeChunk(tmpChunk, LinkDirections.RIGHT);
                 for(var i = 0; i < tmpChunk.tiles.length; i++){
+                    tmpChunk.onPrimaryPath = true;
                     tmpChunk.tiles[i].setMaterial(materialID);
                 }
             }
@@ -207,6 +214,7 @@ function generateChunk(){
         entities:[],
         neighbors:[],
         generated:false,
+        onPrimaryPath:false,
         link:LinkDirections.UP,
         chunkIndex:-1,
     }
