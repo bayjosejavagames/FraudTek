@@ -16,10 +16,14 @@ function loadLevel(seed){
     //Shrine
     //Forrest
     //SkullBridge
-
+    //
     ScriptingEngine.addScript("Level", "testlevel");
 
-    entities.push(new EntityModel(ModelLoader.loadModel("quad"), "brick", new Vector3f(0, 2, 0), 0, 0, 0, 1));
+    var bloomTest2 = new EntityModel(ModelLoader.loadModel("dragon"), "white", new Vector3f(0, 1, -6), 0, 0, 0, 1);
+    bloomTest2.addComponent(new ComponentBloom(bloomTest2));
+    bloomTest2.getAttribute("bloomColor").setData(new Vector3f(0.0, 1.0, 0.75));
+    entities.push(bloomTest2);
+
     // ParticleEngine.push(new EntityParticleEmitter(new Vector3f(0, 0, 0), "fruit", 100));
 }
 

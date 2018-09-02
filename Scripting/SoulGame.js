@@ -11,7 +11,6 @@ function init(){
     ScriptingEngine.addScript("EntityManager");
 
     ScriptingEngine.addScript("Player",  -2, -2);
-    ScriptingEngine.addScript("Door",  6, -6);
     ScriptingEngine.addScript("LevelController", "helloWorld");
 
     client.registerCallback(new Callback(function (data) {
@@ -28,6 +27,7 @@ function tick(){
         if (client.getData('id') != ScriptingEngine.getScript('Player').var('player').getID()) {
             if(client.hasData('x')&& client.hasData('y')&& client.hasData('z')) {
                 // otherPlayer.setPosition(new Vector3f(client.getData('x'), client.getData('y'), client.getData('z')));
+
             }
         }
     }

@@ -2,11 +2,10 @@
 
 in vec2 pass_textureCoords;
 
+uniform vec3 bloomColor;
+
 out vec4 out_Color;
 
-uniform sampler2D textureSampler;
-
 void main(void){
-    vec4 textureColor = texture(textureSampler, pass_textureCoords);
-    out_Color = vec4(textureColor.xyz, 1.0);
+    out_Color = vec4(bloomColor, 0.0);
 }
