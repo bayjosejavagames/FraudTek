@@ -8,11 +8,13 @@ var levelHeight;
 // create a 2d array of size width x height
 var chunks = [];
 
+var seedTable = [];
+
 // randomCap is the maximum value of the array values +1
 var randomCap = 50 + 1;
 
 // islandCutOff is the minimum value for a chunk to exist
-var islandCutOff = 0;
+var islandCutOff = 20;
 
 //Structures in the level
 var structures = [];
@@ -23,41 +25,56 @@ function init(seed) {
     //Generate a random Level based on a seed
     // random = new Random(seed.hashCode()); //Generate a random sequence of numbers based on the passed String
     random = new Random(); //Generate a random sequence of numbers based on the passed String
-    levelWidth = 10 + random.nextInt(21); //Generate a random number between 10 and 30
-    levelHeight = 10 + random.nextInt(21);//Generate a random number between 10 and 30
+    levelWidth = 16 + random.nextInt(16)+1; //Generate a random number between 16 and 32
+    levelHeight = 16 + random.nextInt(16)+1;//Generate a random number between 16 and 32
 
     var entities = ScriptingEngine.getScript("EntityManager").var("entities");
 
-    // populate the array with random values (whole numbers between 0 and 100)
+    //Generate a random value for each entry in our seed table. Bias the center towards a point.
+    for(var j=0; j<levelHeight+1; j++){
+        //Sneeky array init
+        for(var i=0; i<levelWidth+1; i++){
+            seedTable[i+(j*(levelWidth+1))] = (random.nextInt(41)-20) + ((-Math.pow(i-(levelWidth/2), 2)) + (-Math.pow(j-(levelHeight/2), 2)) + 20);
+        }
+    }
+
     for(var i=0; i<levelWidth; i++){
         chunks[i] = [];
-        for(var j=0; j<levelHeight; j++){
+    }
+
+    for(var j=0; j<levelHeight; j++){
+        for(var i=0; i<levelWidth; i++){
             var chunk = generateChunk();
             chunks[i][j] = chunk;
-            // value is a product of random number + function of i&j
-            chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = randomCap -Math.pow((i-(levelWidth/2)),2) - Math.pow((j-(levelHeight/2)),2) + random.nextInt(randomCap);
-            // if it doesn't meet the cutoff, zero it
-            if(chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] < islandCutOff){
-                chunks[i][j].data[Math.floor(chunk.width/2)][Math.floor(chunk.height/2)] = 0;
-            } else {
+            {
                 //Since we are putting data into this chunk, we are going to set the generated flag = to true
-                chunks[i][j].generated = true;
                 chunks[i][j].x = i;
                 chunks[i][j].y = j;
+
+                //Using data from our seedTable, get the corner values for this grid, then lerp all tiles to create a smooth grid.
+                chunks[i][j] = lerpChunk(chunks[i][j], seedTable[((i)+((j)*(levelWidth+1)))],seedTable[((i)+((j+1)*(levelWidth+1)))],seedTable[((i+1)+((j)*(levelWidth+1)))],seedTable[((i+1)+((j+1)*(levelWidth+1)))]);
+
+                //If the tile height is above the cutoff
                 for(var k = 0; k < chunk.height; k++){
                     for(var l = 0; l < chunk.width; l++){
-                        var materialID = MaterialManager.getColor(0,255,0);
-                        var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i+(k/chunk.width) - (levelWidth/2)) * chunk.width * 2, 0, (j+(l/chunk.height) - (levelHeight/2)) * chunk.height * 2), 0, 0, 0, 1);
-                        chunk.tiles[l+(k * chunk.width)] = entity;
-                        entity.setMaterial(materialID);
+                        if(chunks[i][j].heights[l+(k * chunk.width)] > 2) {
+                            var materialID = MaterialManager.getColor(0, 255, 0);
+                            // var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, chunks[i][j].heights[l + (k * chunk.width)], (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                            var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, 0, (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                            chunk.tiles.push(entity);
+                            entity.setMaterial(materialID);
+                            // entities.push(entity);
+                        }
                     }
                 }
+
+                //To see if a chunk was generated or not, we can check if tiles are present.
+                if(chunk.tiles.length > 0){
+                    chunks[i][j].generated = true;
+                }
+
                 chunk.modelGroup = new ModelGroup(chunk.tiles);
                 entities.push(new EntityModelGroup(chunk.modelGroup));
-                // var materialID = MaterialManager.getColor(0,255,0);
-                // var entity = new EntityModel(ModelLoader.loadModel("dragon"), "white", new Vector3f((i - (levelWidth/2)) * chunk.width * 2, 0, (j - (levelHeight/2)) * chunk.height * 2), 0, 0, 0, 1);
-                // entity.setMaterial(materialID);
-                // entities.push(entity);
             }
         }
     }
@@ -201,7 +218,7 @@ function render() {
 }
 
 function generateChunk(){
-    var chunkSize = 8  ;
+    var chunkSize = 15  ;
     var outdata = [];
     for(var i=0; i<chunkSize; i++){
         outdata[i] = new Array(chunkSize);
@@ -216,13 +233,14 @@ function generateChunk(){
         height:chunkSize,
         data:outdata,
         tiles:[],
+        heights:[],
         entities:[],
         neighbors:[],
         generated:false,
         onPrimaryPath:false,
         link:LinkDirections.UP,
         modelGroup:undefined,
-        chunkIndex:-1,
+        chunkIndex:-1
     }
 }
 
@@ -273,6 +291,18 @@ function getRelativeChunk(chunk, direction){
     return null;
 }
 
+function lerpChunk(chunk, x, xx, xy, yy){
+    chunk.heights = new Array(chunk.width * chunk.height);
+
+    for(var j = 0; j < chunk.height; j++){
+        for(var i = 0; i < chunk.width; i++){
+            chunk.heights[i+(j * chunk.width)] = lerp(lerp(x, xx, (i/(chunk.width-1))), lerp(xy, yy, (i/(chunk.width-1))), (j/(chunk.height-1)));
+        }
+    }
+
+    return chunk;
+}
+
 function inChunkBounds(x, y){
     if(x >= 0 && x < levelWidth){
         if(y >= 0 && y < levelHeight){
@@ -284,6 +314,10 @@ function inChunkBounds(x, y){
 
 function clamp(x, min, max){
     return (x<min?0:x>max?max:x);
+}
+
+function lerp(x, xx, d){
+    return ((1.0 - d) * x) + (d * xx);
 }
 
 function contains(array, value){
