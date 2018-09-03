@@ -1,197 +1,1894 @@
 ------------------------------------------------------------------------------------------
-[23:0:53]Engine Initialization
+[10:50:59]Engine Initialization
 ------------------------------------------------------------------------------------------
-[23:0:53]FraudTek version:1.0
-[23:0:53]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum_WIN.exe
-[23:0:53]Game Name:Soul Game
-[23:0:53]Target Width:1920
-[23:0:53]Target Height:1080
-[23:0:53]Window is Fullscreen:true
-[23:0:53]Window is using vsync:true
+[10:50:59]FraudTek version:1.0
+[10:50:59]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum_WIN.exe
+[10:50:59]Game Name:Soul Game
+[10:50:59]Target Width:1920
+[10:50:59]Target Height:1080
+[10:50:59]Window is Fullscreen:false
+[10:50:59]Window is using vsync:false
 ------------------------------------------------------------------------------------------
-[23:0:54]Looking for Source Folders...
+[10:51:0]Looking for Source Folders...
 ------------------------------------------------------------------------------------------
-[23:0:54]Looking for /Animations/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Animations/
-[23:0:54]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
-[23:0:54]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
-[23:0:54]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
-[23:0:54]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
-[23:0:54]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
-[23:0:54]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
-[23:0:54]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
-[23:0:54]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
-[23:0:54]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
+[10:51:0]Looking for /Animations/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Animations/
+[10:51:0]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
+[10:51:0]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
+[10:51:0]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
+[10:51:0]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
+[10:51:0]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
+[10:51:0]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
+[10:51:0]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
+[10:51:0]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
+[10:51:0]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
 ------------------------------------------------------------------------------------------
-[23:0:54]Initializing all engines associated with the game.
+[10:51:0]Initializing all engines associated with the game.
 ------------------------------------------------------------------------------------------
-[23:0:54]Initializing Engine:TextureManager...Success.
-[23:0:54]Initializing Engine:LightingEngine...Success.
-[23:0:54]Initializing Engine:CameraManager...Success.
-[23:0:54]Initializing Engine:Steam...Success.
-[23:0:54]Initializing Engine:SpriteBinder...Success.
-[23:0:54]Initializing Engine:ModelManager...Success.
-[23:0:54]Initializing Engine:Controllers...
+[10:51:0]Initializing Engine:TextureManager...Success.
+[10:51:0]Initializing Engine:LightingEngine...Success.
+[10:51:0]Initializing Engine:CameraManager...Success.
+[10:51:0]Initializing Engine:Steam...Success.
+[10:51:0]Initializing Engine:SpriteBinder...Success.
+[10:51:0]Initializing Engine:ModelManager...Success.
+[10:51:0]Initializing Engine:Controllers...
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------Success.
-[23:0:54]Initializing Engine:VAOManager...Success.
-[23:0:54]Initializing Engine:ServerManager...Success.
-[23:0:54]Initializing Engine:MaterialManager...Success.
-[23:0:54]Sending Data to texture:1 color:-1
-[23:0:54]Sending Data to texture:2 color:-1
-[23:0:54]Sending Data to texture:3 color:-8355841
-[23:0:54]Sending Data to texture:4 color:-1
-[23:0:54]Sending Data to texture:5 color:-1
-[23:0:54]Sending Data to texture:6 color:-1
-[23:0:54]Sending Data to texture:7 color:-16777216
-[23:0:54]Initializing Engine:ParticleEngine...Success.
+[10:51:0]Initializing Engine:VAOManager...Success.
+[10:51:0]Initializing Engine:ServerManager...Success.
+[10:51:0]Initializing Engine:MaterialManager...Success.
+[10:51:0]Sending Data to texture:1 color:-1
+[10:51:0]Sending Data to texture:2 color:-1
+[10:51:0]Sending Data to texture:3 color:-8355841
+[10:51:0]Sending Data to texture:4 color:-1
+[10:51:0]Sending Data to texture:5 color:-1
+[10:51:0]Sending Data to texture:6 color:-1
+[10:51:0]Sending Data to texture:7 color:-16777216
+[10:51:0]Initializing Engine:ParticleEngine...Success.
 ------------------------------------------------------------------------------------------
-[23:0:54]Adding refrences to the scripting engine.
-[23:0:54]Adding class:Vector2f class:class org.joml.Vector2f
-[23:0:54]Adding class:Vector3f class:class org.joml.Vector3f
-[23:0:54]Adding class:Vector4f class:class org.joml.Vector4f
-[23:0:54]Adding class:Gui class:class graphics.gui.Gui
-[23:0:54]Adding class:Debouncer class:class base.util.Debouncer
-[23:0:54]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
-[23:0:54]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[23:0:54]Adding class:EntityModel class:class entity.EntityModel
-[23:0:54]Adding class:EntitySprite class:class entity.EntitySprite
-[23:0:54]Adding class:ModelLoader class:class models.ModelLoader
-[23:0:54]Adding class:Entity class:class entity.Entity
-[23:0:54]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
-[23:0:54]Adding class:Keyboard class:class input.Keyboard
-[23:0:54]Adding class:KeyEvent class:class java.awt.event.KeyEvent
-[23:0:54]Adding class:Mouse class:class input.Mouse
-[23:0:54]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[23:0:54]Adding class:EnumButtonType class:class base.controller.EnumButtonType
-[23:0:54]Adding class:Shader class:class shaders.Shader
-[23:0:54]Adding class:FBO class:class graphics.FBO
-[23:0:54]Adding class:VAO class:class graphics.VAO
-[23:0:54]Adding class:Material class:class textures.Material
-[23:0:54]Adding class:FPSCamera class:class camera.FPSCamera
-[23:0:54]Adding class:TopDownCamera class:class camera.TopDownCamera
-[23:0:54]Adding class:DynamicCamera class:class camera.DynamicCamera
-[23:0:54]Adding class:TargetCamera class:class camera.TargetCamera
-[23:0:54]Adding class:Maths class:class math.Maths
-[23:0:54]Adding class:EntityContainer class:class entity.EntityContainer
-[23:0:54]Adding class:EnumComponentType class:class entity.component.EnumComponentType
-[23:0:54]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
-[23:0:54]Adding class:Cast class:class ScriptingEngine.Cast
-[23:0:54]Adding class:Callback class:class base.util.Callback
-[23:0:54]Adding class:Random class:class java.util.Random
-[23:0:54]Adding class:ComponentGravity class:class entity.component.ComponentGravity
-[23:0:54]Adding class:GL11 class:class org.lwjgl.opengl.GL11
-[23:0:54]Adding class:GL20 class:class org.lwjgl.opengl.GL20
-[23:0:54]Adding class:GL30 class:class org.lwjgl.opengl.GL30
-[23:0:54]File Extension:quad.obj
-[23:0:54]verticies:6
-[23:0:54]textures:6
-[23:0:54]normals:6
-[23:0:54]VAOid:1
-[23:0:54]Sending Data to texture:8 color:-9568145
-[23:0:54]Sending Data to texture:9 color:-9568145
-[23:0:54]Sending Data to texture:10 color:-9568145
-[23:0:54]Sending Data to texture:11 color:-9568145
-[23:0:55]File Extension:quad2.obj
-[23:0:55]verticies:6
-[23:0:55]textures:6
-[23:0:55]normals:6
-[23:0:55]VAOid:2
-[23:0:55]networking.FraudtekClient@6035b93b
-[23:0:55]Sending Data to texture:12 color:0
-[23:0:55]Sending Data to texture:13 color:0
-[23:0:55]FraudTekServer@localhost:8160 has started.
-[23:0:55]New Client connected @/127.0.0.1:49788
-[23:0:55]Client joined!
-[23:0:55]File Extension:sphere2.obj
-[23:0:55]verticies:3456
-[23:0:55]textures:3456
-[23:0:55]normals:3456
-[23:0:55]VAOid:3
-[23:0:55]Sending Data to texture:16 color:-14081507
-[23:0:55]Sending Data to texture:17 color:-1250068
-[23:0:55]Sending Data to texture:18 color:-8943363
-[23:0:55]Sending Data to texture:19 color:-8026747
-[23:0:55]Sending Data to texture:20 color:-8421505
-[23:0:55]Sending Data to texture:21 color:-16646144
-[23:0:55]Sending Data to texture:22 color:-16777216
-[23:0:55]Sending Data to texture:23 color:-11120055
-[23:0:56]Sending Data to texture:24 color:-3223601
-[23:0:56]Sending Data to texture:25 color:-8278545
-[23:0:56]Sending Data to texture:26 color:-8026747
-[23:0:56]Sending Data to texture:27 color:-4342339
-[23:0:56]Sending Data to texture:28 color:-1
-[23:0:56]Sending Data to texture:29 color:-16777216
-[23:0:56]Generating LevelshelloWorld
-[23:0:56]Sending Data to texture:30 color:-1
-[23:0:56]Sending Data to texture:31 color:-1
-[23:0:56]Sending Data to texture:31 color:-16711936
-[23:0:56]SpriteID:31
-[23:0:56]File Extension:cube2.obj
-[23:0:56]verticies:36
-[23:0:56]textures:36
-[23:0:56]normals:36
-[23:0:56]VAOid:4
-[23:0:56]Sending Data to texture:32 color:-1
-[23:0:56]Sending Data to texture:33 color:-1
-[23:0:56]Sending Data to texture:34 color:-8355841
-[23:0:56]Sending Data to texture:35 color:-1
-[23:0:56]Sending Data to texture:36 color:-1
-[23:0:56]Sending Data to texture:37 color:-1
-[23:0:56]Sending Data to texture:38 color:-16777216
-[23:0:56]Sending Data to texture:39 color:-16711936
-[23:0:56]Sending Data to texture:39 color:-65536
-[23:0:56]SpriteID:39
-[23:0:56][ERROR] ScriptNotFoundException TypeError: Cannot get property "tiles" of null in Script:Level at line number 159
-[23:0:56]Adding callback:base.util.Callback$$NashornJavaAdapter@70c69586
-[23:0:56]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/barrel.png
-[23:0:56]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
-[23:0:56]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
-[23:0:57][FPS: 36]
-[23:0:58][FPS: 84]
-[23:0:59][FPS: 144]
-[23:1:0][FPS: 91]
-[23:1:1][FPS: 135]
-[23:1:2][FPS: 143]
-[23:1:3][FPS: 142]
-[23:1:4][FPS: 144]
-[23:1:5][FPS: 143]
-[23:1:6][FPS: 121]
-[23:1:7][FPS: 144]
-[23:1:8][FPS: 143]
+[10:51:0]Adding refrences to the scripting engine.
+[10:51:0]Adding class:Vector2f class:class org.joml.Vector2f
+[10:51:0]Adding class:Vector3f class:class org.joml.Vector3f
+[10:51:0]Adding class:Vector4f class:class org.joml.Vector4f
+[10:51:0]Adding class:Gui class:class graphics.gui.Gui
+[10:51:0]Adding class:Debouncer class:class base.util.Debouncer
+[10:51:0]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
+[10:51:0]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[10:51:0]Adding class:EntityModel class:class entity.EntityModel
+[10:51:0]Adding class:EntityModelGroup class:class entity.EntityModelGroup
+[10:51:0]Adding class:EntitySprite class:class entity.EntitySprite
+[10:51:0]Adding class:ModelLoader class:class models.ModelLoader
+[10:51:0]Adding class:Entity class:class entity.Entity
+[10:51:0]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
+[10:51:0]Adding class:Keyboard class:class input.Keyboard
+[10:51:0]Adding class:KeyEvent class:class java.awt.event.KeyEvent
+[10:51:0]Adding class:Mouse class:class input.Mouse
+[10:51:0]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[10:51:0]Adding class:EnumButtonType class:class base.controller.EnumButtonType
+[10:51:0]Adding class:Shader class:class shaders.Shader
+[10:51:0]Adding class:FBO class:class graphics.FBO
+[10:51:0]Adding class:VAO class:class graphics.VAO
+[10:51:0]Adding class:Material class:class textures.Material
+[10:51:0]Adding class:FPSCamera class:class camera.FPSCamera
+[10:51:0]Adding class:TopDownCamera class:class camera.TopDownCamera
+[10:51:0]Adding class:DynamicCamera class:class camera.DynamicCamera
+[10:51:0]Adding class:TargetCamera class:class camera.TargetCamera
+[10:51:0]Adding class:Maths class:class math.Maths
+[10:51:0]Adding class:EntityContainer class:class entity.EntityContainer
+[10:51:0]Adding class:EnumComponentType class:class entity.component.EnumComponentType
+[10:51:0]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
+[10:51:0]Adding class:Cast class:class ScriptingEngine.Cast
+[10:51:0]Adding class:Callback class:class base.util.Callback
+[10:51:0]Adding class:Random class:class java.util.Random
+[10:51:0]Adding class:ModelGroup class:class models.ModelGroup
+[10:51:0]Adding class:ComponentGravity class:class entity.component.ComponentGravity
+[10:51:0]Adding class:ComponentBloom class:class entity.component.ComponentBloom
+[10:51:0]Adding class:GL11 class:class org.lwjgl.opengl.GL11
+[10:51:0]Adding class:GL20 class:class org.lwjgl.opengl.GL20
+[10:51:0]Adding class:GL30 class:class org.lwjgl.opengl.GL30
+[10:51:0]File Extension:quad.obj
+[10:51:0]verticies:6
+[10:51:0]textures:6
+[10:51:0]normals:6
+[10:51:0]VAOid:1
+[10:51:1]Sending Data to texture:8 color:-9568145
+[10:51:1]Sending Data to texture:9 color:-9568145
+[10:51:1]Sending Data to texture:10 color:-9568145
+[10:51:1]Sending Data to texture:11 color:-9568145
+[10:51:1]File Extension:quad2.obj
+[10:51:1]verticies:6
+[10:51:1]textures:6
+[10:51:1]normals:6
+[10:51:1]VAOid:2
+[10:51:1]networking.FraudtekClient@609640d5
+[10:51:1]Sending Data to texture:12 color:-9568145
+[10:51:1]Sending Data to texture:13 color:-13828050
+[10:51:1]Sending Data to texture:14 color:0
+[10:51:1]Sending Data to texture:15 color:0
+[10:51:1]FraudTekServer@localhost:8160 has started.
+[10:51:1]New Client connected @/127.0.0.1:52029
+[10:51:1]Client joined!
+[10:51:2]Sending Data to texture:28 color:-1
+[10:51:2]Sending Data to texture:29 color:-1
+[10:51:2]Sending Data to texture:30 color:-8355841
+[10:51:2]Sending Data to texture:31 color:-1
+[10:51:2]Sending Data to texture:32 color:-1
+[10:51:2]Sending Data to texture:33 color:-1
+[10:51:2]Sending Data to texture:34 color:-16777216
+[10:51:2]File Extension:sphere2.obj
+[10:51:2]verticies:3456
+[10:51:2]textures:3456
+[10:51:2]normals:3456
+[10:51:2]VAOid:3
+[10:51:2]Sending Data to texture:35 color:-14081507
+[10:51:2]Sending Data to texture:36 color:-1250068
+[10:51:2]Sending Data to texture:37 color:-8943363
+[10:51:2]Sending Data to texture:38 color:-8026747
+[10:51:2]Sending Data to texture:39 color:-8421505
+[10:51:2]Sending Data to texture:40 color:-16646144
+[10:51:2]Sending Data to texture:41 color:-16777216
+[10:51:2]Generating LevelshelloWorld
 ------------------------------------------------------------------------------------------
-[23:1:9]Shutting down Engine.
+[10:51:2]Timer Started
 ------------------------------------------------------------------------------------------
-[23:1:9]Deleting VAO:1
-[23:1:9]Deleting VAO:2
-[23:1:9]Deleting VAO:3
-[23:1:9]Deleting VAO:4
-[23:1:9]Deleting VBO:1
-[23:1:9]Deleting VBO:2
-[23:1:9]Deleting VBO:3
-[23:1:9]Deleting VBO:4
-[23:1:9]Deleting VBO:5
-[23:1:9]Deleting VBO:6
-[23:1:9]Deleting VBO:7
-[23:1:9]Deleting VBO:8
-[23:1:9]Deleting VBO:9
-[23:1:9]Deleting VBO:10
-[23:1:9]Deleting VBO:11
-[23:1:9]Deleting VBO:12
-[23:1:9]Deleting VBO:13
-[23:1:9]Deleting VBO:14
-[23:1:9]Deleting VBO:15
-[23:1:9]Deleting VBO:16
-[23:1:9]Deleting VBO:17
-[23:1:9]Deleting VBO:18
-[23:1:9]Deleting VBO:19
-[23:1:9]Deleting VBO:20
-[23:1:9]Deleting VBO:21
-[23:1:9]Deleting VBO:22
-[23:1:9]Deleting VBO:23
-[23:1:9]Deleting VBO:24
+[10:51:2]Sending Data to texture:42 color:-1
+[10:51:2]Sending Data to texture:43 color:-1
+[10:51:2]Sending Data to texture:43 color:-16711936
+[10:51:2]SpriteID:43
+[10:51:2]File Extension:cube2.obj
+[10:51:2]verticies:36
+[10:51:2]textures:36
+[10:51:2]normals:36
+[10:51:2]VAOid:4
+[10:51:3]Sending Data to texture:44 color:-16711936
+[10:51:3]Sending Data to texture:44 color:-65536
+[10:51:3]SpriteID:44
+[10:51:3][ERROR] ScriptNotFoundException TypeError: Cannot get property "tiles" of null in Script:Level at line number 178
 ------------------------------------------------------------------------------------------
-[23:1:9]Cleaning up Engine.
+[10:51:3]Stopped Timer:625302080
+------------------------------------------------------------------------------------------
+[10:51:3]File Extension:dragon.obj
+[10:51:3]verticies:300000
+[10:51:3]textures:300000
+[10:51:3]normals:300000
+[10:51:3]VAOid:243
+[10:51:3]Adding callback:base.util.Callback$$NashornJavaAdapter@700b9e6b
+[10:51:3]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/barrel.png
+[10:51:3]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
+[10:51:3]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\barrel.png
+[10:51:4][FPS: 309]
+[10:51:5][FPS: 497]
+[10:51:6][FPS: 529]
+[10:51:7][FPS: 548]
+[10:51:8][FPS: 558]
+[10:51:9][FPS: 555]
+[10:51:10][FPS: 576]
+[10:51:11][FPS: 600]
+[10:51:12][FPS: 618]
+[10:51:13][FPS: 615]
+[10:51:14][FPS: 686]
+[10:51:15][FPS: 678]
+[10:51:16][FPS: 707]
+[10:51:17][FPS: 699]
+[10:51:18][FPS: 716]
+[10:51:19][FPS: 717]
+[10:51:20][FPS: 725]
+[10:51:21][FPS: 713]
+[10:51:22][FPS: 709]
+[10:51:23][FPS: 727]
+[10:51:24][FPS: 714]
+[10:51:25][FPS: 703]
+[10:51:26][FPS: 686]
+[10:51:27][FPS: 693]
+[10:51:29][FPS: 538]
+[10:51:29][FPS: 336]
+[10:51:30][FPS: 618]
+------------------------------------------------------------------------------------------
+[10:51:31]Shutting down Engine.
+------------------------------------------------------------------------------------------
+[10:51:31]Deleting VAO:1
+[10:51:31]Deleting VAO:2
+[10:51:31]Deleting VAO:3
+[10:51:31]Deleting VAO:4
+[10:51:31]Deleting VAO:5
+[10:51:31]Deleting VAO:6
+[10:51:31]Deleting VAO:7
+[10:51:31]Deleting VAO:8
+[10:51:31]Deleting VAO:9
+[10:51:31]Deleting VAO:10
+[10:51:31]Deleting VAO:11
+[10:51:31]Deleting VAO:12
+[10:51:31]Deleting VAO:13
+[10:51:31]Deleting VAO:14
+[10:51:31]Deleting VAO:15
+[10:51:31]Deleting VAO:16
+[10:51:31]Deleting VAO:17
+[10:51:31]Deleting VAO:18
+[10:51:31]Deleting VAO:19
+[10:51:31]Deleting VAO:20
+[10:51:31]Deleting VAO:21
+[10:51:31]Deleting VAO:22
+[10:51:31]Deleting VAO:23
+[10:51:31]Deleting VAO:24
+[10:51:31]Deleting VAO:25
+[10:51:31]Deleting VAO:26
+[10:51:31]Deleting VAO:27
+[10:51:31]Deleting VAO:28
+[10:51:31]Deleting VAO:29
+[10:51:31]Deleting VAO:30
+[10:51:31]Deleting VAO:31
+[10:51:31]Deleting VAO:32
+[10:51:31]Deleting VAO:33
+[10:51:31]Deleting VAO:34
+[10:51:31]Deleting VAO:35
+[10:51:31]Deleting VAO:36
+[10:51:31]Deleting VAO:37
+[10:51:31]Deleting VAO:38
+[10:51:31]Deleting VAO:39
+[10:51:31]Deleting VAO:40
+[10:51:31]Deleting VAO:41
+[10:51:31]Deleting VAO:42
+[10:51:31]Deleting VAO:43
+[10:51:31]Deleting VAO:44
+[10:51:31]Deleting VAO:45
+[10:51:31]Deleting VAO:46
+[10:51:31]Deleting VAO:47
+[10:51:31]Deleting VAO:48
+[10:51:31]Deleting VAO:49
+[10:51:31]Deleting VAO:50
+[10:51:31]Deleting VAO:51
+[10:51:31]Deleting VAO:52
+[10:51:31]Deleting VAO:53
+[10:51:31]Deleting VAO:54
+[10:51:31]Deleting VAO:55
+[10:51:31]Deleting VAO:56
+[10:51:31]Deleting VAO:57
+[10:51:31]Deleting VAO:58
+[10:51:31]Deleting VAO:59
+[10:51:31]Deleting VAO:60
+[10:51:31]Deleting VAO:61
+[10:51:31]Deleting VAO:62
+[10:51:31]Deleting VAO:63
+[10:51:31]Deleting VAO:64
+[10:51:31]Deleting VAO:65
+[10:51:31]Deleting VAO:66
+[10:51:31]Deleting VAO:67
+[10:51:31]Deleting VAO:68
+[10:51:31]Deleting VAO:69
+[10:51:31]Deleting VAO:70
+[10:51:31]Deleting VAO:71
+[10:51:31]Deleting VAO:72
+[10:51:31]Deleting VAO:73
+[10:51:31]Deleting VAO:74
+[10:51:31]Deleting VAO:75
+[10:51:31]Deleting VAO:76
+[10:51:31]Deleting VAO:77
+[10:51:31]Deleting VAO:78
+[10:51:31]Deleting VAO:79
+[10:51:31]Deleting VAO:80
+[10:51:31]Deleting VAO:81
+[10:51:31]Deleting VAO:82
+[10:51:31]Deleting VAO:83
+[10:51:31]Deleting VAO:84
+[10:51:31]Deleting VAO:85
+[10:51:31]Deleting VAO:86
+[10:51:31]Deleting VAO:87
+[10:51:31]Deleting VAO:88
+[10:51:31]Deleting VAO:89
+[10:51:31]Deleting VAO:90
+[10:51:31]Deleting VAO:91
+[10:51:31]Deleting VAO:92
+[10:51:31]Deleting VAO:93
+[10:51:31]Deleting VAO:94
+[10:51:31]Deleting VAO:95
+[10:51:31]Deleting VAO:96
+[10:51:31]Deleting VAO:97
+[10:51:31]Deleting VAO:98
+[10:51:31]Deleting VAO:99
+[10:51:31]Deleting VAO:100
+[10:51:31]Deleting VAO:101
+[10:51:31]Deleting VAO:102
+[10:51:31]Deleting VAO:103
+[10:51:31]Deleting VAO:104
+[10:51:31]Deleting VAO:105
+[10:51:31]Deleting VAO:106
+[10:51:31]Deleting VAO:107
+[10:51:31]Deleting VAO:108
+[10:51:31]Deleting VAO:109
+[10:51:31]Deleting VAO:110
+[10:51:31]Deleting VAO:111
+[10:51:31]Deleting VAO:112
+[10:51:31]Deleting VAO:113
+[10:51:31]Deleting VAO:114
+[10:51:31]Deleting VAO:115
+[10:51:31]Deleting VAO:116
+[10:51:31]Deleting VAO:117
+[10:51:31]Deleting VAO:118
+[10:51:31]Deleting VAO:119
+[10:51:31]Deleting VAO:120
+[10:51:31]Deleting VAO:121
+[10:51:31]Deleting VAO:122
+[10:51:31]Deleting VAO:123
+[10:51:31]Deleting VAO:124
+[10:51:31]Deleting VAO:125
+[10:51:31]Deleting VAO:126
+[10:51:31]Deleting VAO:127
+[10:51:31]Deleting VAO:128
+[10:51:31]Deleting VAO:129
+[10:51:31]Deleting VAO:130
+[10:51:31]Deleting VAO:131
+[10:51:31]Deleting VAO:132
+[10:51:31]Deleting VAO:133
+[10:51:31]Deleting VAO:134
+[10:51:31]Deleting VAO:135
+[10:51:31]Deleting VAO:136
+[10:51:31]Deleting VAO:137
+[10:51:31]Deleting VAO:138
+[10:51:31]Deleting VAO:139
+[10:51:31]Deleting VAO:140
+[10:51:31]Deleting VAO:141
+[10:51:31]Deleting VAO:142
+[10:51:31]Deleting VAO:143
+[10:51:31]Deleting VAO:144
+[10:51:31]Deleting VAO:145
+[10:51:31]Deleting VAO:146
+[10:51:31]Deleting VAO:147
+[10:51:31]Deleting VAO:148
+[10:51:31]Deleting VAO:149
+[10:51:31]Deleting VAO:150
+[10:51:31]Deleting VAO:151
+[10:51:31]Deleting VAO:152
+[10:51:31]Deleting VAO:153
+[10:51:31]Deleting VAO:154
+[10:51:31]Deleting VAO:155
+[10:51:31]Deleting VAO:156
+[10:51:31]Deleting VAO:157
+[10:51:31]Deleting VAO:158
+[10:51:31]Deleting VAO:159
+[10:51:31]Deleting VAO:160
+[10:51:31]Deleting VAO:161
+[10:51:31]Deleting VAO:162
+[10:51:31]Deleting VAO:163
+[10:51:31]Deleting VAO:164
+[10:51:31]Deleting VAO:165
+[10:51:31]Deleting VAO:166
+[10:51:31]Deleting VAO:167
+[10:51:31]Deleting VAO:168
+[10:51:31]Deleting VAO:169
+[10:51:31]Deleting VAO:170
+[10:51:31]Deleting VAO:171
+[10:51:31]Deleting VAO:172
+[10:51:31]Deleting VAO:173
+[10:51:31]Deleting VAO:174
+[10:51:31]Deleting VAO:175
+[10:51:31]Deleting VAO:176
+[10:51:31]Deleting VAO:177
+[10:51:31]Deleting VAO:178
+[10:51:31]Deleting VAO:179
+[10:51:31]Deleting VAO:180
+[10:51:31]Deleting VAO:181
+[10:51:31]Deleting VAO:182
+[10:51:31]Deleting VAO:183
+[10:51:31]Deleting VAO:184
+[10:51:31]Deleting VAO:185
+[10:51:31]Deleting VAO:186
+[10:51:31]Deleting VAO:187
+[10:51:31]Deleting VAO:188
+[10:51:31]Deleting VAO:189
+[10:51:31]Deleting VAO:190
+[10:51:31]Deleting VAO:191
+[10:51:31]Deleting VAO:192
+[10:51:31]Deleting VAO:193
+[10:51:31]Deleting VAO:194
+[10:51:31]Deleting VAO:195
+[10:51:31]Deleting VAO:196
+[10:51:31]Deleting VAO:197
+[10:51:31]Deleting VAO:198
+[10:51:31]Deleting VAO:199
+[10:51:31]Deleting VAO:200
+[10:51:31]Deleting VAO:201
+[10:51:31]Deleting VAO:202
+[10:51:31]Deleting VAO:203
+[10:51:31]Deleting VAO:204
+[10:51:31]Deleting VAO:205
+[10:51:31]Deleting VAO:206
+[10:51:31]Deleting VAO:207
+[10:51:31]Deleting VAO:208
+[10:51:31]Deleting VAO:209
+[10:51:31]Deleting VAO:210
+[10:51:31]Deleting VAO:211
+[10:51:31]Deleting VAO:212
+[10:51:31]Deleting VAO:213
+[10:51:31]Deleting VAO:214
+[10:51:31]Deleting VAO:215
+[10:51:31]Deleting VAO:216
+[10:51:31]Deleting VAO:217
+[10:51:31]Deleting VAO:218
+[10:51:31]Deleting VAO:219
+[10:51:31]Deleting VAO:220
+[10:51:31]Deleting VAO:221
+[10:51:31]Deleting VAO:222
+[10:51:31]Deleting VAO:223
+[10:51:31]Deleting VAO:224
+[10:51:31]Deleting VAO:225
+[10:51:31]Deleting VAO:226
+[10:51:31]Deleting VAO:227
+[10:51:31]Deleting VAO:228
+[10:51:31]Deleting VAO:229
+[10:51:31]Deleting VAO:230
+[10:51:31]Deleting VAO:231
+[10:51:31]Deleting VAO:232
+[10:51:31]Deleting VAO:233
+[10:51:31]Deleting VAO:234
+[10:51:31]Deleting VAO:235
+[10:51:31]Deleting VAO:236
+[10:51:31]Deleting VAO:237
+[10:51:31]Deleting VAO:238
+[10:51:31]Deleting VAO:239
+[10:51:31]Deleting VAO:240
+[10:51:31]Deleting VAO:241
+[10:51:31]Deleting VAO:242
+[10:51:31]Deleting VAO:243
+[10:51:31]Deleting VBO:1
+[10:51:31]Deleting VBO:2
+[10:51:31]Deleting VBO:3
+[10:51:31]Deleting VBO:4
+[10:51:31]Deleting VBO:5
+[10:51:31]Deleting VBO:6
+[10:51:31]Deleting VBO:7
+[10:51:31]Deleting VBO:8
+[10:51:31]Deleting VBO:9
+[10:51:31]Deleting VBO:10
+[10:51:31]Deleting VBO:11
+[10:51:31]Deleting VBO:12
+[10:51:31]Deleting VBO:13
+[10:51:31]Deleting VBO:14
+[10:51:31]Deleting VBO:15
+[10:51:31]Deleting VBO:16
+[10:51:31]Deleting VBO:17
+[10:51:31]Deleting VBO:18
+[10:51:31]Deleting VBO:19
+[10:51:31]Deleting VBO:20
+[10:51:31]Deleting VBO:21
+[10:51:31]Deleting VBO:22
+[10:51:31]Deleting VBO:23
+[10:51:31]Deleting VBO:24
+[10:51:31]Deleting VBO:25
+[10:51:31]Deleting VBO:26
+[10:51:31]Deleting VBO:27
+[10:51:31]Deleting VBO:28
+[10:51:31]Deleting VBO:29
+[10:51:31]Deleting VBO:30
+[10:51:31]Deleting VBO:31
+[10:51:31]Deleting VBO:32
+[10:51:31]Deleting VBO:33
+[10:51:31]Deleting VBO:34
+[10:51:31]Deleting VBO:35
+[10:51:31]Deleting VBO:36
+[10:51:31]Deleting VBO:37
+[10:51:31]Deleting VBO:38
+[10:51:31]Deleting VBO:39
+[10:51:31]Deleting VBO:40
+[10:51:31]Deleting VBO:41
+[10:51:31]Deleting VBO:42
+[10:51:31]Deleting VBO:43
+[10:51:31]Deleting VBO:44
+[10:51:31]Deleting VBO:45
+[10:51:31]Deleting VBO:46
+[10:51:31]Deleting VBO:47
+[10:51:31]Deleting VBO:48
+[10:51:31]Deleting VBO:49
+[10:51:31]Deleting VBO:50
+[10:51:31]Deleting VBO:51
+[10:51:31]Deleting VBO:52
+[10:51:31]Deleting VBO:53
+[10:51:31]Deleting VBO:54
+[10:51:31]Deleting VBO:55
+[10:51:31]Deleting VBO:56
+[10:51:31]Deleting VBO:57
+[10:51:31]Deleting VBO:58
+[10:51:31]Deleting VBO:59
+[10:51:31]Deleting VBO:60
+[10:51:31]Deleting VBO:61
+[10:51:31]Deleting VBO:62
+[10:51:31]Deleting VBO:63
+[10:51:31]Deleting VBO:64
+[10:51:31]Deleting VBO:65
+[10:51:31]Deleting VBO:66
+[10:51:31]Deleting VBO:67
+[10:51:31]Deleting VBO:68
+[10:51:31]Deleting VBO:69
+[10:51:31]Deleting VBO:70
+[10:51:31]Deleting VBO:71
+[10:51:31]Deleting VBO:72
+[10:51:31]Deleting VBO:73
+[10:51:31]Deleting VBO:74
+[10:51:31]Deleting VBO:75
+[10:51:31]Deleting VBO:76
+[10:51:31]Deleting VBO:77
+[10:51:31]Deleting VBO:78
+[10:51:31]Deleting VBO:79
+[10:51:31]Deleting VBO:80
+[10:51:31]Deleting VBO:81
+[10:51:31]Deleting VBO:82
+[10:51:31]Deleting VBO:83
+[10:51:31]Deleting VBO:84
+[10:51:31]Deleting VBO:85
+[10:51:31]Deleting VBO:86
+[10:51:31]Deleting VBO:87
+[10:51:31]Deleting VBO:88
+[10:51:31]Deleting VBO:89
+[10:51:31]Deleting VBO:90
+[10:51:31]Deleting VBO:91
+[10:51:31]Deleting VBO:92
+[10:51:31]Deleting VBO:93
+[10:51:31]Deleting VBO:94
+[10:51:31]Deleting VBO:95
+[10:51:31]Deleting VBO:96
+[10:51:31]Deleting VBO:97
+[10:51:31]Deleting VBO:98
+[10:51:31]Deleting VBO:99
+[10:51:31]Deleting VBO:100
+[10:51:31]Deleting VBO:101
+[10:51:31]Deleting VBO:102
+[10:51:31]Deleting VBO:103
+[10:51:31]Deleting VBO:104
+[10:51:31]Deleting VBO:105
+[10:51:31]Deleting VBO:106
+[10:51:31]Deleting VBO:107
+[10:51:31]Deleting VBO:108
+[10:51:31]Deleting VBO:109
+[10:51:31]Deleting VBO:110
+[10:51:31]Deleting VBO:111
+[10:51:31]Deleting VBO:112
+[10:51:31]Deleting VBO:113
+[10:51:31]Deleting VBO:114
+[10:51:31]Deleting VBO:115
+[10:51:31]Deleting VBO:116
+[10:51:31]Deleting VBO:117
+[10:51:31]Deleting VBO:118
+[10:51:31]Deleting VBO:119
+[10:51:31]Deleting VBO:120
+[10:51:31]Deleting VBO:121
+[10:51:31]Deleting VBO:122
+[10:51:31]Deleting VBO:123
+[10:51:31]Deleting VBO:124
+[10:51:31]Deleting VBO:125
+[10:51:31]Deleting VBO:126
+[10:51:31]Deleting VBO:127
+[10:51:31]Deleting VBO:128
+[10:51:31]Deleting VBO:129
+[10:51:31]Deleting VBO:130
+[10:51:31]Deleting VBO:131
+[10:51:31]Deleting VBO:132
+[10:51:31]Deleting VBO:133
+[10:51:31]Deleting VBO:134
+[10:51:31]Deleting VBO:135
+[10:51:31]Deleting VBO:136
+[10:51:31]Deleting VBO:137
+[10:51:31]Deleting VBO:138
+[10:51:31]Deleting VBO:139
+[10:51:31]Deleting VBO:140
+[10:51:31]Deleting VBO:141
+[10:51:31]Deleting VBO:142
+[10:51:31]Deleting VBO:143
+[10:51:31]Deleting VBO:144
+[10:51:31]Deleting VBO:145
+[10:51:31]Deleting VBO:146
+[10:51:31]Deleting VBO:147
+[10:51:31]Deleting VBO:148
+[10:51:31]Deleting VBO:149
+[10:51:31]Deleting VBO:150
+[10:51:31]Deleting VBO:151
+[10:51:31]Deleting VBO:152
+[10:51:31]Deleting VBO:153
+[10:51:31]Deleting VBO:154
+[10:51:31]Deleting VBO:155
+[10:51:31]Deleting VBO:156
+[10:51:31]Deleting VBO:157
+[10:51:31]Deleting VBO:158
+[10:51:31]Deleting VBO:159
+[10:51:31]Deleting VBO:160
+[10:51:31]Deleting VBO:161
+[10:51:31]Deleting VBO:162
+[10:51:31]Deleting VBO:163
+[10:51:31]Deleting VBO:164
+[10:51:31]Deleting VBO:165
+[10:51:31]Deleting VBO:166
+[10:51:31]Deleting VBO:167
+[10:51:31]Deleting VBO:168
+[10:51:31]Deleting VBO:169
+[10:51:31]Deleting VBO:170
+[10:51:31]Deleting VBO:171
+[10:51:31]Deleting VBO:172
+[10:51:31]Deleting VBO:173
+[10:51:31]Deleting VBO:174
+[10:51:31]Deleting VBO:175
+[10:51:31]Deleting VBO:176
+[10:51:31]Deleting VBO:177
+[10:51:31]Deleting VBO:178
+[10:51:31]Deleting VBO:179
+[10:51:31]Deleting VBO:180
+[10:51:31]Deleting VBO:181
+[10:51:31]Deleting VBO:182
+[10:51:31]Deleting VBO:183
+[10:51:31]Deleting VBO:184
+[10:51:31]Deleting VBO:185
+[10:51:31]Deleting VBO:186
+[10:51:31]Deleting VBO:187
+[10:51:31]Deleting VBO:188
+[10:51:31]Deleting VBO:189
+[10:51:31]Deleting VBO:190
+[10:51:31]Deleting VBO:191
+[10:51:31]Deleting VBO:192
+[10:51:31]Deleting VBO:193
+[10:51:31]Deleting VBO:194
+[10:51:31]Deleting VBO:195
+[10:51:31]Deleting VBO:196
+[10:51:31]Deleting VBO:197
+[10:51:31]Deleting VBO:198
+[10:51:31]Deleting VBO:199
+[10:51:31]Deleting VBO:200
+[10:51:31]Deleting VBO:201
+[10:51:31]Deleting VBO:202
+[10:51:31]Deleting VBO:203
+[10:51:31]Deleting VBO:204
+[10:51:31]Deleting VBO:205
+[10:51:31]Deleting VBO:206
+[10:51:31]Deleting VBO:207
+[10:51:31]Deleting VBO:208
+[10:51:31]Deleting VBO:209
+[10:51:31]Deleting VBO:210
+[10:51:31]Deleting VBO:211
+[10:51:31]Deleting VBO:212
+[10:51:31]Deleting VBO:213
+[10:51:31]Deleting VBO:214
+[10:51:31]Deleting VBO:215
+[10:51:31]Deleting VBO:216
+[10:51:31]Deleting VBO:217
+[10:51:31]Deleting VBO:218
+[10:51:31]Deleting VBO:219
+[10:51:31]Deleting VBO:220
+[10:51:31]Deleting VBO:221
+[10:51:31]Deleting VBO:222
+[10:51:31]Deleting VBO:223
+[10:51:31]Deleting VBO:224
+[10:51:31]Deleting VBO:225
+[10:51:31]Deleting VBO:226
+[10:51:31]Deleting VBO:227
+[10:51:31]Deleting VBO:228
+[10:51:31]Deleting VBO:229
+[10:51:31]Deleting VBO:230
+[10:51:31]Deleting VBO:231
+[10:51:31]Deleting VBO:232
+[10:51:31]Deleting VBO:233
+[10:51:31]Deleting VBO:234
+[10:51:31]Deleting VBO:235
+[10:51:31]Deleting VBO:236
+[10:51:31]Deleting VBO:237
+[10:51:31]Deleting VBO:238
+[10:51:31]Deleting VBO:239
+[10:51:31]Deleting VBO:240
+[10:51:31]Deleting VBO:241
+[10:51:31]Deleting VBO:242
+[10:51:31]Deleting VBO:243
+[10:51:31]Deleting VBO:244
+[10:51:31]Deleting VBO:245
+[10:51:31]Deleting VBO:246
+[10:51:31]Deleting VBO:247
+[10:51:31]Deleting VBO:248
+[10:51:31]Deleting VBO:249
+[10:51:31]Deleting VBO:250
+[10:51:31]Deleting VBO:251
+[10:51:31]Deleting VBO:252
+[10:51:31]Deleting VBO:253
+[10:51:31]Deleting VBO:254
+[10:51:31]Deleting VBO:255
+[10:51:31]Deleting VBO:256
+[10:51:31]Deleting VBO:257
+[10:51:31]Deleting VBO:258
+[10:51:31]Deleting VBO:259
+[10:51:31]Deleting VBO:260
+[10:51:31]Deleting VBO:261
+[10:51:31]Deleting VBO:262
+[10:51:31]Deleting VBO:263
+[10:51:31]Deleting VBO:264
+[10:51:31]Deleting VBO:265
+[10:51:31]Deleting VBO:266
+[10:51:31]Deleting VBO:267
+[10:51:31]Deleting VBO:268
+[10:51:31]Deleting VBO:269
+[10:51:31]Deleting VBO:270
+[10:51:31]Deleting VBO:271
+[10:51:31]Deleting VBO:272
+[10:51:31]Deleting VBO:273
+[10:51:31]Deleting VBO:274
+[10:51:31]Deleting VBO:275
+[10:51:31]Deleting VBO:276
+[10:51:31]Deleting VBO:277
+[10:51:31]Deleting VBO:278
+[10:51:31]Deleting VBO:279
+[10:51:31]Deleting VBO:280
+[10:51:31]Deleting VBO:281
+[10:51:31]Deleting VBO:282
+[10:51:31]Deleting VBO:283
+[10:51:31]Deleting VBO:284
+[10:51:31]Deleting VBO:285
+[10:51:31]Deleting VBO:286
+[10:51:31]Deleting VBO:287
+[10:51:31]Deleting VBO:288
+[10:51:31]Deleting VBO:289
+[10:51:31]Deleting VBO:290
+[10:51:31]Deleting VBO:291
+[10:51:31]Deleting VBO:292
+[10:51:31]Deleting VBO:293
+[10:51:31]Deleting VBO:294
+[10:51:31]Deleting VBO:295
+[10:51:31]Deleting VBO:296
+[10:51:31]Deleting VBO:297
+[10:51:31]Deleting VBO:298
+[10:51:31]Deleting VBO:299
+[10:51:31]Deleting VBO:300
+[10:51:31]Deleting VBO:301
+[10:51:31]Deleting VBO:302
+[10:51:31]Deleting VBO:303
+[10:51:31]Deleting VBO:304
+[10:51:31]Deleting VBO:305
+[10:51:31]Deleting VBO:306
+[10:51:31]Deleting VBO:307
+[10:51:31]Deleting VBO:308
+[10:51:31]Deleting VBO:309
+[10:51:31]Deleting VBO:310
+[10:51:31]Deleting VBO:311
+[10:51:31]Deleting VBO:312
+[10:51:31]Deleting VBO:313
+[10:51:31]Deleting VBO:314
+[10:51:31]Deleting VBO:315
+[10:51:31]Deleting VBO:316
+[10:51:31]Deleting VBO:317
+[10:51:31]Deleting VBO:318
+[10:51:31]Deleting VBO:319
+[10:51:31]Deleting VBO:320
+[10:51:31]Deleting VBO:321
+[10:51:31]Deleting VBO:322
+[10:51:31]Deleting VBO:323
+[10:51:31]Deleting VBO:324
+[10:51:31]Deleting VBO:325
+[10:51:31]Deleting VBO:326
+[10:51:31]Deleting VBO:327
+[10:51:31]Deleting VBO:328
+[10:51:31]Deleting VBO:329
+[10:51:31]Deleting VBO:330
+[10:51:31]Deleting VBO:331
+[10:51:31]Deleting VBO:332
+[10:51:31]Deleting VBO:333
+[10:51:31]Deleting VBO:334
+[10:51:31]Deleting VBO:335
+[10:51:31]Deleting VBO:336
+[10:51:31]Deleting VBO:337
+[10:51:31]Deleting VBO:338
+[10:51:31]Deleting VBO:339
+[10:51:31]Deleting VBO:340
+[10:51:31]Deleting VBO:341
+[10:51:31]Deleting VBO:342
+[10:51:31]Deleting VBO:343
+[10:51:31]Deleting VBO:344
+[10:51:31]Deleting VBO:345
+[10:51:31]Deleting VBO:346
+[10:51:31]Deleting VBO:347
+[10:51:31]Deleting VBO:348
+[10:51:31]Deleting VBO:349
+[10:51:31]Deleting VBO:350
+[10:51:31]Deleting VBO:351
+[10:51:31]Deleting VBO:352
+[10:51:31]Deleting VBO:353
+[10:51:31]Deleting VBO:354
+[10:51:31]Deleting VBO:355
+[10:51:31]Deleting VBO:356
+[10:51:31]Deleting VBO:357
+[10:51:31]Deleting VBO:358
+[10:51:31]Deleting VBO:359
+[10:51:31]Deleting VBO:360
+[10:51:31]Deleting VBO:361
+[10:51:31]Deleting VBO:362
+[10:51:31]Deleting VBO:363
+[10:51:31]Deleting VBO:364
+[10:51:31]Deleting VBO:365
+[10:51:31]Deleting VBO:366
+[10:51:31]Deleting VBO:367
+[10:51:31]Deleting VBO:368
+[10:51:31]Deleting VBO:369
+[10:51:31]Deleting VBO:370
+[10:51:31]Deleting VBO:371
+[10:51:31]Deleting VBO:372
+[10:51:31]Deleting VBO:373
+[10:51:31]Deleting VBO:374
+[10:51:31]Deleting VBO:375
+[10:51:31]Deleting VBO:376
+[10:51:31]Deleting VBO:377
+[10:51:31]Deleting VBO:378
+[10:51:31]Deleting VBO:379
+[10:51:31]Deleting VBO:380
+[10:51:31]Deleting VBO:381
+[10:51:31]Deleting VBO:382
+[10:51:31]Deleting VBO:383
+[10:51:31]Deleting VBO:384
+[10:51:31]Deleting VBO:385
+[10:51:31]Deleting VBO:386
+[10:51:31]Deleting VBO:387
+[10:51:31]Deleting VBO:388
+[10:51:31]Deleting VBO:389
+[10:51:31]Deleting VBO:390
+[10:51:31]Deleting VBO:391
+[10:51:31]Deleting VBO:392
+[10:51:31]Deleting VBO:393
+[10:51:31]Deleting VBO:394
+[10:51:31]Deleting VBO:395
+[10:51:31]Deleting VBO:396
+[10:51:31]Deleting VBO:397
+[10:51:31]Deleting VBO:398
+[10:51:31]Deleting VBO:399
+[10:51:31]Deleting VBO:400
+[10:51:31]Deleting VBO:401
+[10:51:31]Deleting VBO:402
+[10:51:31]Deleting VBO:403
+[10:51:31]Deleting VBO:404
+[10:51:31]Deleting VBO:405
+[10:51:31]Deleting VBO:406
+[10:51:31]Deleting VBO:407
+[10:51:31]Deleting VBO:408
+[10:51:31]Deleting VBO:409
+[10:51:31]Deleting VBO:410
+[10:51:31]Deleting VBO:411
+[10:51:31]Deleting VBO:412
+[10:51:31]Deleting VBO:413
+[10:51:31]Deleting VBO:414
+[10:51:31]Deleting VBO:415
+[10:51:31]Deleting VBO:416
+[10:51:31]Deleting VBO:417
+[10:51:31]Deleting VBO:418
+[10:51:31]Deleting VBO:419
+[10:51:31]Deleting VBO:420
+[10:51:31]Deleting VBO:421
+[10:51:31]Deleting VBO:422
+[10:51:31]Deleting VBO:423
+[10:51:31]Deleting VBO:424
+[10:51:31]Deleting VBO:425
+[10:51:31]Deleting VBO:426
+[10:51:31]Deleting VBO:427
+[10:51:31]Deleting VBO:428
+[10:51:31]Deleting VBO:429
+[10:51:31]Deleting VBO:430
+[10:51:31]Deleting VBO:431
+[10:51:31]Deleting VBO:432
+[10:51:31]Deleting VBO:433
+[10:51:31]Deleting VBO:434
+[10:51:31]Deleting VBO:435
+[10:51:31]Deleting VBO:436
+[10:51:31]Deleting VBO:437
+[10:51:31]Deleting VBO:438
+[10:51:31]Deleting VBO:439
+[10:51:31]Deleting VBO:440
+[10:51:31]Deleting VBO:441
+[10:51:31]Deleting VBO:442
+[10:51:31]Deleting VBO:443
+[10:51:31]Deleting VBO:444
+[10:51:31]Deleting VBO:445
+[10:51:31]Deleting VBO:446
+[10:51:31]Deleting VBO:447
+[10:51:31]Deleting VBO:448
+[10:51:31]Deleting VBO:449
+[10:51:31]Deleting VBO:450
+[10:51:31]Deleting VBO:451
+[10:51:31]Deleting VBO:452
+[10:51:31]Deleting VBO:453
+[10:51:31]Deleting VBO:454
+[10:51:31]Deleting VBO:455
+[10:51:31]Deleting VBO:456
+[10:51:31]Deleting VBO:457
+[10:51:31]Deleting VBO:458
+[10:51:31]Deleting VBO:459
+[10:51:31]Deleting VBO:460
+[10:51:31]Deleting VBO:461
+[10:51:31]Deleting VBO:462
+[10:51:31]Deleting VBO:463
+[10:51:31]Deleting VBO:464
+[10:51:31]Deleting VBO:465
+[10:51:31]Deleting VBO:466
+[10:51:31]Deleting VBO:467
+[10:51:31]Deleting VBO:468
+[10:51:31]Deleting VBO:469
+[10:51:31]Deleting VBO:470
+[10:51:31]Deleting VBO:471
+[10:51:31]Deleting VBO:472
+[10:51:31]Deleting VBO:473
+[10:51:31]Deleting VBO:474
+[10:51:31]Deleting VBO:475
+[10:51:31]Deleting VBO:476
+[10:51:31]Deleting VBO:477
+[10:51:31]Deleting VBO:478
+[10:51:31]Deleting VBO:479
+[10:51:31]Deleting VBO:480
+[10:51:31]Deleting VBO:481
+[10:51:31]Deleting VBO:482
+[10:51:31]Deleting VBO:483
+[10:51:31]Deleting VBO:484
+[10:51:31]Deleting VBO:485
+[10:51:31]Deleting VBO:486
+[10:51:31]Deleting VBO:487
+[10:51:31]Deleting VBO:488
+[10:51:31]Deleting VBO:489
+[10:51:31]Deleting VBO:490
+[10:51:31]Deleting VBO:491
+[10:51:31]Deleting VBO:492
+[10:51:31]Deleting VBO:493
+[10:51:31]Deleting VBO:494
+[10:51:31]Deleting VBO:495
+[10:51:31]Deleting VBO:496
+[10:51:31]Deleting VBO:497
+[10:51:31]Deleting VBO:498
+[10:51:31]Deleting VBO:499
+[10:51:31]Deleting VBO:500
+[10:51:31]Deleting VBO:501
+[10:51:31]Deleting VBO:502
+[10:51:31]Deleting VBO:503
+[10:51:31]Deleting VBO:504
+[10:51:31]Deleting VBO:505
+[10:51:31]Deleting VBO:506
+[10:51:31]Deleting VBO:507
+[10:51:31]Deleting VBO:508
+[10:51:31]Deleting VBO:509
+[10:51:31]Deleting VBO:510
+[10:51:31]Deleting VBO:511
+[10:51:31]Deleting VBO:512
+[10:51:31]Deleting VBO:513
+[10:51:31]Deleting VBO:514
+[10:51:31]Deleting VBO:515
+[10:51:31]Deleting VBO:516
+[10:51:31]Deleting VBO:517
+[10:51:31]Deleting VBO:518
+[10:51:31]Deleting VBO:519
+[10:51:31]Deleting VBO:520
+[10:51:31]Deleting VBO:521
+[10:51:31]Deleting VBO:522
+[10:51:31]Deleting VBO:523
+[10:51:31]Deleting VBO:524
+[10:51:31]Deleting VBO:525
+[10:51:31]Deleting VBO:526
+[10:51:31]Deleting VBO:527
+[10:51:31]Deleting VBO:528
+[10:51:31]Deleting VBO:529
+[10:51:31]Deleting VBO:530
+[10:51:31]Deleting VBO:531
+[10:51:31]Deleting VBO:532
+[10:51:31]Deleting VBO:533
+[10:51:31]Deleting VBO:534
+[10:51:31]Deleting VBO:535
+[10:51:31]Deleting VBO:536
+[10:51:31]Deleting VBO:537
+[10:51:31]Deleting VBO:538
+[10:51:31]Deleting VBO:539
+[10:51:31]Deleting VBO:540
+[10:51:31]Deleting VBO:541
+[10:51:31]Deleting VBO:542
+[10:51:31]Deleting VBO:543
+[10:51:31]Deleting VBO:544
+[10:51:31]Deleting VBO:545
+[10:51:31]Deleting VBO:546
+[10:51:31]Deleting VBO:547
+[10:51:31]Deleting VBO:548
+[10:51:31]Deleting VBO:549
+[10:51:31]Deleting VBO:550
+[10:51:31]Deleting VBO:551
+[10:51:31]Deleting VBO:552
+[10:51:31]Deleting VBO:553
+[10:51:31]Deleting VBO:554
+[10:51:31]Deleting VBO:555
+[10:51:31]Deleting VBO:556
+[10:51:31]Deleting VBO:557
+[10:51:31]Deleting VBO:558
+[10:51:31]Deleting VBO:559
+[10:51:31]Deleting VBO:560
+[10:51:31]Deleting VBO:561
+[10:51:31]Deleting VBO:562
+[10:51:31]Deleting VBO:563
+[10:51:31]Deleting VBO:564
+[10:51:31]Deleting VBO:565
+[10:51:31]Deleting VBO:566
+[10:51:31]Deleting VBO:567
+[10:51:31]Deleting VBO:568
+[10:51:31]Deleting VBO:569
+[10:51:31]Deleting VBO:570
+[10:51:31]Deleting VBO:571
+[10:51:31]Deleting VBO:572
+[10:51:31]Deleting VBO:573
+[10:51:31]Deleting VBO:574
+[10:51:31]Deleting VBO:575
+[10:51:31]Deleting VBO:576
+[10:51:31]Deleting VBO:577
+[10:51:31]Deleting VBO:578
+[10:51:31]Deleting VBO:579
+[10:51:31]Deleting VBO:580
+[10:51:31]Deleting VBO:581
+[10:51:31]Deleting VBO:582
+[10:51:31]Deleting VBO:583
+[10:51:31]Deleting VBO:584
+[10:51:31]Deleting VBO:585
+[10:51:31]Deleting VBO:586
+[10:51:31]Deleting VBO:587
+[10:51:31]Deleting VBO:588
+[10:51:31]Deleting VBO:589
+[10:51:31]Deleting VBO:590
+[10:51:31]Deleting VBO:591
+[10:51:31]Deleting VBO:592
+[10:51:31]Deleting VBO:593
+[10:51:31]Deleting VBO:594
+[10:51:31]Deleting VBO:595
+[10:51:31]Deleting VBO:596
+[10:51:31]Deleting VBO:597
+[10:51:31]Deleting VBO:598
+[10:51:31]Deleting VBO:599
+[10:51:31]Deleting VBO:600
+[10:51:31]Deleting VBO:601
+[10:51:31]Deleting VBO:602
+[10:51:31]Deleting VBO:603
+[10:51:31]Deleting VBO:604
+[10:51:31]Deleting VBO:605
+[10:51:31]Deleting VBO:606
+[10:51:31]Deleting VBO:607
+[10:51:31]Deleting VBO:608
+[10:51:31]Deleting VBO:609
+[10:51:31]Deleting VBO:610
+[10:51:31]Deleting VBO:611
+[10:51:31]Deleting VBO:612
+[10:51:31]Deleting VBO:613
+[10:51:31]Deleting VBO:614
+[10:51:31]Deleting VBO:615
+[10:51:31]Deleting VBO:616
+[10:51:31]Deleting VBO:617
+[10:51:31]Deleting VBO:618
+[10:51:31]Deleting VBO:619
+[10:51:31]Deleting VBO:620
+[10:51:31]Deleting VBO:621
+[10:51:31]Deleting VBO:622
+[10:51:31]Deleting VBO:623
+[10:51:31]Deleting VBO:624
+[10:51:31]Deleting VBO:625
+[10:51:31]Deleting VBO:626
+[10:51:31]Deleting VBO:627
+[10:51:31]Deleting VBO:628
+[10:51:31]Deleting VBO:629
+[10:51:31]Deleting VBO:630
+[10:51:31]Deleting VBO:631
+[10:51:31]Deleting VBO:632
+[10:51:31]Deleting VBO:633
+[10:51:31]Deleting VBO:634
+[10:51:31]Deleting VBO:635
+[10:51:31]Deleting VBO:636
+[10:51:31]Deleting VBO:637
+[10:51:31]Deleting VBO:638
+[10:51:31]Deleting VBO:639
+[10:51:31]Deleting VBO:640
+[10:51:31]Deleting VBO:641
+[10:51:31]Deleting VBO:642
+[10:51:31]Deleting VBO:643
+[10:51:31]Deleting VBO:644
+[10:51:31]Deleting VBO:645
+[10:51:31]Deleting VBO:646
+[10:51:31]Deleting VBO:647
+[10:51:31]Deleting VBO:648
+[10:51:31]Deleting VBO:649
+[10:51:31]Deleting VBO:650
+[10:51:31]Deleting VBO:651
+[10:51:31]Deleting VBO:652
+[10:51:31]Deleting VBO:653
+[10:51:31]Deleting VBO:654
+[10:51:31]Deleting VBO:655
+[10:51:31]Deleting VBO:656
+[10:51:31]Deleting VBO:657
+[10:51:31]Deleting VBO:658
+[10:51:31]Deleting VBO:659
+[10:51:31]Deleting VBO:660
+[10:51:31]Deleting VBO:661
+[10:51:31]Deleting VBO:662
+[10:51:31]Deleting VBO:663
+[10:51:31]Deleting VBO:664
+[10:51:31]Deleting VBO:665
+[10:51:31]Deleting VBO:666
+[10:51:31]Deleting VBO:667
+[10:51:31]Deleting VBO:668
+[10:51:31]Deleting VBO:669
+[10:51:31]Deleting VBO:670
+[10:51:31]Deleting VBO:671
+[10:51:31]Deleting VBO:672
+[10:51:31]Deleting VBO:673
+[10:51:31]Deleting VBO:674
+[10:51:31]Deleting VBO:675
+[10:51:31]Deleting VBO:676
+[10:51:31]Deleting VBO:677
+[10:51:31]Deleting VBO:678
+[10:51:31]Deleting VBO:679
+[10:51:31]Deleting VBO:680
+[10:51:31]Deleting VBO:681
+[10:51:31]Deleting VBO:682
+[10:51:31]Deleting VBO:683
+[10:51:31]Deleting VBO:684
+[10:51:31]Deleting VBO:685
+[10:51:31]Deleting VBO:686
+[10:51:31]Deleting VBO:687
+[10:51:31]Deleting VBO:688
+[10:51:31]Deleting VBO:689
+[10:51:31]Deleting VBO:690
+[10:51:31]Deleting VBO:691
+[10:51:31]Deleting VBO:692
+[10:51:31]Deleting VBO:693
+[10:51:31]Deleting VBO:694
+[10:51:31]Deleting VBO:695
+[10:51:31]Deleting VBO:696
+[10:51:31]Deleting VBO:697
+[10:51:31]Deleting VBO:698
+[10:51:31]Deleting VBO:699
+[10:51:31]Deleting VBO:700
+[10:51:31]Deleting VBO:701
+[10:51:31]Deleting VBO:702
+[10:51:31]Deleting VBO:703
+[10:51:31]Deleting VBO:704
+[10:51:31]Deleting VBO:705
+[10:51:31]Deleting VBO:706
+[10:51:31]Deleting VBO:707
+[10:51:31]Deleting VBO:708
+[10:51:31]Deleting VBO:709
+[10:51:31]Deleting VBO:710
+[10:51:31]Deleting VBO:711
+[10:51:31]Deleting VBO:712
+[10:51:31]Deleting VBO:713
+[10:51:31]Deleting VBO:714
+[10:51:31]Deleting VBO:715
+[10:51:31]Deleting VBO:716
+[10:51:31]Deleting VBO:717
+[10:51:31]Deleting VBO:718
+[10:51:31]Deleting VBO:719
+[10:51:31]Deleting VBO:720
+[10:51:31]Deleting VBO:721
+[10:51:31]Deleting VBO:722
+[10:51:31]Deleting VBO:723
+[10:51:31]Deleting VBO:724
+[10:51:31]Deleting VBO:725
+[10:51:31]Deleting VBO:726
+[10:51:31]Deleting VBO:727
+[10:51:31]Deleting VBO:728
+[10:51:31]Deleting VBO:729
+[10:51:31]Deleting VBO:730
+[10:51:31]Deleting VBO:731
+[10:51:31]Deleting VBO:732
+[10:51:31]Deleting VBO:733
+[10:51:31]Deleting VBO:734
+[10:51:31]Deleting VBO:735
+[10:51:31]Deleting VBO:736
+[10:51:31]Deleting VBO:737
+[10:51:31]Deleting VBO:738
+[10:51:31]Deleting VBO:739
+[10:51:31]Deleting VBO:740
+[10:51:31]Deleting VBO:741
+[10:51:31]Deleting VBO:742
+[10:51:31]Deleting VBO:743
+[10:51:31]Deleting VBO:744
+[10:51:31]Deleting VBO:745
+[10:51:31]Deleting VBO:746
+[10:51:31]Deleting VBO:747
+[10:51:31]Deleting VBO:748
+[10:51:31]Deleting VBO:749
+[10:51:31]Deleting VBO:750
+[10:51:31]Deleting VBO:751
+[10:51:31]Deleting VBO:752
+[10:51:31]Deleting VBO:753
+[10:51:31]Deleting VBO:754
+[10:51:31]Deleting VBO:755
+[10:51:31]Deleting VBO:756
+[10:51:31]Deleting VBO:757
+[10:51:31]Deleting VBO:758
+[10:51:31]Deleting VBO:759
+[10:51:31]Deleting VBO:760
+[10:51:31]Deleting VBO:761
+[10:51:31]Deleting VBO:762
+[10:51:31]Deleting VBO:763
+[10:51:31]Deleting VBO:764
+[10:51:31]Deleting VBO:765
+[10:51:31]Deleting VBO:766
+[10:51:31]Deleting VBO:767
+[10:51:31]Deleting VBO:768
+[10:51:31]Deleting VBO:769
+[10:51:31]Deleting VBO:770
+[10:51:31]Deleting VBO:771
+[10:51:31]Deleting VBO:772
+[10:51:31]Deleting VBO:773
+[10:51:31]Deleting VBO:774
+[10:51:31]Deleting VBO:775
+[10:51:31]Deleting VBO:776
+[10:51:31]Deleting VBO:777
+[10:51:31]Deleting VBO:778
+[10:51:31]Deleting VBO:779
+[10:51:31]Deleting VBO:780
+[10:51:31]Deleting VBO:781
+[10:51:31]Deleting VBO:782
+[10:51:31]Deleting VBO:783
+[10:51:31]Deleting VBO:784
+[10:51:31]Deleting VBO:785
+[10:51:31]Deleting VBO:786
+[10:51:31]Deleting VBO:787
+[10:51:31]Deleting VBO:788
+[10:51:31]Deleting VBO:789
+[10:51:31]Deleting VBO:790
+[10:51:31]Deleting VBO:791
+[10:51:31]Deleting VBO:792
+[10:51:31]Deleting VBO:793
+[10:51:31]Deleting VBO:794
+[10:51:31]Deleting VBO:795
+[10:51:31]Deleting VBO:796
+[10:51:31]Deleting VBO:797
+[10:51:31]Deleting VBO:798
+[10:51:31]Deleting VBO:799
+[10:51:31]Deleting VBO:800
+[10:51:31]Deleting VBO:801
+[10:51:31]Deleting VBO:802
+[10:51:31]Deleting VBO:803
+[10:51:31]Deleting VBO:804
+[10:51:31]Deleting VBO:805
+[10:51:31]Deleting VBO:806
+[10:51:31]Deleting VBO:807
+[10:51:31]Deleting VBO:808
+[10:51:31]Deleting VBO:809
+[10:51:31]Deleting VBO:810
+[10:51:31]Deleting VBO:811
+[10:51:31]Deleting VBO:812
+[10:51:31]Deleting VBO:813
+[10:51:31]Deleting VBO:814
+[10:51:31]Deleting VBO:815
+[10:51:31]Deleting VBO:816
+[10:51:31]Deleting VBO:817
+[10:51:31]Deleting VBO:818
+[10:51:31]Deleting VBO:819
+[10:51:31]Deleting VBO:820
+[10:51:31]Deleting VBO:821
+[10:51:31]Deleting VBO:822
+[10:51:31]Deleting VBO:823
+[10:51:31]Deleting VBO:824
+[10:51:31]Deleting VBO:825
+[10:51:31]Deleting VBO:826
+[10:51:31]Deleting VBO:827
+[10:51:31]Deleting VBO:828
+[10:51:31]Deleting VBO:829
+[10:51:31]Deleting VBO:830
+[10:51:31]Deleting VBO:831
+[10:51:31]Deleting VBO:832
+[10:51:31]Deleting VBO:833
+[10:51:31]Deleting VBO:834
+[10:51:31]Deleting VBO:835
+[10:51:31]Deleting VBO:836
+[10:51:31]Deleting VBO:837
+[10:51:31]Deleting VBO:838
+[10:51:31]Deleting VBO:839
+[10:51:31]Deleting VBO:840
+[10:51:31]Deleting VBO:841
+[10:51:31]Deleting VBO:842
+[10:51:31]Deleting VBO:843
+[10:51:31]Deleting VBO:844
+[10:51:31]Deleting VBO:845
+[10:51:31]Deleting VBO:846
+[10:51:31]Deleting VBO:847
+[10:51:31]Deleting VBO:848
+[10:51:31]Deleting VBO:849
+[10:51:31]Deleting VBO:850
+[10:51:31]Deleting VBO:851
+[10:51:31]Deleting VBO:852
+[10:51:31]Deleting VBO:853
+[10:51:31]Deleting VBO:854
+[10:51:31]Deleting VBO:855
+[10:51:31]Deleting VBO:856
+[10:51:31]Deleting VBO:857
+[10:51:31]Deleting VBO:858
+[10:51:31]Deleting VBO:859
+[10:51:31]Deleting VBO:860
+[10:51:31]Deleting VBO:861
+[10:51:31]Deleting VBO:862
+[10:51:31]Deleting VBO:863
+[10:51:31]Deleting VBO:864
+[10:51:31]Deleting VBO:865
+[10:51:31]Deleting VBO:866
+[10:51:31]Deleting VBO:867
+[10:51:31]Deleting VBO:868
+[10:51:31]Deleting VBO:869
+[10:51:31]Deleting VBO:870
+[10:51:31]Deleting VBO:871
+[10:51:31]Deleting VBO:872
+[10:51:31]Deleting VBO:873
+[10:51:31]Deleting VBO:874
+[10:51:31]Deleting VBO:875
+[10:51:31]Deleting VBO:876
+[10:51:31]Deleting VBO:877
+[10:51:31]Deleting VBO:878
+[10:51:31]Deleting VBO:879
+[10:51:31]Deleting VBO:880
+[10:51:31]Deleting VBO:881
+[10:51:31]Deleting VBO:882
+[10:51:31]Deleting VBO:883
+[10:51:31]Deleting VBO:884
+[10:51:31]Deleting VBO:885
+[10:51:31]Deleting VBO:886
+[10:51:31]Deleting VBO:887
+[10:51:31]Deleting VBO:888
+[10:51:31]Deleting VBO:889
+[10:51:31]Deleting VBO:890
+[10:51:31]Deleting VBO:891
+[10:51:31]Deleting VBO:892
+[10:51:31]Deleting VBO:893
+[10:51:31]Deleting VBO:894
+[10:51:31]Deleting VBO:895
+[10:51:31]Deleting VBO:896
+[10:51:31]Deleting VBO:897
+[10:51:31]Deleting VBO:898
+[10:51:31]Deleting VBO:899
+[10:51:31]Deleting VBO:900
+[10:51:31]Deleting VBO:901
+[10:51:31]Deleting VBO:902
+[10:51:31]Deleting VBO:903
+[10:51:31]Deleting VBO:904
+[10:51:31]Deleting VBO:905
+[10:51:31]Deleting VBO:906
+[10:51:31]Deleting VBO:907
+[10:51:31]Deleting VBO:908
+[10:51:31]Deleting VBO:909
+[10:51:31]Deleting VBO:910
+[10:51:31]Deleting VBO:911
+[10:51:31]Deleting VBO:912
+[10:51:31]Deleting VBO:913
+[10:51:31]Deleting VBO:914
+[10:51:31]Deleting VBO:915
+[10:51:31]Deleting VBO:916
+[10:51:31]Deleting VBO:917
+[10:51:31]Deleting VBO:918
+[10:51:31]Deleting VBO:919
+[10:51:31]Deleting VBO:920
+[10:51:31]Deleting VBO:921
+[10:51:31]Deleting VBO:922
+[10:51:31]Deleting VBO:923
+[10:51:31]Deleting VBO:924
+[10:51:31]Deleting VBO:925
+[10:51:31]Deleting VBO:926
+[10:51:31]Deleting VBO:927
+[10:51:31]Deleting VBO:928
+[10:51:31]Deleting VBO:929
+[10:51:31]Deleting VBO:930
+[10:51:31]Deleting VBO:931
+[10:51:31]Deleting VBO:932
+[10:51:31]Deleting VBO:933
+[10:51:31]Deleting VBO:934
+[10:51:31]Deleting VBO:935
+[10:51:31]Deleting VBO:936
+[10:51:31]Deleting VBO:937
+[10:51:31]Deleting VBO:938
+[10:51:31]Deleting VBO:939
+[10:51:31]Deleting VBO:940
+[10:51:31]Deleting VBO:941
+[10:51:31]Deleting VBO:942
+[10:51:31]Deleting VBO:943
+[10:51:31]Deleting VBO:944
+[10:51:31]Deleting VBO:945
+[10:51:31]Deleting VBO:946
+[10:51:31]Deleting VBO:947
+[10:51:31]Deleting VBO:948
+[10:51:31]Deleting VBO:949
+[10:51:31]Deleting VBO:950
+[10:51:31]Deleting VBO:951
+[10:51:31]Deleting VBO:952
+[10:51:31]Deleting VBO:953
+[10:51:31]Deleting VBO:954
+[10:51:31]Deleting VBO:955
+[10:51:31]Deleting VBO:956
+[10:51:31]Deleting VBO:957
+[10:51:31]Deleting VBO:958
+[10:51:31]Deleting VBO:959
+[10:51:31]Deleting VBO:960
+[10:51:31]Deleting VBO:961
+[10:51:31]Deleting VBO:962
+[10:51:31]Deleting VBO:963
+[10:51:31]Deleting VBO:964
+[10:51:31]Deleting VBO:965
+[10:51:31]Deleting VBO:966
+[10:51:31]Deleting VBO:967
+[10:51:31]Deleting VBO:968
+[10:51:31]Deleting VBO:969
+[10:51:31]Deleting VBO:970
+[10:51:31]Deleting VBO:971
+[10:51:31]Deleting VBO:972
+[10:51:31]Deleting VBO:973
+[10:51:31]Deleting VBO:974
+[10:51:31]Deleting VBO:975
+[10:51:31]Deleting VBO:976
+[10:51:31]Deleting VBO:977
+[10:51:31]Deleting VBO:978
+[10:51:31]Deleting VBO:979
+[10:51:31]Deleting VBO:980
+[10:51:31]Deleting VBO:981
+[10:51:31]Deleting VBO:982
+[10:51:31]Deleting VBO:983
+[10:51:31]Deleting VBO:984
+[10:51:31]Deleting VBO:985
+[10:51:31]Deleting VBO:986
+[10:51:31]Deleting VBO:987
+[10:51:31]Deleting VBO:988
+[10:51:31]Deleting VBO:989
+[10:51:31]Deleting VBO:990
+[10:51:31]Deleting VBO:991
+[10:51:31]Deleting VBO:992
+[10:51:31]Deleting VBO:993
+[10:51:31]Deleting VBO:994
+[10:51:31]Deleting VBO:995
+[10:51:31]Deleting VBO:996
+[10:51:31]Deleting VBO:997
+[10:51:31]Deleting VBO:998
+[10:51:31]Deleting VBO:999
+[10:51:31]Deleting VBO:1000
+[10:51:31]Deleting VBO:1001
+[10:51:31]Deleting VBO:1002
+[10:51:31]Deleting VBO:1003
+[10:51:31]Deleting VBO:1004
+[10:51:31]Deleting VBO:1005
+[10:51:31]Deleting VBO:1006
+[10:51:31]Deleting VBO:1007
+[10:51:31]Deleting VBO:1008
+[10:51:31]Deleting VBO:1009
+[10:51:31]Deleting VBO:1010
+[10:51:31]Deleting VBO:1011
+[10:51:31]Deleting VBO:1012
+[10:51:31]Deleting VBO:1013
+[10:51:31]Deleting VBO:1014
+[10:51:31]Deleting VBO:1015
+[10:51:31]Deleting VBO:1016
+[10:51:31]Deleting VBO:1017
+[10:51:31]Deleting VBO:1018
+[10:51:31]Deleting VBO:1019
+[10:51:31]Deleting VBO:1020
+[10:51:31]Deleting VBO:1021
+[10:51:31]Deleting VBO:1022
+[10:51:31]Deleting VBO:1023
+[10:51:31]Deleting VBO:1024
+[10:51:31]Deleting VBO:1025
+[10:51:31]Deleting VBO:1026
+[10:51:31]Deleting VBO:1027
+[10:51:31]Deleting VBO:1028
+[10:51:31]Deleting VBO:1029
+[10:51:31]Deleting VBO:1030
+[10:51:31]Deleting VBO:1031
+[10:51:31]Deleting VBO:1032
+[10:51:31]Deleting VBO:1033
+[10:51:31]Deleting VBO:1034
+[10:51:31]Deleting VBO:1035
+[10:51:31]Deleting VBO:1036
+[10:51:31]Deleting VBO:1037
+[10:51:31]Deleting VBO:1038
+[10:51:31]Deleting VBO:1039
+[10:51:31]Deleting VBO:1040
+[10:51:31]Deleting VBO:1041
+[10:51:31]Deleting VBO:1042
+[10:51:31]Deleting VBO:1043
+[10:51:31]Deleting VBO:1044
+[10:51:31]Deleting VBO:1045
+[10:51:31]Deleting VBO:1046
+[10:51:31]Deleting VBO:1047
+[10:51:31]Deleting VBO:1048
+[10:51:31]Deleting VBO:1049
+[10:51:31]Deleting VBO:1050
+[10:51:31]Deleting VBO:1051
+[10:51:31]Deleting VBO:1052
+[10:51:31]Deleting VBO:1053
+[10:51:31]Deleting VBO:1054
+[10:51:31]Deleting VBO:1055
+[10:51:31]Deleting VBO:1056
+[10:51:31]Deleting VBO:1057
+[10:51:31]Deleting VBO:1058
+[10:51:31]Deleting VBO:1059
+[10:51:31]Deleting VBO:1060
+[10:51:31]Deleting VBO:1061
+[10:51:31]Deleting VBO:1062
+[10:51:31]Deleting VBO:1063
+[10:51:31]Deleting VBO:1064
+[10:51:31]Deleting VBO:1065
+[10:51:31]Deleting VBO:1066
+[10:51:31]Deleting VBO:1067
+[10:51:31]Deleting VBO:1068
+[10:51:31]Deleting VBO:1069
+[10:51:31]Deleting VBO:1070
+[10:51:31]Deleting VBO:1071
+[10:51:31]Deleting VBO:1072
+[10:51:31]Deleting VBO:1073
+[10:51:31]Deleting VBO:1074
+[10:51:31]Deleting VBO:1075
+[10:51:31]Deleting VBO:1076
+[10:51:31]Deleting VBO:1077
+[10:51:31]Deleting VBO:1078
+[10:51:31]Deleting VBO:1079
+[10:51:31]Deleting VBO:1080
+[10:51:31]Deleting VBO:1081
+[10:51:31]Deleting VBO:1082
+[10:51:31]Deleting VBO:1083
+[10:51:31]Deleting VBO:1084
+[10:51:31]Deleting VBO:1085
+[10:51:31]Deleting VBO:1086
+[10:51:31]Deleting VBO:1087
+[10:51:31]Deleting VBO:1088
+[10:51:31]Deleting VBO:1089
+[10:51:31]Deleting VBO:1090
+[10:51:31]Deleting VBO:1091
+[10:51:31]Deleting VBO:1092
+[10:51:31]Deleting VBO:1093
+[10:51:31]Deleting VBO:1094
+[10:51:31]Deleting VBO:1095
+[10:51:31]Deleting VBO:1096
+[10:51:31]Deleting VBO:1097
+[10:51:31]Deleting VBO:1098
+[10:51:31]Deleting VBO:1099
+[10:51:31]Deleting VBO:1100
+[10:51:31]Deleting VBO:1101
+[10:51:31]Deleting VBO:1102
+[10:51:31]Deleting VBO:1103
+[10:51:31]Deleting VBO:1104
+[10:51:31]Deleting VBO:1105
+[10:51:31]Deleting VBO:1106
+[10:51:31]Deleting VBO:1107
+[10:51:31]Deleting VBO:1108
+[10:51:31]Deleting VBO:1109
+[10:51:31]Deleting VBO:1110
+[10:51:31]Deleting VBO:1111
+[10:51:31]Deleting VBO:1112
+[10:51:31]Deleting VBO:1113
+[10:51:31]Deleting VBO:1114
+[10:51:31]Deleting VBO:1115
+[10:51:31]Deleting VBO:1116
+[10:51:31]Deleting VBO:1117
+[10:51:31]Deleting VBO:1118
+[10:51:31]Deleting VBO:1119
+[10:51:31]Deleting VBO:1120
+[10:51:31]Deleting VBO:1121
+[10:51:31]Deleting VBO:1122
+[10:51:31]Deleting VBO:1123
+[10:51:31]Deleting VBO:1124
+[10:51:31]Deleting VBO:1125
+[10:51:31]Deleting VBO:1126
+[10:51:31]Deleting VBO:1127
+[10:51:31]Deleting VBO:1128
+[10:51:31]Deleting VBO:1129
+[10:51:31]Deleting VBO:1130
+[10:51:31]Deleting VBO:1131
+[10:51:31]Deleting VBO:1132
+[10:51:31]Deleting VBO:1133
+[10:51:31]Deleting VBO:1134
+[10:51:31]Deleting VBO:1135
+[10:51:31]Deleting VBO:1136
+[10:51:31]Deleting VBO:1137
+[10:51:31]Deleting VBO:1138
+[10:51:31]Deleting VBO:1139
+[10:51:31]Deleting VBO:1140
+[10:51:31]Deleting VBO:1141
+[10:51:31]Deleting VBO:1142
+[10:51:31]Deleting VBO:1143
+[10:51:31]Deleting VBO:1144
+[10:51:31]Deleting VBO:1145
+[10:51:31]Deleting VBO:1146
+[10:51:31]Deleting VBO:1147
+[10:51:31]Deleting VBO:1148
+[10:51:31]Deleting VBO:1149
+[10:51:31]Deleting VBO:1150
+[10:51:31]Deleting VBO:1151
+[10:51:31]Deleting VBO:1152
+[10:51:31]Deleting VBO:1153
+[10:51:31]Deleting VBO:1154
+[10:51:31]Deleting VBO:1155
+[10:51:31]Deleting VBO:1156
+[10:51:31]Deleting VBO:1157
+[10:51:31]Deleting VBO:1158
+[10:51:31]Deleting VBO:1159
+[10:51:31]Deleting VBO:1160
+[10:51:31]Deleting VBO:1161
+[10:51:31]Deleting VBO:1162
+[10:51:31]Deleting VBO:1163
+[10:51:31]Deleting VBO:1164
+[10:51:31]Deleting VBO:1165
+[10:51:31]Deleting VBO:1166
+[10:51:31]Deleting VBO:1167
+[10:51:31]Deleting VBO:1168
+[10:51:31]Deleting VBO:1169
+[10:51:31]Deleting VBO:1170
+[10:51:31]Deleting VBO:1171
+[10:51:31]Deleting VBO:1172
+[10:51:31]Deleting VBO:1173
+[10:51:31]Deleting VBO:1174
+[10:51:31]Deleting VBO:1175
+[10:51:31]Deleting VBO:1176
+[10:51:31]Deleting VBO:1177
+[10:51:31]Deleting VBO:1178
+[10:51:31]Deleting VBO:1179
+[10:51:31]Deleting VBO:1180
+[10:51:31]Deleting VBO:1181
+[10:51:31]Deleting VBO:1182
+[10:51:31]Deleting VBO:1183
+[10:51:31]Deleting VBO:1184
+[10:51:31]Deleting VBO:1185
+[10:51:31]Deleting VBO:1186
+[10:51:31]Deleting VBO:1187
+[10:51:31]Deleting VBO:1188
+[10:51:31]Deleting VBO:1189
+[10:51:31]Deleting VBO:1190
+[10:51:31]Deleting VBO:1191
+[10:51:31]Deleting VBO:1192
+[10:51:31]Deleting VBO:1193
+[10:51:31]Deleting VBO:1194
+[10:51:31]Deleting VBO:1195
+[10:51:31]Deleting VBO:1196
+[10:51:31]Deleting VBO:1197
+[10:51:31]Deleting VBO:1198
+[10:51:31]Deleting VBO:1199
+[10:51:31]Deleting VBO:1200
+[10:51:31]Deleting VBO:1201
+[10:51:31]Deleting VBO:1202
+[10:51:31]Deleting VBO:1203
+[10:51:31]Deleting VBO:1204
+[10:51:31]Deleting VBO:1205
+[10:51:31]Deleting VBO:1206
+[10:51:31]Deleting VBO:1207
+[10:51:31]Deleting VBO:1208
+[10:51:31]Deleting VBO:1209
+[10:51:31]Deleting VBO:1210
+[10:51:31]Deleting VBO:1211
+[10:51:31]Deleting VBO:1212
+[10:51:31]Deleting VBO:1213
+[10:51:31]Deleting VBO:1214
+[10:51:31]Deleting VBO:1215
+[10:51:31]Deleting VBO:1216
+[10:51:31]Deleting VBO:1217
+[10:51:31]Deleting VBO:1218
+[10:51:31]Deleting VBO:1219
+[10:51:31]Deleting VBO:1220
+[10:51:31]Deleting VBO:1221
+[10:51:31]Deleting VBO:1222
+[10:51:31]Deleting VBO:1223
+[10:51:31]Deleting VBO:1224
+[10:51:31]Deleting VBO:1225
+[10:51:31]Deleting VBO:1226
+[10:51:31]Deleting VBO:1227
+[10:51:31]Deleting VBO:1228
+[10:51:31]Deleting VBO:1229
+[10:51:31]Deleting VBO:1230
+[10:51:31]Deleting VBO:1231
+[10:51:31]Deleting VBO:1232
+[10:51:31]Deleting VBO:1233
+[10:51:31]Deleting VBO:1234
+[10:51:31]Deleting VBO:1235
+[10:51:31]Deleting VBO:1236
+[10:51:31]Deleting VBO:1237
+[10:51:31]Deleting VBO:1238
+[10:51:31]Deleting VBO:1239
+[10:51:31]Deleting VBO:1240
+[10:51:31]Deleting VBO:1241
+[10:51:31]Deleting VBO:1242
+[10:51:31]Deleting VBO:1243
+[10:51:31]Deleting VBO:1244
+[10:51:31]Deleting VBO:1245
+[10:51:31]Deleting VBO:1246
+[10:51:31]Deleting VBO:1247
+[10:51:31]Deleting VBO:1248
+[10:51:31]Deleting VBO:1249
+[10:51:31]Deleting VBO:1250
+[10:51:31]Deleting VBO:1251
+[10:51:31]Deleting VBO:1252
+[10:51:31]Deleting VBO:1253
+[10:51:31]Deleting VBO:1254
+[10:51:31]Deleting VBO:1255
+[10:51:31]Deleting VBO:1256
+[10:51:31]Deleting VBO:1257
+[10:51:31]Deleting VBO:1258
+[10:51:31]Deleting VBO:1259
+[10:51:31]Deleting VBO:1260
+[10:51:31]Deleting VBO:1261
+[10:51:31]Deleting VBO:1262
+[10:51:31]Deleting VBO:1263
+[10:51:31]Deleting VBO:1264
+[10:51:31]Deleting VBO:1265
+[10:51:31]Deleting VBO:1266
+[10:51:31]Deleting VBO:1267
+[10:51:31]Deleting VBO:1268
+[10:51:31]Deleting VBO:1269
+[10:51:31]Deleting VBO:1270
+[10:51:31]Deleting VBO:1271
+[10:51:31]Deleting VBO:1272
+[10:51:31]Deleting VBO:1273
+[10:51:31]Deleting VBO:1274
+[10:51:31]Deleting VBO:1275
+[10:51:31]Deleting VBO:1276
+[10:51:31]Deleting VBO:1277
+[10:51:31]Deleting VBO:1278
+[10:51:31]Deleting VBO:1279
+[10:51:31]Deleting VBO:1280
+[10:51:31]Deleting VBO:1281
+[10:51:31]Deleting VBO:1282
+[10:51:31]Deleting VBO:1283
+[10:51:31]Deleting VBO:1284
+[10:51:31]Deleting VBO:1285
+[10:51:31]Deleting VBO:1286
+[10:51:31]Deleting VBO:1287
+[10:51:31]Deleting VBO:1288
+[10:51:31]Deleting VBO:1289
+[10:51:31]Deleting VBO:1290
+[10:51:31]Deleting VBO:1291
+[10:51:31]Deleting VBO:1292
+[10:51:31]Deleting VBO:1293
+[10:51:31]Deleting VBO:1294
+[10:51:31]Deleting VBO:1295
+[10:51:31]Deleting VBO:1296
+[10:51:31]Deleting VBO:1297
+[10:51:31]Deleting VBO:1298
+[10:51:31]Deleting VBO:1299
+[10:51:31]Deleting VBO:1300
+[10:51:31]Deleting VBO:1301
+[10:51:31]Deleting VBO:1302
+[10:51:31]Deleting VBO:1303
+[10:51:31]Deleting VBO:1304
+[10:51:31]Deleting VBO:1305
+[10:51:31]Deleting VBO:1306
+[10:51:31]Deleting VBO:1307
+[10:51:31]Deleting VBO:1308
+[10:51:31]Deleting VBO:1309
+[10:51:31]Deleting VBO:1310
+[10:51:31]Deleting VBO:1311
+[10:51:31]Deleting VBO:1312
+[10:51:31]Deleting VBO:1313
+[10:51:31]Deleting VBO:1314
+[10:51:31]Deleting VBO:1315
+[10:51:31]Deleting VBO:1316
+[10:51:31]Deleting VBO:1317
+[10:51:31]Deleting VBO:1318
+[10:51:31]Deleting VBO:1319
+[10:51:31]Deleting VBO:1320
+[10:51:31]Deleting VBO:1321
+[10:51:31]Deleting VBO:1322
+[10:51:31]Deleting VBO:1323
+[10:51:31]Deleting VBO:1324
+[10:51:31]Deleting VBO:1325
+[10:51:31]Deleting VBO:1326
+[10:51:31]Deleting VBO:1327
+[10:51:31]Deleting VBO:1328
+[10:51:31]Deleting VBO:1329
+[10:51:31]Deleting VBO:1330
+[10:51:31]Deleting VBO:1331
+[10:51:31]Deleting VBO:1332
+[10:51:31]Deleting VBO:1333
+[10:51:31]Deleting VBO:1334
+[10:51:31]Deleting VBO:1335
+[10:51:31]Deleting VBO:1336
+[10:51:31]Deleting VBO:1337
+[10:51:31]Deleting VBO:1338
+[10:51:31]Deleting VBO:1339
+[10:51:31]Deleting VBO:1340
+[10:51:31]Deleting VBO:1341
+[10:51:31]Deleting VBO:1342
+[10:51:31]Deleting VBO:1343
+[10:51:31]Deleting VBO:1344
+[10:51:31]Deleting VBO:1345
+[10:51:31]Deleting VBO:1346
+[10:51:31]Deleting VBO:1347
+[10:51:31]Deleting VBO:1348
+[10:51:31]Deleting VBO:1349
+[10:51:31]Deleting VBO:1350
+[10:51:31]Deleting VBO:1351
+[10:51:31]Deleting VBO:1352
+[10:51:31]Deleting VBO:1353
+[10:51:31]Deleting VBO:1354
+[10:51:31]Deleting VBO:1355
+[10:51:31]Deleting VBO:1356
+[10:51:31]Deleting VBO:1357
+[10:51:31]Deleting VBO:1358
+[10:51:31]Deleting VBO:1359
+[10:51:31]Deleting VBO:1360
+[10:51:31]Deleting VBO:1361
+[10:51:31]Deleting VBO:1362
+[10:51:31]Deleting VBO:1363
+[10:51:31]Deleting VBO:1364
+[10:51:31]Deleting VBO:1365
+[10:51:31]Deleting VBO:1366
+[10:51:31]Deleting VBO:1367
+[10:51:31]Deleting VBO:1368
+[10:51:31]Deleting VBO:1369
+[10:51:31]Deleting VBO:1370
+[10:51:31]Deleting VBO:1371
+[10:51:31]Deleting VBO:1372
+[10:51:31]Deleting VBO:1373
+[10:51:31]Deleting VBO:1374
+[10:51:31]Deleting VBO:1375
+[10:51:31]Deleting VBO:1376
+[10:51:31]Deleting VBO:1377
+[10:51:31]Deleting VBO:1378
+[10:51:31]Deleting VBO:1379
+[10:51:31]Deleting VBO:1380
+[10:51:31]Deleting VBO:1381
+[10:51:31]Deleting VBO:1382
+[10:51:31]Deleting VBO:1383
+[10:51:31]Deleting VBO:1384
+[10:51:31]Deleting VBO:1385
+[10:51:31]Deleting VBO:1386
+[10:51:31]Deleting VBO:1387
+[10:51:31]Deleting VBO:1388
+[10:51:31]Deleting VBO:1389
+[10:51:31]Deleting VBO:1390
+[10:51:31]Deleting VBO:1391
+[10:51:31]Deleting VBO:1392
+[10:51:31]Deleting VBO:1393
+[10:51:31]Deleting VBO:1394
+[10:51:31]Deleting VBO:1395
+[10:51:31]Deleting VBO:1396
+[10:51:31]Deleting VBO:1397
+[10:51:31]Deleting VBO:1398
+[10:51:31]Deleting VBO:1399
+[10:51:31]Deleting VBO:1400
+[10:51:31]Deleting VBO:1401
+[10:51:31]Deleting VBO:1402
+[10:51:31]Deleting VBO:1403
+[10:51:31]Deleting VBO:1404
+[10:51:31]Deleting VBO:1405
+[10:51:31]Deleting VBO:1406
+[10:51:31]Deleting VBO:1407
+[10:51:31]Deleting VBO:1408
+[10:51:31]Deleting VBO:1409
+[10:51:31]Deleting VBO:1410
+[10:51:31]Deleting VBO:1411
+[10:51:31]Deleting VBO:1412
+[10:51:31]Deleting VBO:1413
+[10:51:31]Deleting VBO:1414
+[10:51:31]Deleting VBO:1415
+[10:51:31]Deleting VBO:1416
+[10:51:31]Deleting VBO:1417
+[10:51:31]Deleting VBO:1418
+[10:51:31]Deleting VBO:1419
+[10:51:31]Deleting VBO:1420
+[10:51:31]Deleting VBO:1421
+[10:51:31]Deleting VBO:1422
+[10:51:31]Deleting VBO:1423
+[10:51:31]Deleting VBO:1424
+[10:51:31]Deleting VBO:1425
+[10:51:31]Deleting VBO:1426
+[10:51:31]Deleting VBO:1427
+[10:51:31]Deleting VBO:1428
+[10:51:31]Deleting VBO:1429
+[10:51:31]Deleting VBO:1430
+[10:51:31]Deleting VBO:1431
+[10:51:31]Deleting VBO:1432
+[10:51:31]Deleting VBO:1433
+[10:51:31]Deleting VBO:1434
+[10:51:31]Deleting VBO:1435
+[10:51:31]Deleting VBO:1436
+[10:51:31]Deleting VBO:1437
+[10:51:31]Deleting VBO:1438
+[10:51:31]Deleting VBO:1439
+[10:51:31]Deleting VBO:1440
+[10:51:31]Deleting VBO:1441
+[10:51:31]Deleting VBO:1442
+[10:51:31]Deleting VBO:1443
+[10:51:31]Deleting VBO:1444
+[10:51:31]Deleting VBO:1445
+[10:51:31]Deleting VBO:1446
+[10:51:31]Deleting VBO:1447
+[10:51:31]Deleting VBO:1448
+[10:51:31]Deleting VBO:1449
+[10:51:31]Deleting VBO:1450
+[10:51:31]Deleting VBO:1451
+[10:51:31]Deleting VBO:1452
+[10:51:31]Deleting VBO:1453
+[10:51:31]Deleting VBO:1454
+[10:51:31]Deleting VBO:1455
+[10:51:31]Deleting VBO:1456
+[10:51:31]Deleting VBO:1457
+[10:51:31]Deleting VBO:1458
+------------------------------------------------------------------------------------------
+[10:51:31]Cleaning up Engine.
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
-[23:1:9]Terminating Window.
+[10:51:31]Terminating Window.
 ------------------------------------------------------------------------------------------

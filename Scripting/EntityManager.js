@@ -24,6 +24,8 @@ var combineFBO;
 
 var screenQuad;
 
+var modelGroup;
+
 function init(){
     //Entity Container for use with rendering
     entities = new EntityContainer(new ComparitorVAO());
@@ -54,7 +56,14 @@ function init(){
     var scene = new Gui(combineFBO.getTextureID(), new Vector2f(0.0, 0.0), new Vector2f(1.0, 1.0));
     guis.add(scene);
 
-    screenQuad = entities.push(new EntityModel(ModelLoader.loadModel("quad"), "white", new Vector3f(0, 0, 0), 0, 0, 0, 1));
+    screenQuad = new EntityModel(ModelLoader.loadModel("quad"), "white", new Vector3f(0, 0, 0), 0, 0, 0, 1);
+
+    // var modelArray = [];
+    // for(var i = 0; i < 1000; i++){
+    //     modelArray.push(new EntityModel(ModelLoader.loadModel("cube2"), "brick", new Vector3f(0, 1, i), 0, 0, 0, 1))
+    // }
+    // modelGroup = new ModelGroup(modelArray);
+
 }
 
 function tick(){
@@ -69,7 +78,7 @@ function render(){
     var blooms = [];
     //Render all entities push entities to be bloom lit to seperate array
     screenFBO.bindFrameBuffer();
-        GL11.glClearColor(1.0, 1.0, 1.0, 1.0);
+        GL11.glClearColor(0.0, 0.0, 1.0, 1.0);
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
         var player = ScriptingEngine.getScript("Player").var("player");
         shader.start();
@@ -79,21 +88,27 @@ function render(){
         shader.run("setAnimationOffset", new Vector3f(0, 0, 0));
         var lastVao = -1;
         for(var i = 0; i < entities.getLength(); i++){
-            if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(20)), entities.get(i).getPosition()) < 24.0){
+            // if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(20)), entities.get(i).getPosition()) < 50.0){
                 if(entities.get(i).hasAttribute("bloom")){
                     blooms.push(entities.get(i));
                 }
                 shader.loadData("rotationMatrix", Maths.getEntityRot(entities.get(i)));
-                var model = entities.get(i).getComponent(EnumComponentType.MESH).getModel();
-                if(lastVao != model.getVaoID()) {
-                    shader.bindVAOFromID(model.getVaoID());
+                if(entities.get(i).hasComponent(EnumComponentType.MESH)) {
+                    var model = entities.get(i).getComponent(EnumComponentType.MESH).getModel();
+                    if (lastVao != model.getVaoID()) {
+                        shader.bindVAOFromID(model.getVaoID());
+                    }
+                    shader.run("loadMaterial", entities.get(i).getMaterial());
+                    lastVao = model.getVaoID();
                 }
-                shader.run("loadMaterial", entities.get(i).getMaterial());
-                lastVao = model.getVaoID();
+                if(entities.get(i).hasComponent(EnumComponentType.MODEL_GROUP)){
+                    var model = entities.get(i).getComponent(EnumComponentType.MODEL_GROUP).getModelGroup();
+                    shader.bindVAOFromID(model.getVAOID());
+                    lastVao = model.getVAOID();
+                }
                 shader.render(entities.get(i));
-            }
+            // }
         }
-        shader.unBindVAO();
         shader.stop();
     screenFBO.unbindFrameBuffer();
 
@@ -139,6 +154,7 @@ function render(){
         v_blur.stop();
     v_blurFBO.unbindFrameBuffer();
 
+    // subtract initial bloomed image from gaussian blurred image.
     subtractFBO.bindFrameBuffer();
         subtract.start();
         subtract.loadData("originalTexture", v_blurFBO.getTextureID());
@@ -149,6 +165,7 @@ function render(){
         subtract.stop();
     subtractFBO.unbindFrameBuffer();
 
+    // add result of previous step to the scene image.
     combineFBO.bindFrameBuffer();
         GL11.glClearColor(0.0, 0.0, 0.0, 0.0);
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
@@ -160,11 +177,4 @@ function render(){
         combine.render(screenQuad);
         combine.stop();
     combineFBO.unbindFrameBuffer();
-
-    // subtract initial bloomed image from gaussian blurred image.
-
-
-    // add result of previous step to the scene image.
-
-
 }

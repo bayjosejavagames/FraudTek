@@ -50,9 +50,14 @@ function init(seed) {
                         var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i+(k/chunk.width) - (levelWidth/2)) * chunk.width * 2, 0, (j+(l/chunk.height) - (levelHeight/2)) * chunk.height * 2), 0, 0, 0, 1);
                         chunk.tiles[l+(k * chunk.width)] = entity;
                         entity.setMaterial(materialID);
-                        entities.push(entity);
                     }
                 }
+                chunk.modelGroup = new ModelGroup(chunk.tiles);
+                entities.push(new EntityModelGroup(chunk.modelGroup));
+                // var materialID = MaterialManager.getColor(0,255,0);
+                // var entity = new EntityModel(ModelLoader.loadModel("dragon"), "white", new Vector3f((i - (levelWidth/2)) * chunk.width * 2, 0, (j - (levelHeight/2)) * chunk.height * 2), 0, 0, 0, 1);
+                // entity.setMaterial(materialID);
+                // entities.push(entity);
             }
         }
     }
@@ -196,7 +201,7 @@ function render() {
 }
 
 function generateChunk(){
-    var chunkSize = 5;
+    var chunkSize = 8  ;
     var outdata = [];
     for(var i=0; i<chunkSize; i++){
         outdata[i] = new Array(chunkSize);
@@ -216,6 +221,7 @@ function generateChunk(){
         generated:false,
         onPrimaryPath:false,
         link:LinkDirections.UP,
+        modelGroup:undefined,
         chunkIndex:-1,
     }
 }
