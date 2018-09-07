@@ -2,13 +2,13 @@
 
 in vec2 pass_textureCoords;
 in vec3 toCameraVector;
-in vec3 toLightVector[4];
+in vec3 toLightVector[@MAX_LIGHTS];
 in vec3 passNormal;
 in mat3 TBN;
 
 out vec4 out_Color;
 
-uniform sampler2D albedoMap;
+uniform sampler2D albedoMap[@MAX_TEXTURES_PER_ENTITY];
 uniform sampler2D ambientOcclusionMap;
 uniform sampler2D normalMap;
 uniform sampler2D displacementMap;
@@ -17,15 +17,15 @@ uniform sampler2D roughnessMap;
 uniform sampler2D emissiveMap;
 uniform sampler2D emissivemaskMap;
 
-uniform vec3 lightColor[4];
-uniform vec3 attenuation[4];
+uniform vec3 lightColor[@MAX_LIGHTS];
+uniform vec3 attenuation[@MAX_LIGHTS];
 uniform float shineDamper;
 uniform float reflectivity;
 
 const float levels = 3.0;
 
 void main(void){
-    vec4 albedoColor = texture(albedoMap, pass_textureCoords);
+    vec4 albedoColor = texture(albedoMap[0], pass_textureCoords);
     vec4 ambientOcclusionMap = texture(ambientOcclusionMap, pass_textureCoords);
     vec4 normalColor = texture(normalMap, pass_textureCoords);
     vec3 normalMapVector = normalize(normalColor.rgb*2.0 - 1.0);

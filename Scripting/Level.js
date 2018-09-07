@@ -54,13 +54,13 @@ function init(seed) {
                 //Using data from our seedTable, get the corner values for this grid, then lerp all tiles to create a smooth grid.
                 chunks[i][j] = lerpChunk(chunks[i][j], seedTable[((i)+((j)*(levelWidth+1)))],seedTable[((i)+((j+1)*(levelWidth+1)))],seedTable[((i+1)+((j)*(levelWidth+1)))],seedTable[((i+1)+((j+1)*(levelWidth+1)))]);
 
-                //If the tile height is above the cutoff
+                // If the tile height is above the cutoff
                 for(var k = 0; k < chunk.height; k++){
                     for(var l = 0; l < chunk.width; l++){
                         if(chunks[i][j].heights[l+(k * chunk.width)] > 2) {
                             var materialID = MaterialManager.getColor(0, 255, 0);
                             // var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, chunks[i][j].heights[l + (k * chunk.width)], (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
-                            var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, 0, (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                            var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, -1, (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
                             chunk.tiles.push(entity);
                             entity.setMaterial(materialID);
                             // entities.push(entity);
@@ -68,13 +68,25 @@ function init(seed) {
                     }
                 }
 
+                // for(var k = 0; k < chunk.height; k++){
+                //     for(var l = 0; l < chunk.width; l++){
+                //         var materialID = MaterialManager.getColor(0, 255, 0);
+                //         // var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, chunks[i][j].heights[l + (k * chunk.width)], (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                //         var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, random.nextInt(120), (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                //         chunk.tiles.push(entity);
+                //         entity.setMaterial(materialID);
+                //         // entities.push(entity);
+                //     }
+                // }
+
                 //To see if a chunk was generated or not, we can check if tiles are present.
                 if(chunk.tiles.length > 0){
                     chunks[i][j].generated = true;
                 }
 
-                chunk.modelGroup = new ModelGroup(chunk.tiles);
-                entities.push(new EntityModelGroup(chunk.modelGroup));
+                var mg = new ModelGroup(chunk.tiles);
+                chunk.modelGroup = new EntityModel(mg.modelID(), "white", new Vector3f(0, 0, 0), 0, 0, 0, 1);
+                entities.push(chunk.modelGroup);
             }
         }
     }
@@ -218,7 +230,7 @@ function render() {
 }
 
 function generateChunk(){
-    var chunkSize = 15  ;
+    var chunkSize = 15;
     var outdata = [];
     for(var i=0; i<chunkSize; i++){
         outdata[i] = new Array(chunkSize);

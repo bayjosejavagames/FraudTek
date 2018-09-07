@@ -1,8 +1,8 @@
 {
   "width":1920,
   "height":1080,
-  "fullscreen":false,
-  "vsync":false,
+  "fullscreen":true ,
+  "vsync":true,
   "name":"Soul Game",
   "username":"ThePiratePup",
   "mainScript":"SoulGame.js",
@@ -40,5 +40,9 @@
       "width":3840,
       "height":2160
     }
-  ]
+  ],
+  "ENGINE_CONSTANTS":{
+    "MAX_LIGHTS":16,
+    "MAX_TEXTURES_PER_ENTITY":16
+  }
 }

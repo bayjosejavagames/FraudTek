@@ -9,5 +9,9 @@ out vec4 out_Color;
 
 void main(void){
     out_Color = vec4(0.0);
-    out_Color.xyz = ((texture(originalTexture, pass_TextureCoords).xyz - texture(subtractTexture, pass_TextureCoords).xyz));
+
+    vec3 tex1 = texture(originalTexture, pass_TextureCoords).xyz;
+    vec3 tex2 = texture(subtractTexture, pass_TextureCoords).xyz;
+
+    out_Color.xyz = (tex1 - tex2);
 }

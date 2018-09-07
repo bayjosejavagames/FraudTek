@@ -50,8 +50,8 @@ function init(){
     // guis.add( new Gui(bloom_FBO.getTextureID(), new Vector2f(-0.4, 0.8), new Vector2f(0.1, 0.1)));
     // guis.add( new Gui(h_blurFBO.getTextureID(), new Vector2f(-0.2, 0.8), new Vector2f(0.1, 0.1)));
     // guis.add( new Gui(v_blurFBO.getTextureID(), new Vector2f(-0.0, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(subtractFBO.getTextureID(), new Vector2f(0.2, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(combineFBO.getTextureID(), new Vector2f(0.4, 0.8), new Vector2f(0.1, 0.1)));
+    // guis.add( new Gui(subtractFBO.getTextureID(), new Vector2f(-0.6, 0.6), new Vector2f(0.1, 0.1)));
+    // guis.add( new Gui(combineFBO.getTextureID(), new Vector2f(-0.4, 0.6), new Vector2f(0.1, 0.1)));
 
     var scene = new Gui(combineFBO.getTextureID(), new Vector2f(0.0, 0.0), new Vector2f(1.0, 1.0));
     guis.add(scene);
@@ -68,6 +68,9 @@ function init(){
 
 function tick(){
     entities.sort();
+    for(var i = 0; i < entities.length(); i++){
+        entities.get(i).tick();
+    }
     ticks++;
     ticks%=720;
 }
@@ -88,7 +91,7 @@ function render(){
         shader.run("setAnimationOffset", new Vector3f(0, 0, 0));
         var lastVao = -1;
         for(var i = 0; i < entities.getLength(); i++){
-            // if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(20)), entities.get(i).getPosition()) < 50.0){
+            // if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(24)), entities.get(i).getPosition()) < 32.0){
                 if(entities.get(i).hasAttribute("bloom")){
                     blooms.push(entities.get(i));
                 }
@@ -100,11 +103,6 @@ function render(){
                     }
                     shader.run("loadMaterial", entities.get(i).getMaterial());
                     lastVao = model.getVaoID();
-                }
-                if(entities.get(i).hasComponent(EnumComponentType.MODEL_GROUP)){
-                    var model = entities.get(i).getComponent(EnumComponentType.MODEL_GROUP).getModelGroup();
-                    shader.bindVAOFromID(model.getVAOID());
-                    lastVao = model.getVAOID();
                 }
                 shader.render(entities.get(i));
             // }

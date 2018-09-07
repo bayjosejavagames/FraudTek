@@ -12,15 +12,18 @@ var camera2;
 var location;
 
 var cameraToggle;
+var lightPlacer;
 
 function init(x, y){
     var entities = ScriptingEngine.getScript("EntityManager").var("entities");
     player = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), "lava", new Vector3f(x, 1, y), 0, 0, 0, 1));
-    player.addComponent(new ComponentGravity(player));
+    // player.addComponent(new ComponentGravity(player));
 
     // light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(0, 0.5, 1.0));
 
-    light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(1, 1, 1));
+    // light = LightingEngine.addLight(CameraManager.getCamera().getPosition(), new Vector3f(1, 1, 1));
+    lightPlacer = new Debouncer(false);
+
 
     cameraToggle = new Debouncer(false);
     camera2 = new FPSCamera();
@@ -34,7 +37,7 @@ function init(x, y){
 function tick(){
     location = player.getPosition();
 
-    light.setPosition(player.getPosition().add(new Vector3f(0, 2, 0)));
+    // light.setPosition(player.getPosition().add(new Vector3f(0, 2, 0)));
 
     var moved = false;
 
@@ -76,6 +79,17 @@ function tick(){
             player.translate(player.getForwardVector(new Vector3f(0, -90, 0)).mul(0.1));
             moved = true;
         }
+    }else{
+        // light.setPosition(CameraManager.getCamera().getPosition());
+    }
+
+    if(lightPlacer.risingAction(Keyboard.isKeyDown(KeyEvent.VK_SPACE))){
+        var materialID = MaterialManager.getColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256));
+        var entities = ScriptingEngine.getScript("EntityManager").var("entities");
+        var cube = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), materialID.getName(), new Vector3f(CameraManager.getCamera().getPosition()), 0, 0, 0, 1));
+        var RigidBody = new ComponentRigidBody(cube);
+        cube.addComponent(RigidBody);
+        RigidBody.addAcceleration(CameraManager.getCamera().getLookingDirection().mul(120));
     }
 
 
