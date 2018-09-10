@@ -60,7 +60,7 @@ function init(seed) {
                         if(chunks[i][j].heights[l+(k * chunk.width)] > 2) {
                             var materialID = MaterialManager.getColor(0, 255, 0);
                             // var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, chunks[i][j].heights[l + (k * chunk.width)], (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
-                            var entity = new EntityModel(ModelLoader.loadModel("cube2"), "white", new Vector3f((i + (k / chunk.width) - (levelWidth / 2)) * chunk.width * 2, -1, (j + (l / chunk.height) - (levelHeight / 2)) * chunk.height * 2), 0, 0, 0, 1);
+                            var entity = new EntityModel(ModelLoader.loadModel("quad"), "white", new Vector3f(((k / chunk.width)) * chunk.width * 2, -0.5, ((l / chunk.height)) * chunk.height * 2), 0, 0, 0, 1);
                             chunk.tiles.push(entity);
                             entity.setMaterial(materialID);
                             // entities.push(entity);
@@ -85,7 +85,7 @@ function init(seed) {
                 }
 
                 var mg = new ModelGroup(chunk.tiles);
-                chunk.modelGroup = new EntityModel(mg.modelID(), "white", new Vector3f(0, 0, 0), 0, 0, 0, 1);
+                chunk.modelGroup = new EntityModel(mg.modelID(), "white", new Vector3f((i - (levelWidth /2)) * chunk.width * 2 , 0, (j - (levelHeight /2)) * chunk.height * 2), 0, 0, 0, 1);
                 entities.push(chunk.modelGroup);
             }
         }

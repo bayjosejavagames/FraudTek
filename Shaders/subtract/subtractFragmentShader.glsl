@@ -13,5 +13,5 @@ void main(void){
     vec3 tex1 = texture(originalTexture, pass_TextureCoords).xyz;
     vec3 tex2 = texture(subtractTexture, pass_TextureCoords).xyz;
 
-    out_Color.xyz = (tex1 - tex2);
+    out_Color.xyz = (tex1 - (tex2 * vec3(1.5)));
 }

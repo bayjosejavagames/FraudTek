@@ -22,7 +22,7 @@ uniform vec3 attenuation[@MAX_LIGHTS];
 uniform float shineDamper;
 uniform float reflectivity;
 
-const float levels = 3.0;
+const float levels = 5.0;
 
 void main(void){
     vec4 albedoColor = texture(albedoMap[0], pass_textureCoords);
@@ -51,7 +51,7 @@ void main(void){
         float brightness = max(nDot, 0.0);
         float level = floor(brightness * levels);
         brightness = level / levels;
-        totalDiffuse = totalDiffuse+((lightColor[i] * brightness + (0.25)) / attFactor);
+        totalDiffuse = totalDiffuse+((lightColor[i] * brightness) + (lightColor[i] * (2 / attFactor)));
 
         float specularAddition = (dot(reflect(-normalize(toLightVector[i]), normalize(unitNormal)), unitVectorToCamera));
         specularAddition = max(specularAddition, 0.0);

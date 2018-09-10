@@ -91,7 +91,7 @@ function render(){
         shader.run("setAnimationOffset", new Vector3f(0, 0, 0));
         var lastVao = -1;
         for(var i = 0; i < entities.getLength(); i++){
-            // if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(24)), entities.get(i).getPosition()) < 32.0){
+            if(DistanceCalculator.distance(player.getPosition().add(player.getForwardVector().mul(40)), entities.get(i).getPosition()) < 90.0){
                 if(entities.get(i).hasAttribute("bloom")){
                     blooms.push(entities.get(i));
                 }
@@ -105,7 +105,7 @@ function render(){
                     lastVao = model.getVaoID();
                 }
                 shader.render(entities.get(i));
-            // }
+            }
         }
         shader.stop();
     screenFBO.unbindFrameBuffer();

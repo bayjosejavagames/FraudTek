@@ -13,17 +13,23 @@ var location;
 
 var cameraToggle;
 var lightPlacer;
+var gunBouncer;
+
+var body;
 
 function init(x, y){
     var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-    player = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), "lava", new Vector3f(x, 1, y), 0, 0, 0, 1));
+    var model = new EntityModel(ModelLoader.loadModel("sphere2"), "lava", new Vector3f(x, 1, y), 0, 0, 0, 1);
+    body = new ComponentRigidBody(model, EnumPhysicsPrimitive.SPHERE);
+    model.addComponent(body);
+    player = entities.push(model);
     // player.addComponent(new ComponentGravity(player));
 
-    // light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(0, 0.5, 1.0));
+    light = LightingEngine.addLight(player.getExactPosition(), new Vector3f(0, 0.5, 1.0));
 
     // light = LightingEngine.addLight(CameraManager.getCamera().getPosition(), new Vector3f(1, 1, 1));
     lightPlacer = new Debouncer(false);
-
+    gunBouncer = new Debouncer(false);
 
     cameraToggle = new Debouncer(false);
     camera2 = new FPSCamera();
@@ -64,7 +70,8 @@ function tick(){
         }
 
         if (Keyboard.isKeyDown(KeyEvent.VK_W)) {
-            player.translate(player.getForwardVector().mul(0.1));
+            body.addAcceleration(player.getForwardVector().mul(1));
+            // player.translate(player.getForwardVector().mul(0.1));
             moved = true;
         }
         if (Keyboard.isKeyDown(KeyEvent.VK_S)) {
@@ -86,10 +93,12 @@ function tick(){
     if(lightPlacer.risingAction(Keyboard.isKeyDown(KeyEvent.VK_SPACE))){
         var materialID = MaterialManager.getColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256));
         var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-        var cube = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), materialID.getName(), new Vector3f(CameraManager.getCamera().getPosition()), 0, 0, 0, 1));
-        var RigidBody = new ComponentRigidBody(cube);
+        var cube = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), materialID.getName(), new Vector3f(CameraManager.getCamera().getPosition()), 0, 0, 0, 0.5));
+        var RigidBody = new ComponentRigidBody(cube, EnumPhysicsPrimitive.SPHERE);
         cube.addComponent(RigidBody);
+        cube.getAttribute("weight").setData(1.0);
         RigidBody.addAcceleration(CameraManager.getCamera().getLookingDirection().mul(120));
+        // body.addAcceleration(new Vector3f(0, 100, 0));
     }
 
 
