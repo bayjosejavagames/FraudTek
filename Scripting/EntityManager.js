@@ -6,7 +6,6 @@ var entities;
 
 //Shaders
 var shader;
-var bright;
 var bloom;
 var h_blur;
 var v_blur;
@@ -15,6 +14,7 @@ var combine;
 
 var ticks = 0;
 
+//FBOS
 var screenFBO;
 var bloom_FBO;
 var h_blurFBO;
@@ -24,7 +24,6 @@ var combineFBO;
 
 var screenQuad;
 
-var modelGroup;
 
 function init(){
     //Entity Container for use with rendering
@@ -46,12 +45,13 @@ function init(){
     subtractFBO = new FBO(WIDTH/2, HEIGHT/2);
     combineFBO = new FBO(WIDTH/2, HEIGHT/2);
 
-    // guis.add(new Gui(screenFBO.getTextureID(), new Vector2f(-0.6, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(bloom_FBO.getTextureID(), new Vector2f(-0.4, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(h_blurFBO.getTextureID(), new Vector2f(-0.2, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(v_blurFBO.getTextureID(), new Vector2f(-0.0, 0.8), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(subtractFBO.getTextureID(), new Vector2f(-0.6, 0.6), new Vector2f(0.1, 0.1)));
-    // guis.add( new Gui(combineFBO.getTextureID(), new Vector2f(-0.4, 0.6), new Vector2f(0.1, 0.1)));
+    guis.add(new Gui(screenFBO.getTextureID(), new Vector2f(-0.6, 0.8), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(bloom_FBO.getTextureID(), new Vector2f(-0.4, 0.8), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(h_blurFBO.getTextureID(), new Vector2f(-0.2, 0.8), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(v_blurFBO.getTextureID(), new Vector2f(-0.0, 0.8), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(subtractFBO.getTextureID(), new Vector2f(-0.6, 0.6), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(combineFBO.getTextureID(), new Vector2f(-0.4, 0.6), new Vector2f(0.1, 0.1)));
+    guis.add( new Gui(screenFBO.getDepthTexture(), new Vector2f(-0.2, 0.6), new Vector2f(0.1, 0.1)));
 
     var scene = new Gui(combineFBO.getTextureID(), new Vector2f(0.0, 0.0), new Vector2f(1.0, 1.0));
     guis.add(scene);
@@ -95,7 +95,6 @@ function render(){
                 if(entities.get(i).hasAttribute("bloom")){
                     blooms.push(entities.get(i));
                 }
-                shader.loadData("rotationMatrix", Maths.getEntityRot(entities.get(i)));
                 if(entities.get(i).hasComponent(EnumComponentType.MESH)) {
                     var model = entities.get(i).getComponent(EnumComponentType.MESH).getModel();
                     if (lastVao != model.getVaoID()) {
@@ -108,6 +107,9 @@ function render(){
             }
         }
         shader.stop();
+        if(ScriptingEngine.isLoaded("VectorRenderer")) {
+            ScriptingEngine.getScript("VectorRenderer").run("render");
+        }
     screenFBO.unbindFrameBuffer();
 
     //Render bloomed entities in their respective bloom colors

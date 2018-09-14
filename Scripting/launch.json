@@ -1,8 +1,8 @@
 {
   "width":1920,
   "height":1080,
-  "fullscreen":true,
-  "vsync":true,
+  "fullscreen":false,
+  "vsync":false,
   "name":"Soul Game",
   "username":"ThePiratePup",
   "mainScript":"SoulGame.js",

@@ -7,7 +7,7 @@ in vec3 tangent;
 in vec3 bitangent;
 
 out vec2 pass_textureCoords;
-out vec3 toLightVector[4];
+out vec3 toLightVector[@MAX_LIGHTS];
 out vec3 toCameraVector;
 out vec3 passNormal;
 out mat3 TBN;
@@ -16,7 +16,7 @@ uniform mat4 transformationMatrix;
 uniform mat4 rotationMatrix;
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
-uniform vec3 lightPosition[4];
+uniform vec3 lightPosition[@MAX_LIGHTS];
 uniform vec4 plane;
 
 void main(void){
@@ -26,7 +26,7 @@ void main(void){
     gl_Position =  projectionMatrix * viewMatrix * worldPosition;
     pass_textureCoords = textureCoords;
 
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < @MAX_LIGHTS; i++){
         toLightVector[i] = lightPosition[i] - worldPosition.xyz;
     }
     toCameraVector = (inverse(viewMatrix) * vec4(0.0,0.0,0.0,1.0)).xyz - worldPosition.xyz;

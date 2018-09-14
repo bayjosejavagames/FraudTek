@@ -1,1630 +1,3976 @@
 ------------------------------------------------------------------------------------------
-[19:35:4]Engine Initialization
+[18:48:29]Engine Initialization
 ------------------------------------------------------------------------------------------
-[19:35:4]FraudTek version:1.0
-[19:35:4]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum_WIN.exe
-[19:35:4]Game Name:Soul Game
-[19:35:4]Target Width:1920
-[19:35:4]Target Height:1080
-[19:35:4]Window is Fullscreen:false
-[19:35:4]Window is using vsync:false
+[18:48:29]FraudTek version:1.0
+[18:48:29]/E:/Java/Edaxerum/out/artifacts/unnamed/Edaxerum.jar
+[18:48:29]Game Name:Soul Game
+[18:48:29]Target Width:1920
+[18:48:29]Target Height:1080
+[18:48:29]Window is Fullscreen:false
+[18:48:29]Window is using vsync:false
 ------------------------------------------------------------------------------------------
-[19:35:5]Looking for Source Folders...
+[18:48:29]Looking for Source Folders...
 ------------------------------------------------------------------------------------------
-[19:35:5]Looking for /Animations/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Animations/
-[19:35:5]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
-[19:35:5]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
-[19:35:5]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
-[19:35:5]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
-[19:35:5]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
-[19:35:5]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
-[19:35:5]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
-[19:35:5]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
-[19:35:5]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
+[18:48:29]Looking for /Animations/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Animations/
+[18:48:29]Looking for /Images/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Images/
+[18:48:29]Looking for /Models/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Models/
+[18:48:29]Looking for /Sounds/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Sounds/
+[18:48:29]Looking for /Shaders/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Shaders/
+[18:48:29]Looking for /Scripting/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Scripting/
+[18:48:29]Looking for /res/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//res/
+[18:48:29]Looking for /Web/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Web/
+[18:48:29]Looking for /Documentation/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Documentation/
+[18:48:29]Looking for /Logs/ Folder:/E:/Java/Edaxerum/out/artifacts/unnamed//Logs/
 ------------------------------------------------------------------------------------------
-[19:35:5]Initializing all engines associated with the game.
+[18:48:29]Initializing all engines associated with the game.
 ------------------------------------------------------------------------------------------
-[19:35:5]Initializing Engine:TextureManager...Success.
-[19:35:5]Initializing Engine:LightingEngine...Success.
-[19:35:5]Initializing Engine:CameraManager...Success.
-[19:35:5]Initializing Engine:Steam...Success.
-[19:35:5]Initializing Engine:SpriteBinder...Success.
-[19:35:5]Initializing Engine:ModelManager...Success.
-[19:35:5]Initializing Engine:Controllers...
+[18:48:29]Initializing Engine:TextureManager...Success.
+[18:48:29]Initializing Engine:LightingEngine...Success.
+[18:48:29]Initializing Engine:CameraManager...Success.
+[18:48:29]Initializing Engine:Steam...Success.
+[18:48:29]Initializing Engine:SpriteBinder...Success.
+[18:48:29]Initializing Engine:ModelManager...Success.
+[18:48:29]Initializing Engine:Controllers...
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------Success.
-[19:35:5]Initializing Engine:VAOManager...Success.
-[19:35:5]Initializing Engine:ServerManager...Success.
-[19:35:5]Initializing Engine:MaterialManager...Success.
-[19:35:5]Sending Data to texture:1 color:-1
-[19:35:5]Sending Data to texture:2 color:-1
-[19:35:5]Sending Data to texture:3 color:-8355841
-[19:35:5]Sending Data to texture:4 color:-1
-[19:35:5]Sending Data to texture:5 color:-1
-[19:35:5]Sending Data to texture:6 color:-1
-[19:35:5]Sending Data to texture:7 color:-16777216
-[19:35:5]Initializing Engine:ParticleEngine...Success.
-[19:35:5]Initializing Engine:CollisionChannels...Success.
+[18:48:29]Initializing Engine:VAOManager...Success.
+[18:48:29]Initializing Engine:ServerManager...Success.
+[18:48:29]Initializing Engine:MaterialManager...Success.
+[18:48:30]Sending Data to texture:1 color:-1
+[18:48:30]Sending Data to texture:2 color:-1
+[18:48:30]Sending Data to texture:3 color:-8355841
+[18:48:30]Sending Data to texture:4 color:-1
+[18:48:30]Sending Data to texture:5 color:-1
+[18:48:30]Sending Data to texture:6 color:-1
+[18:48:30]Sending Data to texture:7 color:-16777216
+[18:48:30]Initializing Engine:ParticleEngine...Success.
+[18:48:30]Initializing Engine:CollisionChannels...Success.
 ------------------------------------------------------------------------------------------
-[19:35:5]Adding refrences to the scripting engine.
-[19:35:5]Adding class:Vector2f class:class org.joml.Vector2f
-[19:35:5]Adding class:Vector3f class:class org.joml.Vector3f
-[19:35:5]Adding class:Vector4f class:class org.joml.Vector4f
-[19:35:5]Adding class:Gui class:class graphics.gui.Gui
-[19:35:5]Adding class:Debouncer class:class base.util.Debouncer
-[19:35:5]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
-[19:35:5]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[19:35:5]Adding class:EntityModel class:class entity.EntityModel
-[19:35:5]Adding class:EntitySprite class:class entity.EntitySprite
-[19:35:5]Adding class:ModelLoader class:class models.ModelLoader
-[19:35:5]Adding class:Entity class:class entity.Entity
-[19:35:5]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
-[19:35:5]Adding class:Keyboard class:class input.Keyboard
-[19:35:5]Adding class:KeyEvent class:class java.awt.event.KeyEvent
-[19:35:5]Adding class:Mouse class:class input.Mouse
-[19:35:5]Adding class:EnumMouseButton class:class input.EnumMouseButton
-[19:35:5]Adding class:EnumButtonType class:class base.controller.EnumButtonType
-[19:35:5]Adding class:Shader class:class shaders.Shader
-[19:35:5]Adding class:FBO class:class graphics.FBO
-[19:35:5]Adding class:VAO class:class graphics.VAO
-[19:35:5]Adding class:Material class:class textures.Material
-[19:35:5]Adding class:FPSCamera class:class camera.FPSCamera
-[19:35:5]Adding class:TopDownCamera class:class camera.TopDownCamera
-[19:35:5]Adding class:DynamicCamera class:class camera.DynamicCamera
-[19:35:5]Adding class:TargetCamera class:class camera.TargetCamera
-[19:35:5]Adding class:Maths class:class math.Maths
-[19:35:5]Adding class:EntityContainer class:class entity.EntityContainer
-[19:35:5]Adding class:EnumComponentType class:class entity.component.EnumComponentType
-[19:35:5]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
-[19:35:5]Adding class:Cast class:class ScriptingEngine.Cast
-[19:35:5]Adding class:Callback class:class base.util.Callback
-[19:35:5]Adding class:Random class:class java.util.Random
-[19:35:5]Adding class:ModelGroup class:class models.ModelGroup
-[19:35:5]Adding class:ComponentBloom class:class entity.component.ComponentBloom
-[19:35:5]Adding class:ComponentLight class:class entity.component.ComponentLight
-[19:35:5]Adding class:ComponentRigidBody class:class entity.component.Physics.ComponentRigidBody
-[19:35:5]Adding class:EnumPhysicsPrimitive class:class entity.component.Physics.EnumPhysicsPrimitive
-[19:35:5]Adding class:GL11 class:class org.lwjgl.opengl.GL11
-[19:35:5]Adding class:GL20 class:class org.lwjgl.opengl.GL20
-[19:35:5]Adding class:GL30 class:class org.lwjgl.opengl.GL30
-[19:35:5]File Extension:quad.obj
-[19:35:5]verticies:6
-[19:35:5]textures:6
-[19:35:5]normals:6
-[19:35:5]VAOid:1
-[19:35:6]Sending Data to texture:8 color:-9568145
-[19:35:6]Sending Data to texture:9 color:-9568145
-[19:35:6]Sending Data to texture:10 color:-9568145
-[19:35:6]Sending Data to texture:11 color:-9568145
-[19:35:6]File Extension:quad2.obj
-[19:35:6]verticies:6
-[19:35:6]textures:6
-[19:35:6]normals:6
-[19:35:6]VAOid:2
-[19:35:6]Sending Data to texture:12 color:-9568145
-[19:35:6]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/fileNotFound.png
-[19:35:6]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\fileNotFound.png
-[19:35:6]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\fileNotFound.png
-[19:35:6]networking.FraudtekClient@7813cb11
-[19:35:6]Sending Data to texture:13 color:-9568145
-[19:35:6]Sending Data to texture:14 color:-13828050
-[19:35:6]Sending Data to texture:15 color:0
-[19:35:6]Sending Data to texture:16 color:0
-[19:35:7]FraudTekServer@localhost:8160 has started.
-[19:35:7]New Client connected @/127.0.0.1:53167
-[19:35:7]Client joined!
-[19:35:7]Sending Data to texture:29 color:-1
-[19:35:7]Sending Data to texture:30 color:-1
-[19:35:7]Sending Data to texture:31 color:-8355841
-[19:35:7]Sending Data to texture:32 color:-1
-[19:35:7]Sending Data to texture:33 color:-1
-[19:35:7]Sending Data to texture:34 color:-1
-[19:35:7]Sending Data to texture:35 color:-16777216
-[19:35:7]File Extension:sphere2.obj
-[19:35:7]verticies:3456
-[19:35:7]textures:3456
-[19:35:7]normals:3456
-[19:35:7]VAOid:3
-[19:35:7]Sending Data to texture:36 color:-14081507
-[19:35:7]Sending Data to texture:37 color:-1250068
-[19:35:7]Sending Data to texture:38 color:-8943363
-[19:35:7]Sending Data to texture:39 color:-8026747
-[19:35:8]Sending Data to texture:40 color:-8421505
-[19:35:8]Sending Data to texture:41 color:-16646144
-[19:35:8]Sending Data to texture:42 color:-16777216
-[19:35:8]Generating LevelshelloWorld
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]Sending Data to texture:43 color:-1
-[19:35:8]Sending Data to texture:44 color:-1
-[19:35:8]Sending Data to texture:44 color:-16711936
-[19:35:8]SpriteID:44
-[19:35:8]verticies:12
-[19:35:8]textures:12
-[19:35:8]normals:12
-[19:35:8]verticies:12
-[19:35:8]textures:12
-[19:35:8]normals:12
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:234
-[19:35:8]textures:234
-[19:35:8]normals:234
-[19:35:8]verticies:240
-[19:35:8]textures:240
-[19:35:8]normals:240
-[19:35:8]verticies:324
-[19:35:8]textures:324
-[19:35:8]normals:324
-[19:35:8]verticies:606
-[19:35:8]textures:606
-[19:35:8]normals:606
-[19:35:8]verticies:486
-[19:35:8]textures:486
-[19:35:8]normals:486
-[19:35:8]verticies:510
-[19:35:8]textures:510
-[19:35:8]normals:510
-[19:35:8]verticies:366
-[19:35:8]textures:366
-[19:35:8]normals:366
-[19:35:8]verticies:438
-[19:35:8]textures:438
-[19:35:8]normals:438
-[19:35:8]verticies:60
-[19:35:8]textures:60
-[19:35:8]normals:60
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:162
-[19:35:8]textures:162
-[19:35:8]normals:162
-[19:35:8]verticies:186
-[19:35:8]textures:186
-[19:35:8]normals:186
-[19:35:8]verticies:252
-[19:35:8]textures:252
-[19:35:8]normals:252
-[19:35:8]verticies:1146
-[19:35:8]textures:1146
-[19:35:8]normals:1146
-[19:35:8]verticies:1164
-[19:35:8]textures:1164
-[19:35:8]normals:1164
-[19:35:8]verticies:1062
-[19:35:8]textures:1062
-[19:35:8]normals:1062
-[19:35:8]verticies:1260
-[19:35:8]textures:1260
-[19:35:8]normals:1260
-[19:35:8]verticies:1050
-[19:35:8]textures:1050
-[19:35:8]normals:1050
-[19:35:8]verticies:90
-[19:35:8]textures:90
-[19:35:8]normals:90
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:294
-[19:35:8]textures:294
-[19:35:8]normals:294
-[19:35:8]verticies:804
-[19:35:8]textures:804
-[19:35:8]normals:804
-[19:35:8]verticies:828
-[19:35:8]textures:828
-[19:35:8]normals:828
-[19:35:8]verticies:1164
-[19:35:8]textures:1164
-[19:35:8]normals:1164
-[19:35:8]verticies:1242
-[19:35:8]textures:1242
-[19:35:8]normals:1242
-[19:35:8]verticies:1242
-[19:35:8]textures:1242
-[19:35:8]normals:1242
-[19:35:8]verticies:1236
-[19:35:8]textures:1236
-[19:35:8]normals:1236
-[19:35:8]verticies:276
-[19:35:8]textures:276
-[19:35:8]normals:276
-[19:35:8]verticies:432
-[19:35:8]textures:432
-[19:35:8]normals:432
-[19:35:8]verticies:324
-[19:35:8]textures:324
-[19:35:8]normals:324
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:6
-[19:35:8]textures:6
-[19:35:8]normals:6
-[19:35:8]verticies:6
-[19:35:8]textures:6
-[19:35:8]normals:6
-[19:35:8]verticies:780
-[19:35:8]textures:780
-[19:35:8]normals:780
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:900
-[19:35:8]textures:900
-[19:35:8]normals:900
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:306
-[19:35:8]textures:306
-[19:35:8]normals:306
-[19:35:8]verticies:162
-[19:35:8]textures:162
-[19:35:8]normals:162
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:12
-[19:35:8]textures:12
-[19:35:8]normals:12
-[19:35:8]verticies:12
-[19:35:8]textures:12
-[19:35:8]normals:12
-[19:35:8]verticies:714
-[19:35:8]textures:714
-[19:35:8]normals:714
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1332
-[19:35:8]textures:1332
-[19:35:8]normals:1332
-[19:35:8]verticies:1314
-[19:35:8]textures:1314
-[19:35:8]normals:1314
-[19:35:8]verticies:1218
-[19:35:8]textures:1218
-[19:35:8]normals:1218
-[19:35:8]verticies:186
-[19:35:8]textures:186
-[19:35:8]normals:186
-[19:35:8]verticies:60
-[19:35:8]textures:60
-[19:35:8]normals:60
-[19:35:8]verticies:48
-[19:35:8]textures:48
-[19:35:8]normals:48
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:36
-[19:35:8]textures:36
-[19:35:8]normals:36
-[19:35:8]verticies:984
-[19:35:8]textures:984
-[19:35:8]normals:984
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1350
-[19:35:8]textures:1350
-[19:35:8]normals:1350
-[19:35:8]verticies:1320
-[19:35:8]textures:1320
-[19:35:8]normals:1320
-[19:35:8]verticies:1302
-[19:35:8]textures:1302
-[19:35:8]normals:1302
-[19:35:8]verticies:1278
-[19:35:8]textures:1278
-[19:35:8]normals:1278
-[19:35:8]verticies:1308
-[19:35:8]textures:1308
-[19:35:8]normals:1308
-[19:35:8]verticies:870
-[19:35:8]textures:870
-[19:35:8]normals:870
-[19:35:8]verticies:66
-[19:35:8]textures:66
-[19:35:8]normals:66
-[19:35:8]verticies:54
-[19:35:8]textures:54
-[19:35:8]normals:54
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:54
-[19:35:8]textures:54
-[19:35:8]normals:54
-[19:35:8]verticies:744
-[19:35:8]textures:744
-[19:35:8]normals:744
-[19:35:8]verticies:1032
-[19:35:8]textures:1032
-[19:35:8]normals:1032
-[19:35:8]verticies:1260
-[19:35:8]textures:1260
-[19:35:8]normals:1260
-[19:35:8]verticies:1296
-[19:35:8]textures:1296
-[19:35:8]normals:1296
-[19:35:8]verticies:1302
-[19:35:8]textures:1302
-[19:35:8]normals:1302
-[19:35:8]verticies:1302
-[19:35:8]textures:1302
-[19:35:8]normals:1302
-[19:35:8]verticies:1116
-[19:35:8]textures:1116
-[19:35:8]normals:1116
-[19:35:8]verticies:1194
-[19:35:8]textures:1194
-[19:35:8]normals:1194
-[19:35:8]verticies:234
-[19:35:8]textures:234
-[19:35:8]normals:234
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:294
-[19:35:8]textures:294
-[19:35:8]normals:294
-[19:35:8]verticies:1260
-[19:35:8]textures:1260
-[19:35:8]normals:1260
-[19:35:8]verticies:1056
-[19:35:8]textures:1056
-[19:35:8]normals:1056
-[19:35:8]verticies:846
-[19:35:8]textures:846
-[19:35:8]normals:846
-[19:35:8]verticies:1290
-[19:35:8]textures:1290
-[19:35:8]normals:1290
-[19:35:8]verticies:864
-[19:35:8]textures:864
-[19:35:8]normals:864
-[19:35:8]verticies:714
-[19:35:8]textures:714
-[19:35:8]normals:714
-[19:35:8]verticies:402
-[19:35:8]textures:402
-[19:35:8]normals:402
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:144
-[19:35:8]textures:144
-[19:35:8]normals:144
-[19:35:8]verticies:870
-[19:35:8]textures:870
-[19:35:8]normals:870
-[19:35:8]verticies:324
-[19:35:8]textures:324
-[19:35:8]normals:324
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:588
-[19:35:8]textures:588
-[19:35:8]normals:588
-[19:35:8]verticies:468
-[19:35:8]textures:468
-[19:35:8]normals:468
-[19:35:8]verticies:48
-[19:35:8]textures:48
-[19:35:8]normals:48
-[19:35:8]verticies:24
-[19:35:8]textures:24
-[19:35:8]normals:24
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:24
-[19:35:8]textures:24
-[19:35:8]normals:24
-[19:35:8]verticies:24
-[19:35:8]textures:24
-[19:35:8]normals:24
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]verticies:0
-[19:35:8]textures:0
-[19:35:8]normals:0
-[SEVERE][19:35:8]No Normals loaded with model.
-[SEVERE][19:35:8]No Tangents loaded with model.
-[SEVERE][19:35:8]No BiTangents loaded with model.
-[19:35:8]Sending Data to texture:45 color:-16711936
-[19:35:8]Sending Data to texture:45 color:-65536
-[19:35:8]SpriteID:45
-[19:35:8][ERROR] ScriptNotFoundException TypeError: Cannot get property "tiles" of null in Script:Level at line number 207
-[19:35:8]File Extension:cube2.obj
-[19:35:8]verticies:36
-[19:35:8]textures:36
-[19:35:8]normals:36
-[19:35:8]VAOid:293
-[19:35:8]File Extension:dragon.obj
-[19:35:10]verticies:300000
-[19:35:10]textures:300000
-[19:35:10]normals:300000
-[19:35:10]VAOid:294
-[19:35:10]Adding callback:base.util.Callback$$NashornJavaAdapter@66a82a13
-[19:35:11][FPS: 170]
-[19:35:12][FPS: 357]
-[19:35:13][FPS: 446]
-[19:35:14][FPS: 534]
+[18:48:30]Adding refrences to the scripting engine.
+[18:48:30]Adding class:Vector2f class:class org.joml.Vector2f
+[18:48:30]Adding class:Vector3f class:class org.joml.Vector3f
+[18:48:30]Adding class:Vector4f class:class org.joml.Vector4f
+[18:48:30]Adding class:Gui class:class graphics.gui.Gui
+[18:48:30]Adding class:Debouncer class:class base.util.Debouncer
+[18:48:30]Adding class:DistanceCalculator class:class base.util.DistanceCalculator
+[18:48:30]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[18:48:30]Adding class:EntityModel class:class entity.EntityModel
+[18:48:30]Adding class:EntitySprite class:class entity.EntitySprite
+[18:48:30]Adding class:ModelLoader class:class models.ModelLoader
+[18:48:30]Adding class:Entity class:class entity.Entity
+[18:48:30]Adding class:EntityParticleEmitter class:class particles.EntityParticleEmitter
+[18:48:30]Adding class:Keyboard class:class input.Keyboard
+[18:48:30]Adding class:KeyEvent class:class java.awt.event.KeyEvent
+[18:48:30]Adding class:Mouse class:class input.Mouse
+[18:48:30]Adding class:EnumMouseButton class:class input.EnumMouseButton
+[18:48:30]Adding class:EnumButtonType class:class base.controller.EnumButtonType
+[18:48:30]Adding class:Shader class:class shaders.Shader
+[18:48:30]Adding class:FBO class:class graphics.FBO
+[18:48:30]Adding class:VAO class:class graphics.VAO
+[18:48:30]Adding class:Material class:class textures.Material
+[18:48:30]Adding class:FPSCamera class:class camera.FPSCamera
+[18:48:30]Adding class:TopDownCamera class:class camera.TopDownCamera
+[18:48:30]Adding class:DynamicCamera class:class camera.DynamicCamera
+[18:48:30]Adding class:TargetCamera class:class camera.TargetCamera
+[18:48:30]Adding class:Maths class:class math.Maths
+[18:48:30]Adding class:EntityContainer class:class entity.EntityContainer
+[18:48:30]Adding class:EnumComponentType class:class entity.component.EnumComponentType
+[18:48:30]Adding class:ComparitorVAO class:class entity.comparators.ComparitorVAO
+[18:48:30]Adding class:Cast class:class ScriptingEngine.Cast
+[18:48:30]Adding class:Callback class:class base.util.Callback
+[18:48:30]Adding class:Random class:class java.util.Random
+[18:48:30]Adding class:ModelGroup class:class models.ModelGroup
+[18:48:30]Adding class:ComponentBloom class:class entity.component.ComponentBloom
+[18:48:30]Adding class:ComponentLight class:class entity.component.ComponentLight
+[18:48:30]Adding class:ComponentRigidBody class:class entity.component.Physics.ComponentRigidBody
+[18:48:30]Adding class:EnumPhysicsPrimitive class:class entity.component.Physics.EnumPhysicsPrimitive
+[18:48:30]Adding class:GL11 class:class org.lwjgl.opengl.GL11
+[18:48:30]Adding class:GL20 class:class org.lwjgl.opengl.GL20
+[18:48:30]Adding class:GL30 class:class org.lwjgl.opengl.GL30
+[18:48:30]File Extension:quad.obj
+[18:48:30]verticies:6
+[18:48:30]textures:6
+[18:48:30]normals:6
+[18:48:30]VAOid:1
+[18:48:30]Sending Data to texture:8 color:-9568145
+[18:48:30]Sending Data to texture:9 color:-9568145
+[18:48:30]Sending Data to texture:10 color:-9568145
+[18:48:30]Sending Data to texture:11 color:-9568145
+[18:48:30]File Extension:quad2.obj
+[18:48:30]verticies:6
+[18:48:30]textures:6
+[18:48:30]normals:6
+[18:48:30]VAOid:2
+[18:48:30]Sending Data to texture:12 color:-9568145
+[18:48:30]/E:/Java/Edaxerum/out/artifacts/unnamed//res/Images/fileNotFound.png
+[18:48:30]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\fileNotFound.png
+[18:48:30]E:\Java\Edaxerum\out\artifacts\unnamed\\res\Images\fileNotFound.png
+[18:48:31]networking.FraudtekClient@6e16b8b5
+[18:48:31]Sending Data to texture:13 color:-9568145
+[18:48:31]Sending Data to texture:14 color:-13828050
+[18:48:31]Sending Data to texture:15 color:0
+[18:48:31]Sending Data to texture:16 color:0
+[18:48:31]FraudTekServer@localhost:8160 has started.
+[18:48:31]New Client connected @/127.0.0.1:52593
+[18:48:31]Client joined!
+[18:48:31]Sending Data to texture:29 color:-1
+[18:48:31]Sending Data to texture:30 color:-1
+[18:48:31]Sending Data to texture:31 color:-8355841
+[18:48:31]Sending Data to texture:32 color:-1
+[18:48:31]Sending Data to texture:33 color:-1
+[18:48:31]Sending Data to texture:34 color:-1
+[18:48:31]Sending Data to texture:35 color:-16777216
+[18:48:31]File Extension:sphere_smooth.obj
+[18:48:31]verticies:2880
+[18:48:31]textures:2880
+[18:48:31]normals:2880
+[18:48:31]VAOid:3
+[18:48:31]Generating LevelshelloWorld
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]Sending Data to texture:36 color:-1
+[18:48:32]Sending Data to texture:37 color:-1
+[18:48:32]Sending Data to texture:37 color:-16711936
+[18:48:32]SpriteID:37
+[18:48:32]verticies:96
+[18:48:32]textures:96
+[18:48:32]normals:96
+[18:48:32]verticies:120
+[18:48:32]textures:120
+[18:48:32]normals:120
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:42
+[18:48:32]textures:42
+[18:48:32]normals:42
+[18:48:32]verticies:54
+[18:48:32]textures:54
+[18:48:32]normals:54
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:216
+[18:48:32]textures:216
+[18:48:32]normals:216
+[18:48:32]verticies:852
+[18:48:32]textures:852
+[18:48:32]normals:852
+[18:48:32]verticies:630
+[18:48:32]textures:630
+[18:48:32]normals:630
+[18:48:32]verticies:354
+[18:48:32]textures:354
+[18:48:32]normals:354
+[18:48:32]verticies:150
+[18:48:32]textures:150
+[18:48:32]normals:150
+[18:48:32]verticies:60
+[18:48:32]textures:60
+[18:48:32]normals:60
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:114
+[18:48:32]textures:114
+[18:48:32]normals:114
+[18:48:32]verticies:78
+[18:48:32]textures:78
+[18:48:32]normals:78
+[18:48:32]verticies:384
+[18:48:32]textures:384
+[18:48:32]normals:384
+[18:48:32]verticies:1308
+[18:48:32]textures:1308
+[18:48:32]normals:1308
+[18:48:32]verticies:756
+[18:48:32]textures:756
+[18:48:32]normals:756
+[18:48:32]verticies:558
+[18:48:32]textures:558
+[18:48:32]normals:558
+[18:48:32]verticies:894
+[18:48:32]textures:894
+[18:48:32]normals:894
+[18:48:32]verticies:78
+[18:48:32]textures:78
+[18:48:32]normals:78
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:228
+[18:48:32]textures:228
+[18:48:32]normals:228
+[18:48:32]verticies:432
+[18:48:32]textures:432
+[18:48:32]normals:432
+[18:48:32]verticies:636
+[18:48:32]textures:636
+[18:48:32]normals:636
+[18:48:32]verticies:786
+[18:48:32]textures:786
+[18:48:32]normals:786
+[18:48:32]verticies:696
+[18:48:32]textures:696
+[18:48:32]normals:696
+[18:48:32]verticies:1314
+[18:48:32]textures:1314
+[18:48:32]normals:1314
+[18:48:32]verticies:1236
+[18:48:32]textures:1236
+[18:48:32]normals:1236
+[18:48:32]verticies:1218
+[18:48:32]textures:1218
+[18:48:32]normals:1218
+[18:48:32]verticies:1332
+[18:48:32]textures:1332
+[18:48:32]normals:1332
+[18:48:32]verticies:558
+[18:48:32]textures:558
+[18:48:32]normals:558
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:0
+[18:48:32]textures:0
+[18:48:32]normals:0
+[SEVERE][18:48:32]No Normals loaded with model.
+[SEVERE][18:48:32]No Tangents loaded with model.
+[SEVERE][18:48:32]No BiTangents loaded with model.
+[18:48:32]verticies:768
+[18:48:32]textures:768
+[18:48:32]normals:768
+[18:48:32]verticies:1236
+[18:48:32]textures:1236
+[18:48:32]normals:1236
+[18:48:32]verticies:1170
+[18:48:32]textures:1170
+[18:48:32]normals:1170
+[18:48:32]verticies:1344
+[18:48:32]textures:1344
+[18:48:32]normals:1344
+[18:48:32]verticies:1344
+[18:48:32]textures:1344
+[18:48:32]normals:1344
+[18:48:32]verticies:1350
+[18:48:32]textures:1350
+[18:48:32]normals:1350
+[18:48:33]verticies:1332
+[18:48:33]textures:1332
+[18:48:33]normals:1332
+[18:48:33]verticies:1290
+[18:48:33]textures:1290
+[18:48:33]normals:1290
+[18:48:33]verticies:1188
+[18:48:33]textures:1188
+[18:48:33]normals:1188
+[18:48:33]verticies:486
+[18:48:33]textures:486
+[18:48:33]normals:486
+[18:48:33]verticies:180
+[18:48:33]textures:180
+[18:48:33]normals:180
+[18:48:33]verticies:42
+[18:48:33]textures:42
+[18:48:33]normals:42
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:204
+[18:48:33]textures:204
+[18:48:33]normals:204
+[18:48:33]verticies:1074
+[18:48:33]textures:1074
+[18:48:33]normals:1074
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1338
+[18:48:33]textures:1338
+[18:48:33]normals:1338
+[18:48:33]verticies:1326
+[18:48:33]textures:1326
+[18:48:33]normals:1326
+[18:48:33]verticies:1254
+[18:48:33]textures:1254
+[18:48:33]normals:1254
+[18:48:33]verticies:990
+[18:48:33]textures:990
+[18:48:33]normals:990
+[18:48:33]verticies:1128
+[18:48:33]textures:1128
+[18:48:33]normals:1128
+[18:48:33]verticies:66
+[18:48:33]textures:66
+[18:48:33]normals:66
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:720
+[18:48:33]textures:720
+[18:48:33]normals:720
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1338
+[18:48:33]textures:1338
+[18:48:33]normals:1338
+[18:48:33]verticies:1338
+[18:48:33]textures:1338
+[18:48:33]normals:1338
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1026
+[18:48:33]textures:1026
+[18:48:33]normals:1026
+[18:48:33]verticies:234
+[18:48:33]textures:234
+[18:48:33]normals:234
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:66
+[18:48:33]textures:66
+[18:48:33]normals:66
+[18:48:33]verticies:528
+[18:48:33]textures:528
+[18:48:33]normals:528
+[18:48:33]verticies:918
+[18:48:33]textures:918
+[18:48:33]normals:918
+[18:48:33]verticies:1176
+[18:48:33]textures:1176
+[18:48:33]normals:1176
+[18:48:33]verticies:1326
+[18:48:33]textures:1326
+[18:48:33]normals:1326
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1332
+[18:48:33]textures:1332
+[18:48:33]normals:1332
+[18:48:33]verticies:1194
+[18:48:33]textures:1194
+[18:48:33]normals:1194
+[18:48:33]verticies:972
+[18:48:33]textures:972
+[18:48:33]normals:972
+[18:48:33]verticies:138
+[18:48:33]textures:138
+[18:48:33]normals:138
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:54
+[18:48:33]textures:54
+[18:48:33]normals:54
+[18:48:33]verticies:102
+[18:48:33]textures:102
+[18:48:33]normals:102
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:168
+[18:48:33]textures:168
+[18:48:33]normals:168
+[18:48:33]verticies:1290
+[18:48:33]textures:1290
+[18:48:33]normals:1290
+[18:48:33]verticies:1350
+[18:48:33]textures:1350
+[18:48:33]normals:1350
+[18:48:33]verticies:1224
+[18:48:33]textures:1224
+[18:48:33]normals:1224
+[18:48:33]verticies:1158
+[18:48:33]textures:1158
+[18:48:33]normals:1158
+[18:48:33]verticies:552
+[18:48:33]textures:552
+[18:48:33]normals:552
+[18:48:33]verticies:924
+[18:48:33]textures:924
+[18:48:33]normals:924
+[18:48:33]verticies:522
+[18:48:33]textures:522
+[18:48:33]normals:522
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:942
+[18:48:33]textures:942
+[18:48:33]normals:942
+[18:48:33]verticies:1344
+[18:48:33]textures:1344
+[18:48:33]normals:1344
+[18:48:33]verticies:1080
+[18:48:33]textures:1080
+[18:48:33]normals:1080
+[18:48:33]verticies:1098
+[18:48:33]textures:1098
+[18:48:33]normals:1098
+[18:48:33]verticies:582
+[18:48:33]textures:582
+[18:48:33]normals:582
+[18:48:33]verticies:42
+[18:48:33]textures:42
+[18:48:33]normals:42
+[18:48:33]verticies:24
+[18:48:33]textures:24
+[18:48:33]normals:24
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:246
+[18:48:33]textures:246
+[18:48:33]normals:246
+[18:48:33]verticies:660
+[18:48:33]textures:660
+[18:48:33]normals:660
+[18:48:33]verticies:1050
+[18:48:33]textures:1050
+[18:48:33]normals:1050
+[18:48:33]verticies:486
+[18:48:33]textures:486
+[18:48:33]normals:486
+[18:48:33]verticies:54
+[18:48:33]textures:54
+[18:48:33]normals:54
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:6
+[18:48:33]textures:6
+[18:48:33]normals:6
+[18:48:33]verticies:18
+[18:48:33]textures:18
+[18:48:33]normals:18
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:33]verticies:0
+[18:48:33]textures:0
+[18:48:33]normals:0
+[SEVERE][18:48:33]No Normals loaded with model.
+[SEVERE][18:48:33]No Tangents loaded with model.
+[SEVERE][18:48:33]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]verticies:0
+[18:48:34]textures:0
+[18:48:34]normals:0
+[SEVERE][18:48:34]No Normals loaded with model.
+[SEVERE][18:48:34]No Tangents loaded with model.
+[SEVERE][18:48:34]No BiTangents loaded with model.
+[18:48:34]Sending Data to texture:38 color:-16711936
+[18:48:34]Sending Data to texture:38 color:-65536
+[18:48:34]SpriteID:38
+[18:48:34][ERROR] ScriptNotFoundException TypeError: Cannot get property "tiles" of null in Script:Level at line number 190
+[18:48:34]File Extension:cube2.obj
+[18:48:34]verticies:36
+[18:48:34]textures:36
+[18:48:34]normals:36
+[18:48:34]VAOid:686
+[18:48:34]File Extension:dragon.obj
+[18:48:34]verticies:300000
+[18:48:34]textures:300000
+[18:48:34]normals:300000
+[18:48:34]VAOid:687
 ------------------------------------------------------------------------------------------
-[19:35:14]Shutting down Engine.
+[18:48:34]Vector Renderer Version:2
+[18:48:34]Created by Bailey
 ------------------------------------------------------------------------------------------
-[19:35:14]Deleting294 VAOs.
-[19:35:14]Deleting1170 VBOs.
+[18:48:34]Adding callback:base.util.Callback$$NashornJavaAdapter@20faaf77
+[18:48:35][FPS: 74]
+[18:48:36][FPS: 170]
+[18:48:37][FPS: 277]
+[18:48:38][FPS: 301]
+[18:48:39][FPS: 327]
+[18:48:40][FPS: 342]
+[18:48:41][FPS: 348]
+[18:48:42][FPS: 354]
+[18:48:43][FPS: 348]
+[18:48:44][FPS: 348]
+[18:48:45][FPS: 354]
+[18:48:46][FPS: 356]
+[18:48:47][FPS: 366]
 ------------------------------------------------------------------------------------------
-[19:35:14]Cleaning up Engine.
+[18:48:48]Shutting down Engine.
+------------------------------------------------------------------------------------------
+[18:48:48]Deleting688 VAOs.
+[18:48:48]Deleting2369 VBOs.
+------------------------------------------------------------------------------------------
+[18:48:48]Cleaning up Engine.
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
-[19:35:14]Terminating Window.
+[18:48:48]Terminating Window.
 ------------------------------------------------------------------------------------------

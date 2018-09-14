@@ -83,11 +83,6 @@ function getUniforms(){
         },
         {
             "type":"mat4",
-            "name":"rotationMatrix",
-            "location":"vertex"
-        },
-        {
-            "type":"mat4",
             "name":"projectionMatrix",
             "location":"vertex"
         },

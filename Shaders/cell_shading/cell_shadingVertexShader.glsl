@@ -14,13 +14,14 @@ out mat3 TBN;
 
 uniform mat4 animationMatrix;
 uniform mat4 transformationMatrix;
-uniform mat4 rotationMatrix;
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
 uniform vec3 lightPosition[@MAX_LIGHTS];
 
 void main(void){
     vec4 worldPosition = animationMatrix * transformationMatrix * vec4(position, 1.0);
+
+    mat4 rotationMatrix = mat4(transformationMatrix[0], transformationMatrix[1], transformationMatrix[2], vec4(0.0, 0.0, 0.0, 1.0));
 
     gl_Position =  projectionMatrix * viewMatrix * worldPosition;
     pass_textureCoords = textureCoords;

@@ -1,6 +1,8 @@
 var client;
 var otherPlayer;
 
+var vector;
+
 function init(){
     ServerManager.connect('localhost', '8160');
     client = ServerManager.addClient('localhost', '8160');
@@ -14,13 +16,16 @@ function init(){
     ScriptingEngine.addScript("Player",  -2, -2);
     ScriptingEngine.addScript("LevelController", "helloWorld");
 
+    ScriptingEngine.addScript("VectorRenderer");
+    vector = ScriptingEngine.getScript("VectorRenderer").run("addVector", ScriptingEngine.getScript("Player").var("player").getExactPosition(), ScriptingEngine.getScript("Player").var("player").getForwardVector());
+
     client.registerCallback(new Callback(function (data) {
         Log.println(data);
     }));
 }
 
 function tick(){
-
+    vector.pos = ScriptingEngine.getScript("Player").var("player").getPosition().add(ScriptingEngine.getScript("Player").var("player").getForwardVector());
 }
 
 function render(){

@@ -19,7 +19,7 @@ var body;
 
 function init(x, y){
     var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-    var model = new EntityModel(ModelLoader.loadModel("sphere2"), "lava", new Vector3f(x, 1, y), 0, 0, 0, 1);
+    var model = new EntityModel(ModelLoader.loadModel("sphere_smooth"), "white", new Vector3f(x, 1, y), 0, 0, 0, 1);
     body = new ComponentRigidBody(model, EnumPhysicsPrimitive.SPHERE);
     model.addComponent(body);
     player = entities.push(model);
@@ -43,7 +43,7 @@ function init(x, y){
 function tick(){
     location = player.getPosition();
 
-    // light.setPosition(player.getPosition().add(new Vector3f(0, 2, 0)));
+    light.setPosition(player.getPosition().add(new Vector3f(0, 2, 0)));
 
     var moved = false;
 
@@ -86,6 +86,7 @@ function tick(){
             player.translate(player.getForwardVector(new Vector3f(0, -90, 0)).mul(0.1));
             moved = true;
         }
+        // Log.println(player.getPosition()+" "+player.getForwardVector());
     }else{
         // light.setPosition(CameraManager.getCamera().getPosition());
     }
@@ -93,8 +94,8 @@ function tick(){
     if(lightPlacer.risingAction(Keyboard.isKeyDown(KeyEvent.VK_SPACE))){
         var materialID = MaterialManager.getColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256));
         var entities = ScriptingEngine.getScript("EntityManager").var("entities");
-        var cube = entities.push(new EntityModel(ModelLoader.loadModel("sphere2"), materialID.getName(), new Vector3f(CameraManager.getCamera().getPosition()), 0, 0, 0, 0.5));
-        var RigidBody = new ComponentRigidBody(cube, EnumPhysicsPrimitive.SPHERE);
+        var cube = entities.push(new EntityModel(ModelLoader.loadModel("cube2"), materialID.getName(), new Vector3f(CameraManager.getCamera().getPosition()), 0, 0, 0, 0.5));
+        var RigidBody = new ComponentRigidBody(cube, EnumPhysicsPrimitive.CUBE);
         cube.addComponent(RigidBody);
         cube.getAttribute("weight").setData(1.0);
         RigidBody.addAcceleration(CameraManager.getCamera().getLookingDirection().mul(120));

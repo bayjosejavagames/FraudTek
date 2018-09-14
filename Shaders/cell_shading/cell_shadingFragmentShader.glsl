@@ -41,9 +41,9 @@ void main(void){
 
     vec3 totalDiffuse = vec3(0.0);
     vec3 totalSpecular = vec3(0.0);
-    vec3 ambient = vec3(1.0, 1.0, 1.0);
+    vec3 totalAmbient = vec3(0.0);
 
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < @MAX_LIGHTS; i++){
         float distance = length(toLightVector[i]);
         float attFactor = attenuation[i].x + (attenuation[i].y * distance) + (attenuation[i].z * distance * distance);
         float nDot = dot(normalize(toLightVector[i]), unitNormal);
@@ -51,16 +51,16 @@ void main(void){
         float brightness = max(nDot, 0.0);
         float level = floor(brightness * levels);
         brightness = level / levels;
-        totalDiffuse = totalDiffuse+((lightColor[i] * brightness) + (lightColor[i] * (2 / attFactor)));
+        totalDiffuse = totalDiffuse + ((lightColor[i] / attFactor * brightness));
 
         float specularAddition = (dot(reflect(-normalize(toLightVector[i]), normalize(unitNormal)), unitVectorToCamera));
         specularAddition = max(specularAddition, 0.0);
         specularAddition = min(specularAddition, 1.0);
         float dampedSpecular = pow(specularAddition, 1000)/ attFactor;
         totalSpecular = clamp(totalSpecular + (lightColor[i] * dampedSpecular), vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0));
-        ambient = (ambient * (lightColor[i])) / attFactor * 5;
-    }
 
+        totalAmbient = totalAmbient + ((lightColor[i] / (attFactor * distance)));
+    }
 
 
     totalDiffuse = max(totalDiffuse, 0.0);
@@ -74,7 +74,11 @@ void main(void){
         discard;
     }
 
-    out_Color = (clamp(emissiveMaskColor * emissiveColor, vec4(0.0, 0.0, 0.0, 0.0), vec4(1.0, 1.0, 1.0, 1.0)) + clamp((albedoColor * (vec4(totalDiffuse + (ambient), 1.0)) ), vec4(0.0, 0.0, 0.0, 0.0), vec4(1.0, 1.0, 1.0, 1.0)));
+    out_Color = (clamp(emissiveMaskColor * emissiveColor, vec4(0.0, 0.0, 0.0, 0.0), vec4(1.0, 1.0, 1.0, 1.0)) + clamp((albedoColor * (vec4(totalDiffuse + (totalAmbient), 1.0)) ), vec4(0.0, 0.0, 0.0, 0.0), vec4(1.0, 1.0, 1.0, 1.0)));
+
+//      out_Color = vec4(totalDiffuse, 1.0);
+//      out_Color = vec4(totalAmbient, 1.0);
+//        out_Color = vec4(totalAmbient, 1.0);
 
 //    out_Color = vec4(passNormal, 1.0);
 //    out_Color = vec4(normalMapVector, 1.0);

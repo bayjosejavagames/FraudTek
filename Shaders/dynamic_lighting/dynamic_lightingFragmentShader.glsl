@@ -2,7 +2,7 @@
 
 in vec2 pass_textureCoords;
 in vec3 toCameraVector;
-in vec3 toLightVector[4];
+in vec3 toLightVector[@MAX_LIGHTS];
 in vec3 passNormal;
 in mat3 TBN;
 
@@ -17,8 +17,8 @@ uniform sampler2D roughnessMap;
 uniform sampler2D emissiveMap;
 uniform sampler2D emissivemaskMap;
 
-uniform vec3 lightColor[4];
-uniform vec3 attenuation[4];
+uniform vec3 lightColor[@MAX_LIGHTS];
+uniform vec3 attenuation[@MAX_LIGHTS];
 uniform float shineDamper;
 uniform float reflectivity;
 
